@@ -1,0 +1,283 @@
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
+
+@layer base {
+  :root {
+    /* Light mode - Clean and modern */
+    --background: 220 100% 98%;
+    --background-gradient: linear-gradient(135deg, hsl(220 100% 98%) 0%, hsl(210 100% 96%) 50%, hsl(200 100% 97%) 100%);
+    --foreground: 240 10% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+
+    /* Primary brand colors - Purple Blue Gradient */
+    --primary: 270 91% 65%;
+    --primary-foreground: 210 40% 98%;
+
+    /* Secondary with purple tint */
+    --secondary: 260 15% 94%;
+    --secondary-foreground: 270 15% 15%;
+
+    /* Muted backgrounds with purple undertone */
+    --muted: 260 15% 94%;
+    --muted-foreground: 270 8% 45%;
+
+    /* Accent colors with blue-purple gradient */
+    --accent: 260 15% 94%;
+    --accent-foreground: 270 15% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    /* Purple-themed borders */
+    --border: 260 20% 88%;
+    --input: 260 20% 88%;
+    --ring: 270 91% 65%;
+
+    --radius: 0.75rem;
+
+    /* Enhanced sidebar colors with purple theme */
+    --sidebar-background: 260 20% 97%;
+    --sidebar-foreground: 270 15% 25%;
+    --sidebar-primary: 270 91% 65%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 260 15% 94%;
+    --sidebar-accent-foreground: 270 15% 15%;
+    --sidebar-border: 260 20% 88%;
+    --sidebar-ring: 270 91% 65%;
+
+    /* Beautiful purple-blue gradient colors */
+    --gradient-start: 270 91% 65%;
+    --gradient-middle: 260 80% 70%;
+    --gradient-end: 240 85% 75%;
+    
+    /* Purple-tinted shadow colors */
+    --shadow-light: 260 15% 90%;
+    --shadow-medium: 260 15% 82%;
+  }
+
+  .dark {
+    --background: 270 30% 8%;
+    --foreground: 270 15% 95%;
+
+    --card: 270 30% 8%;
+    --card-foreground: 270 15% 95%;
+
+    --popover: 270 30% 8%;
+    --popover-foreground: 270 15% 95%;
+
+    --primary: 270 91% 65%;
+    --primary-foreground: 270 30% 8%;
+
+    --secondary: 270 20% 15%;
+    --secondary-foreground: 270 15% 95%;
+
+    --muted: 270 20% 15%;
+    --muted-foreground: 270 10% 65%;
+
+    --accent: 270 20% 15%;
+    --accent-foreground: 270 15% 95%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 270 15% 95%;
+
+    --border: 270 20% 15%;
+    --input: 270 20% 15%;
+    --ring: 270 91% 65%;
+    --sidebar-background: 270 25% 12%;
+    --sidebar-foreground: 270 15% 95%;
+    --sidebar-primary: 270 91% 65%;
+    --sidebar-primary-foreground: 270 30% 8%;
+    --sidebar-accent: 270 20% 15%;
+    --sidebar-accent-foreground: 270 15% 95%;
+    --sidebar-border: 270 20% 15%;
+    --sidebar-ring: 270 91% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply text-foreground font-advercase;
+    background: var(--background-gradient);
+  }
+
+  .dark body {
+    @apply bg-background;
+  }
+}
+
+/* Apple Liquid Glass Design System */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.05);
+}
+
+.liquid-glass-hover {
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.liquid-glass-hover:hover {
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(25px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+  transform: translateY(-2px) scale(1.02);
+}
+
+.dark .liquid-glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.dark .liquid-glass-hover:hover {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(25px) saturate(200%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Liquid button effects */
+.liquid-button {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(15px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.liquid-button:hover {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+}
+
+/* Light mode specific enhancements */
+.light-glass {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid hsl(var(--border));
+  box-shadow: 0 8px 32px hsl(var(--shadow-light) / 0.1);
+}
+
+.light-card-hover:hover {
+  box-shadow: 0 20px 40px hsl(var(--shadow-medium) / 0.15);
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+}
+
+.light-gradient-bg {
+  background: linear-gradient(135deg, 
+    hsl(var(--gradient-start)) 0%, 
+    hsl(var(--gradient-middle)) 50%, 
+    hsl(var(--gradient-end)) 100%);
+}
+
+.light-subtle-pattern {
+  background-image: 
+    radial-gradient(circle at 1px 1px, hsl(var(--border) / 0.3) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+
+/* Custom animations and effects */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 1s ease-out;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.6s ease-out;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+.animation-delay-1000 {
+  animation-delay: 1s;
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.hover\:scale-102:hover {
+  transform: scale(1.02);
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom backdrop blur for better glass effect */
+.backdrop-blur-lg {
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Enhanced gradient text animation */
+.bg-gradient-to-r {
+  background-size: 200% auto;
+}
+
+/* Pulse animation delays */
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
