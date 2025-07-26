@@ -8,29 +8,29 @@ interface FeaturedWork {
 
 const featuredWorks: FeaturedWork[] = [
   {
-    title: "Samsung Galaxy Watch 4 Review",
-    link: "https://www.3arrafni.com/samsung-galaxy-watch-4-review/",
-    image: "/lovable-uploads/cc0ed4c2-86a5-4d8e-8065-cac902b8bc16.png"
+    title: "Fantasy Premier League Explained",
+    link: "https://www.3arrafni.com/fantasy-premier-league-explained/",
+    image: "/lovable-uploads/b14d570d-e8e5-4ae3-8804-493cd431e8bc.png"
   },
   {
-    title: "Honey Scam explained",
-    link: "https://www.3arrafni.com/honey-scam-explained/",
-    image: "/lovable-uploads/8ef3ab80-42b8-4ce4-b280-e4a0c812617b.png"
+    title: "Ramses Central Fire Disrupted Egypt's Internet",
+    link: "https://www.3arrafni.com/ramses-central-fire-disrupted-egypts-internet/",
+    image: "/lovable-uploads/bcfc6f72-cd1d-4b77-b573-d2864bd26e80.png"
   },
   {
-    title: "Samsung Galaxy Buds FE Review",
-    link: "https://www.3arrafni.com/samsung-galaxy-buds-fe-review/",
-    image: "/lovable-uploads/50a63b2f-f4a6-4af1-b9fa-180df9e12233.png"
+    title: "What's New In The MacBook Pro M5",
+    link: "https://www.3arrafni.com/tech-news/whats-new-in-the-macbook-pro-m5-update/",
+    image: "/lovable-uploads/6003f53f-4584-4c61-9047-9b1f0c4ab5a4.png"
   },
   {
-    title: "UGREEN Nexode 65W GaN Charging Station",
-    link: "https://www.3arrafni.com/ugreen-nexode-65w-gan-charging-station/",
-    image: "/lovable-uploads/c35b2cfe-9a8a-4ec2-830c-214900066582.png"
+    title: "iPhone 17 Air Colors Leak",
+    link: "https://www.3arrafni.com/tech-news/iphone-17-air-colors-leak/",
+    image: "/lovable-uploads/3ab556f4-89e1-46bc-ac02-abb3d8ee8503.png"
   },
   {
-    title: "Black Myth Wukong Review",
-    link: "https://www.3arrafni.com/black-myth-wukong-review/",
-    image: "/lovable-uploads/6134c47d-6131-4d1f-ba02-e6aa71b2d036.png"
+    title: "Nothing OS 4.0",
+    link: "https://www.3arrafni.com/tech-news/nothing-os-4-0/",
+    image: "/lovable-uploads/b823ab54-079a-4e3a-ba85-7a325944be55.png"
   }
 ];
 
