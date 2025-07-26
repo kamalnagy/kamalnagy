@@ -27,8 +27,8 @@ export const Contact = () => {
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="text-muted-foreground text-xs md:text-sm">Email</p>
-                      <a href="mailto:mahmoudalmoselhy@gmail.com" className="text-foreground hover:text-primary transition-colors text-sm md:text-base break-all">
-                        mahmoudalmoselhy@gmail.com
+                      <a href="mailto:Kamalnagy97@gmail.com" className="text-foreground hover:text-primary transition-colors text-sm md:text-base break-all">
+                        Kamalnagy97@gmail.com
                       </a>
                     </div>
                   </div>
@@ -39,8 +39,8 @@ export const Contact = () => {
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="text-muted-foreground text-xs md:text-sm">Phone</p>
-                      <a href="tel:+201121529292" className="text-foreground hover:text-primary transition-colors text-sm md:text-base">
-                        +20 112 152 9292
+                      <a href="tel:+201554044072" className="text-foreground hover:text-primary transition-colors text-sm md:text-base">
+                        +201554044072
                       </a>
                     </div>
                   </div>
@@ -52,12 +52,12 @@ export const Contact = () => {
                     <div className="min-w-0 flex-1">
                       <p className="text-muted-foreground text-xs md:text-sm">WhatsApp</p>
                       <a 
-                        href="https://wa.me/201121529292" 
+                        href="https://wa.me/201554044072" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-primary transition-colors flex items-center space-x-1 text-sm md:text-base"
                       >
-                        <span>+20 112 152 9292</span>
+                        <span>+201554044072</span>
                         <ExternalLink className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
                       </a>
                     </div>
@@ -70,12 +70,12 @@ export const Contact = () => {
                     <div className="min-w-0 flex-1">
                       <p className="text-muted-foreground text-xs md:text-sm">LinkedIn</p>
                       <a 
-                        href="https://linkedin.com/in/mahmoudalmoselhy" 
+                        href="https://linkedin.com/in/kamal-nagy" 
                         target="_blank" 
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-primary transition-colors flex items-center space-x-1 text-sm md:text-base"
                       >
-                        <span className="break-all">mahmoudalmoselhy</span>
+                        <span className="break-all">kamal-nagy</span>
                         <ExternalLink className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
                       </a>
                     </div>
@@ -88,23 +88,23 @@ export const Contact = () => {
                 <ul className="space-y-3 md:space-y-4 text-muted-foreground">
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">Content Strategy & Planning</span>
+                    <span className="text-sm md:text-base">SEO Content Creation</span>
                   </li>
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">SEO Optimization & Analysis</span>
+                    <span className="text-sm md:text-base">Social Media Campaign Management</span>
                   </li>
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">Team Leadership & Training</span>
+                    <span className="text-sm md:text-base">Legal Academic Research</span>
                   </li>
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">Content Creation & Copywriting</span>
+                    <span className="text-sm md:text-base">Bilingual Content Writing</span>
                   </li>
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">Performance Analytics & Reporting</span>
+                    <span className="text-sm md:text-base">Keyword Optimization & Analytics</span>
                   </li>
                 </ul>
               </div>
@@ -114,7 +114,7 @@ export const Contact = () => {
         
         <div className="text-center mt-8 md:mt-12 px-4">
           <p className="text-muted-foreground text-sm md:text-base">
-            © 2024 Mahmoud AlMoselhy. Crafted with passion for great content.
+            © 2024 Kamal Nagy. Crafted with passion for great content.
           </p>
         </div>
       </div>

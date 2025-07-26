@@ -25,31 +25,31 @@ export const Hero = () => {
           <div className="text-center animate-fade-in max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
               <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent animate-gradient">
-                Mahmoud
+                Kamal
               </span>
               <br />
-              <span className="text-foreground">AlMoselhy</span>
+              <span className="text-foreground">Nagy</span>
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-4 font-light">
-              Content Team Leader & SEO Specialist
+              SEO & Social Media Content Creator | Independent Legal Academic Researcher
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 text-muted-foreground mb-6">
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-sm md:text-base">mahmoudalmoselhy@gmail.com</span>
+                <span className="text-sm md:text-base">Kamalnagy97@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <MessageCircle className="w-5 h-5 text-accent-foreground" />
-                <span className="text-sm md:text-base">+20 112 152 9292</span>
+                <span className="text-sm md:text-base">+201554044072</span>
               </div>
             </div>
             
             <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
-              "Like Albus Dumbledore said: 'words in my humble opinion are the most inexhaustible source of magic' 
-              I do believe in the power of words where a man can invent a whole new world just with his pencil. 
-              Working for 13 years now as a content creator."
+              "The right words, at the right time, can open doors, change minds, and build empires." 
+              As a bilingual SEO content creator and legal researcher, I believe in the transformative power of language — not just to communicate, but to connect.
+              With over 5 years of experience in academic legal research and more than 1.5 years in SEO-driven content creation.
             </p>
             
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
@@ -60,7 +60,7 @@ export const Hero = () => {
                 Get In Touch
               </a>
               <a 
-                href="https://linkedin.com/in/mahmoudalmoselhy" 
+                href="https://linkedin.com/in/kamal-nagy" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="border-2 border-accent-foreground text-accent-foreground px-6 py-3 rounded-full font-semibold hover:bg-accent-foreground hover:text-background transform transition-all duration-300 flex items-center justify-center space-x-2"
