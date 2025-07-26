@@ -6,18 +6,18 @@ export const About = () => {
   const highlights = [
     {
       icon: Target,
-      title: "13+ Years Experience",
-      description: "Dedicated content creator with over a decade of expertise"
+      title: "5+ Years Legal Research",
+      description: "Academic legal research expertise with precision and accuracy"
     },
     {
       icon: Users,
-      title: "Team Leadership",
-      description: "Leading content teams and mentoring writers"
+      title: "Bilingual Content Creation",
+      description: "Creating engaging content in multiple languages"
     },
     {
       icon: TrendingUp,
-      title: "SEO Excellence",
-      description: "Driving organic growth through strategic optimization"
+      title: "SEO & Social Media Expert",
+      description: "1.5+ years driving organic traffic and engagement"
     }
   ];
 

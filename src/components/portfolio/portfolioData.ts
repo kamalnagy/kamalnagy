@@ -1,282 +1,89 @@
 export const portfolioSections = [
   {
     title: "Content Writing - 3arrafni.com",
-    description: "Leading NVIDIA MENA news translation and tech content creation",
+    description: "Tech news and content creation with SEO optimization",
     items: [
       {
-        title: "UGREEN Nexode PowerBank 200W",
-        description: "Comprehensive powerbank review and testing",
-        link: "https://www.3arrafni.com/ugreen-nexode-powerbank-200w/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "Fantasy Premier League Explained",
+        description: "Complete guide to Fantasy Premier League strategies and tips",
+        link: "https://www.3arrafni.com/fantasy-premier-league-explained/",
+        logo: "/lovable-uploads/b14d570d-e8e5-4ae3-8804-493cd431e8bc.png"
       },
       {
-        title: "ChatGPT Explained",
-        description: "In-depth explanation of AI technology and applications",
-        link: "https://www.3arrafni.com/chatgpt-explained/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "Ramses Central Fire Disrupted Egypt's Internet",
+        description: "Coverage of how the central fire affected Egypt's internet infrastructure",
+        link: "https://www.3arrafni.com/ramses-central-fire-disrupted-egypts-internet/",
+        logo: "/lovable-uploads/bcfc6f72-cd1d-4b77-b573-d2864bd26e80.png"
       },
       {
-        title: "How COVID-19 Affected E-Commerce",
-        description: "Analysis of pandemic impact on digital commerce",
-        link: "https://www.3arrafni.com/how-covid-19-affected-e-commerce/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "What's New In The MacBook Pro M5",
+        description: "Latest updates and features in the MacBook Pro M5",
+        link: "https://www.3arrafni.com/tech-news/whats-new-in-the-macbook-pro-m5-update/",
+        logo: "/lovable-uploads/6003f53f-4584-4c61-9047-9b1f0c4ab5a4.png"
       },
       {
-        title: "How AI Helps Content Creators",
-        description: "Exploring AI tools and their impact on content creation",
-        link: "https://www.3arrafni.com/how-ai-helps-content-creators/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "iPhone 17 Air Colors Leak",
+        description: "Exclusive coverage of iPhone 17 Air color options leak",
+        link: "https://www.3arrafni.com/tech-news/iphone-17-air-colors-leak/",
+        logo: "/lovable-uploads/3ab556f4-89e1-46bc-ac02-abb3d8ee8503.png"
       },
       {
-        title: "Prompt Engineering Explained",
-        description: "Guide to effective AI prompt creation and optimization",
-        link: "https://www.3arrafni.com/prompt-engineering-explained/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "Nothing OS 4.0",
+        description: "Comprehensive coverage of Nothing OS 4.0 features and updates",
+        link: "https://www.3arrafni.com/tech-news/nothing-os-4-0/",
+        logo: "/lovable-uploads/b823ab54-079a-4e3a-ba85-7a325944be55.png"
       },
       {
-        title: "UGREEN Nexode Pro Revision",
-        description: "Updated review of UGREEN's professional charging solution",
-        link: "https://www.3arrafni.com/ugreen-nexode-pro-revision/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "Xiaomi 16 Grabs New Certification",
+        description: "Latest certification updates for Xiaomi 16 smartphone",
+        link: "https://www.3arrafni.com/tech-news/xiaomi-16-grabs-new-certification/",
+        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       },
       {
-        title: "UGREEN HiTune Max5 Review",
-        description: "Comprehensive audio device review and testing",
-        link: "https://www.3arrafni.com/ugreen-hitune-max5-review/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "Nothing Phone 3 Official Release",
+        description: "Official announcement and details of Nothing Phone 3",
+        link: "https://www.3arrafni.com/tech-news/nothing-phone-3-official-release/",
+        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       },
       {
-        title: "GameSir X2 Pro Review",
-        description: "Gaming controller review for mobile gaming",
-        link: "https://www.3arrafni.com/gamesir-x2-pro-review/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "Samsung Galaxy S25 Ultra",
+        description: "Complete coverage of Samsung Galaxy S25 Ultra features",
+        link: "https://www.3arrafni.com/mobiles/samsung-galaxy-s25-ultra/",
+        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       },
       {
-        title: "Rapoo MT750L Mouse Review",
-        description: "Professional mouse review with detailed testing",
-        link: "https://www.3arrafni.com/rapoo-mt750l-mouse-review/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "Samsung Knox Security Update",
+        description: "New security features in One UI 8 and Samsung Knox",
+        link: "https://www.3arrafni.com/tech-news/new-security-update-one-ui-8/",
+        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       },
       {
-        title: "Honor Magic Watch 2 Review",
-        description: "Smartwatch review with comprehensive feature analysis",
-        link: "https://www.3arrafni.com/honor-magic-watch-2-review/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
+        title: "S Pen Galaxy S26 Ultra Changes",
+        description: "Upcoming changes for S Pen in Galaxy S26 Ultra",
+        link: "https://www.3arrafni.com/tech-news/upcoming-changes-for-s26-ultra-pen/",
+        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       },
       {
-        title: "Gaomon S620 Graphic Tablet Review",
-        description: "Digital art tablet review for creative professionals",
-        link: "https://www.3arrafni.com/gaomon-s620-graphic-tablet-review/",
-        logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
-      }
-    ]
-  },
-  {
-    title: "Android World Articles",
-    description: "Mobile technology and Android-focused content writing",
-    items: [
-      {
-        title: "Android Technology Article",
-        description: "Latest Android developments and mobile tech insights",
-        link: "https://www.androidworld9.com/87528/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
+        title: "GeForce RTX 50 Release",
+        description: "NVIDIA GeForce RTX 5050 official release coverage",
+        link: "https://www.3arrafni.com/tech-news/nvidia-geforce-rtx-5050-released/",
+        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       },
       {
-        title: "Mobile Innovation Coverage",
-        description: "Comprehensive mobile technology analysis",
-        link: "https://www.androidworld9.com/87308/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
-      },
-      {
-        title: "Android Feature Analysis",
-        description: "In-depth analysis of Android features and updates",
-        link: "https://www.androidworld9.com/45890/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
-      },
-      {
-        title: "Mobile Security Insights",
-        description: "Android security features and privacy analysis",
-        link: "https://www.androidworld9.com/42376/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
-      },
-      {
-        title: "App Development Trends",
-        description: "Latest trends in Android app development",
-        link: "https://www.androidworld9.com/42329/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
-      },
-      {
-        title: "Android OS Updates",
-        description: "Coverage of Android operating system updates",
-        link: "https://www.androidworld9.com/42203/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
-      },
-      {
-        title: "Mobile Hardware Reviews",
-        description: "Android device hardware analysis and reviews",
-        link: "https://www.androidworld9.com/41684/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
-      },
-      {
-        title: "Android Ecosystem Analysis",
-        description: "Comprehensive analysis of the Android ecosystem",
-        link: "https://www.androidworld9.com/41551/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
-      },
-      {
-        title: "Mobile Technology Trends",
-        description: "Emerging trends in mobile technology landscape",
-        link: "https://www.androidworld9.com/40030/",
-        logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
-      }
-    ]
-  },
-  {
-    title: "Script Writing",
-    description: "YouTube content creation and script development",
-    items: [
-      {
-        title: "ExVar YouTube Scripts",
-        description: "Script writing for Lamees El-Husseini's diverse video content",
-        link: "https://youtube.com/playlist?list=PLsMyTdtr0IJlgBBuxRdba1NkyHHUpQPgm",
-        logo: "/lovable-uploads/106b69a1-42a2-4bf5-9caa-e9f4a854f21a.png"
-      },
-      {
-        title: "Revieology Channel Scripts",
-        description: "Script writing for review-focused YouTube content",
-        link: "https://www.youtube.com/playlist?list=PLvHCxZoUkHSaflZiicOpeOcBvr84u50Fk",
-        logo: "/lovable-uploads/b53bf9e1-ad4a-433a-984c-7c8fb6a6187d.png"
-      }
-    ]
-  },
-  {
-    title: "Social Media Campaigns - Menusbee",
-    description: "Complete campaign management targeting diverse business sectors",
-    items: [
-      {
-        title: "Tourism Companies Campaign",
-        description: "Targeted advertising for travel and tourism businesses",
-        link: "https://www.facebook.com/menusbee/posts/pfbid0sUPtVyCZPXH1ZZ17tpsSgv4WrG6Stwq83AoKDZQ2zdkmTrcS7RacRqEcJejE1u1Ll",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Cafes & Restaurants Campaign",
-        description: "Food service industry social media strategy",
-        link: "https://www.facebook.com/menusbee/posts/pfbid0gYKbwHD5H4hGLoJtoYVAAfk7iunBid9G5MAHLG1ny47PYHEqmP8p7GhZGn3tatV8l",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Butcher Shops Campaign",
-        description: "Specialized campaign for meat retailers",
-        link: "https://www.facebook.com/menusbee/posts/pfbid02yBxPnp34eVP5aZzVK2YCUAUEiMAUotMTFx31mb39QP6h7XqYYMSVRxCtqZCRCgCal",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Business Promotion Campaign",
-        description: "Strategic business promotion and marketing campaign",
-        link: "https://www.facebook.com/share/p/19J24XMdu4/",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Digital Marketing Strategy",
-        description: "Comprehensive digital marketing approach for businesses",
-        link: "https://www.facebook.com/menusbee/posts/pfbid02moagYrwRaNxLrF6LQzTdy2eP9NqPWoYA5RzRvvuKx2KcaTUG36Jhmj16LJZEYJ2xl",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Brand Visibility Campaign",
-        description: "Enhanced brand visibility through targeted social media",
-        link: "https://www.facebook.com/menusbee/posts/pfbid02d974q9mGJxWVwJVGGUhi2hAe7LmiTcjFhuPvB8GtKQrWZcNBVk6ovt56CEHgpHbpl",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Customer Engagement Campaign",
-        description: "Building customer relationships through social media",
-        link: "https://www.facebook.com/share/p/16SmfZfReK/",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Market Expansion Strategy",
-        description: "Strategic approach to expanding market reach",
-        link: "https://www.facebook.com/share/p/1696ahYCzP/",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Community Building Initiative",
-        description: "Building strong business communities through social media",
-        link: "https://www.facebook.com/share/p/1Dkkr1VrtT/",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Local Business Support Campaign",
-        description: "Supporting local businesses through targeted campaigns",
-        link: "https://www.facebook.com/share/p/1C9e7h1pCx/",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Industry-Specific Marketing",
-        description: "Tailored marketing solutions for specific industries",
-        link: "https://www.facebook.com/share/p/16Z3SRTBLg/",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      },
-      {
-        title: "Cross-Platform Campaign Management",
-        description: "Multi-platform social media campaign coordination",
-        link: "https://www.facebook.com/menusbee/posts/pfbid0WiUtAsWQ9J3Uacjcd3iLtZWQkx3ic8LkFCgVGenSWioL2vMiGqGns5HHygXa4timl",
-        logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
-      }
-    ]
-  },
-  {
-    title: "Lecce Social Media Content",
-    description: "Creative social media campaigns and content creation",
-    items: [
-      {
-        title: "UCL Final Competition",
-        description: "UEFA Champions League final competition coverage",
-        link: "https://www.facebook.com/share/p/16f7QEfVF4/",
-        logo: "/lovable-uploads/684b33f4-7836-42a3-810a-395f2e74a0da.png"
-      },
-      {
-        title: "El Classico Copa Del Ray final",
-        description: "El Classico Copa del Rey final social media coverage",
-        link: "https://www.facebook.com/share/p/16RdYQQR2K/",
-        logo: "/lovable-uploads/684b33f4-7836-42a3-810a-395f2e74a0da.png"
-      },
-      {
-        title: "Egypt's Derby",
-        description: "Egyptian football derby social media campaign",
-        link: "https://www.facebook.com/share/p/12MnJq4FKrH/",
-        logo: "/lovable-uploads/684b33f4-7836-42a3-810a-395f2e74a0da.png"
-      },
-      {
-        title: "Me time with Lecce",
-        description: "Personal time and lifestyle content with Lecce brand",
-        link: "https://www.facebook.com/share/p/1AmJ7uKYfq/",
-        logo: "/lovable-uploads/684b33f4-7836-42a3-810a-395f2e74a0da.png"
-      },
-      {
-        title: "Egypt's Derby",
-        description: "Another Egyptian football derby social media campaign",
-        link: "https://www.facebook.com/share/p/1Dwk3mVRL8/",
-        logo: "/lovable-uploads/684b33f4-7836-42a3-810a-395f2e74a0da.png"
+        title: "NVIDIA DLSS 4",
+        description: "NVIDIA DLSS 4 integration in Killing Floor 3 and Wuchang",
+        link: "https://www.3arrafni.com/tech-news/nvidia-dlss-4-killing-floor-3-wuchang/",
+        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       }
     ]
   }
 ];
 
-// ... keep existing code (seoArchives)
 export const seoArchives = [
   {
     title: "3arrafni.com Archive",
-    description: "Complete collection of tech articles and reviews",
-    link: "https://www.3arrafni.com/author/almoselhy/",
-    logo: "/lovable-uploads/693924e3-2bc0-456b-8afe-d100ef0390f8.png"
-  },
-  {
-    title: "Android World Archive",
-    description: "Mobile technology and Android-focused content",
-    link: "https://www.androidworld9.com/author/mahmoud-almoselhy/",
-    logo: "/lovable-uploads/e1d8ea68-6c79-4ca8-8729-ca7d400d103a.png"
+    description: "Complete collection of tech articles and SEO content",
+    link: "https://www.3arrafni.com/author/kamal-nagy/",
+    logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
   }
 ];
