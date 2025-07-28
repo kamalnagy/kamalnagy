@@ -15,9 +15,10 @@ interface PortfolioSectionProps {
   items: PortfolioSectionItem[];
   gridClassName?: string;
   imageSize?: 'small' | 'medium' | 'large';
+  backgroundImage?: boolean;
 }
 
-export const PortfolioSection = ({ title, description, items, gridClassName = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3", imageSize = 'small' }: PortfolioSectionProps) => {
+export const PortfolioSection = ({ title, description, items, gridClassName = "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3", imageSize = 'small', backgroundImage = false }: PortfolioSectionProps) => {
   return (
     <div className="space-y-6 md:space-y-8">
       <div className="text-center px-4">
@@ -34,6 +35,7 @@ export const PortfolioSection = ({ title, description, items, gridClassName = "g
             link={item.link}
             logo={item.logo}
             imageSize={imageSize}
+            backgroundImage={backgroundImage}
           />
         ))}
       </div>

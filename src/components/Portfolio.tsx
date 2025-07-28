@@ -50,6 +50,7 @@ export const Portfolio = () => {
                 items={section.items}
                 gridClassName={sectionGridLayouts[sectionIndex]}
                 imageSize={sectionIndex === 1 ? 'medium' : 'small'}
+                backgroundImage={sectionIndex === 1}
               />
             </div>
           ))}

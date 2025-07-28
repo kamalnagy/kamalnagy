@@ -8,9 +8,10 @@ interface PortfolioItemProps {
   link: string;
   logo: string;
   imageSize?: 'small' | 'medium' | 'large';
+  backgroundImage?: boolean;
 }
 
-export const PortfolioItem = ({ title, description, link, logo, imageSize = 'small' }: PortfolioItemProps) => {
+export const PortfolioItem = ({ title, description, link, logo, imageSize = 'small', backgroundImage = false }: PortfolioItemProps) => {
   const getImageSizeClasses = () => {
     switch (imageSize) {
       case 'large':
@@ -22,6 +23,42 @@ export const PortfolioItem = ({ title, description, link, logo, imageSize = 'sma
         return "w-10 h-10 md:w-12 md:h-12";
     }
   };
+
+  if (backgroundImage) {
+    return (
+      <a
+        href={link}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group relative overflow-hidden rounded-3xl cursor-pointer transform hover:scale-105 transition-all duration-500"
+        style={{
+          backgroundImage: `url(${logo})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          minHeight: '250px'
+        }}
+      >
+        {/* Dark overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-all duration-500"></div>
+        
+        {/* Content overlay */}
+        <div className="relative z-10 h-full p-4 md:p-6 flex flex-col justify-end text-white">
+          <h4 className="text-base md:text-lg font-semibold mb-2 md:mb-3 group-hover:text-primary transition-all duration-500 line-clamp-2">
+            {title}
+          </h4>
+          
+          <p className="text-white/80 text-xs md:text-sm leading-relaxed mb-3 md:mb-4 line-clamp-3 transition-colors duration-500">
+            {description}
+          </p>
+          
+          <div className="flex items-center text-white/90 text-xs md:text-sm font-medium group-hover:text-primary transition-all duration-500">
+            <span>View Work</span>
+            <ExternalLink className="w-3 h-3 md:w-4 md:h-4 ml-2 group-hover:translate-x-1 group-hover:scale-110 transition-all duration-500" />
+          </div>
+        </div>
+      </a>
+    );
+  }
 
   return (
     <a
