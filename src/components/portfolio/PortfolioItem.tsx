@@ -7,9 +7,22 @@ interface PortfolioItemProps {
   description: string;
   link: string;
   logo: string;
+  imageSize?: 'small' | 'medium' | 'large';
 }
 
-export const PortfolioItem = ({ title, description, link, logo }: PortfolioItemProps) => {
+export const PortfolioItem = ({ title, description, link, logo, imageSize = 'small' }: PortfolioItemProps) => {
+  const getImageSizeClasses = () => {
+    switch (imageSize) {
+      case 'large':
+        return "w-20 h-20 md:w-24 md:h-24";
+      case 'medium':
+        return "w-16 h-16 md:w-20 md:h-20";
+      case 'small':
+      default:
+        return "w-10 h-10 md:w-12 md:h-12";
+    }
+  };
+
   return (
     <a
       href={link}
@@ -17,7 +30,7 @@ export const PortfolioItem = ({ title, description, link, logo }: PortfolioItemP
       rel="noopener noreferrer"
       className="group liquid-glass liquid-glass-hover rounded-3xl p-4 md:p-6 cursor-pointer transform"
     >
-      <div className="w-10 h-10 md:w-12 md:h-12 liquid-button rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-500 p-2">
+      <div className={`${getImageSizeClasses()} liquid-button rounded-full flex items-center justify-center mb-3 md:mb-4 group-hover:scale-110 transition-transform duration-500 p-2`}>
         <img
           src={logo}
           alt={title}

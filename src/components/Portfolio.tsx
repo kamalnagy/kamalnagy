@@ -49,6 +49,7 @@ export const Portfolio = () => {
                 description={sectionIndex === 0 ? "" : section.description}
                 items={section.items}
                 gridClassName={sectionGridLayouts[sectionIndex]}
+                imageSize={sectionIndex === 1 ? 'medium' : 'small'}
               />
             </div>
           ))}
