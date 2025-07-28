@@ -140,6 +140,48 @@ export const portfolioSections = [
         description: "Professional guide to modern web development and design practices",
         link: "https://devolum.com/how-to-develop-electronic-websites/",
         logo: "/lovable-uploads/1666408e-a405-44b6-ba0a-b11c493ecb73.png"
+      },
+      {
+        title: "Increase Student Engagement",
+        description: "Strategies and techniques to boost student participation and learning",
+        link: "https://saabeel.com/increase-student-engagement/",
+        logo: "/lovable-uploads/21b639d5-f1db-467b-8a06-432f93d6c81d.png"
+      },
+      {
+        title: "Study Medicine In English In Turkey",
+        description: "Complete guide to pursuing medical education in English at Turkish universities",
+        link: "https://www.international-stu.com/study-medicine-in-english-in-turkey-2/",
+        logo: "/lovable-uploads/a60fb0f5-68a1-4284-ad40-afcae8273fd0.png"
+      },
+      {
+        title: "Studying In English At Turkish Public Universities",
+        description: "Comprehensive overview of English-taught programs at Turkish public institutions",
+        link: "https://www.international-stu.com/studying-in-english-at-turkish-public-universities/",
+        logo: "/lovable-uploads/faac997b-a1dc-447f-9be5-4005abadb87f.png"
+      },
+      {
+        title: "AI In Developing Biodegradable Implants",
+        description: "Exploring artificial intelligence applications in medical implant development",
+        link: "https://hsi-eg.co/ar/the-role-of-ai-in-developing-biodegradable-implants/",
+        logo: "/lovable-uploads/63be9809-8cd5-4624-b8f1-c57fc574a477.png"
+      },
+      {
+        title: "What is Fluoroscopy?",
+        description: "Understanding real-time X-ray imaging technology in modern medicine",
+        link: "https://hsi-eg.co/fluoroscopy-real-time-x-ray-imaging-in-medicine/",
+        logo: "/lovable-uploads/c75fea98-0675-43bd-b742-221d8cc43633.png"
+      },
+      {
+        title: "3D Printing In Medicine",
+        description: "Revolutionary applications of 3D printing technology in healthcare",
+        link: "https://hsi-eg.co/ar/3d-printing-in-medicine/",
+        logo: "/lovable-uploads/fbcc368b-5d04-4c04-833a-7d27a77ff254.png"
+      },
+      {
+        title: "How To Start A Career In Medical Device Sales",
+        description: "Professional roadmap to entering the medical device sales industry",
+        link: "https://hsi-eg.co/ar/how-to-start-a-career-in-medical-device-sales/",
+        logo: "/lovable-uploads/18517331-d399-4f1c-bc91-130f9f85dbff.png"
       }
     ]
   }
