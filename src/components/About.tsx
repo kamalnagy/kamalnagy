@@ -16,7 +16,7 @@ export const About = () => {
     },
     {
       icon: TrendingUp,
-      title: "SEO & Social Media Expert",
+      title: "SEO Content Creation",
       description: "1.5+ years driving organic traffic and engagement"
     }
   ];
