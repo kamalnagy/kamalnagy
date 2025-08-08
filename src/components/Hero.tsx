@@ -20,9 +20,20 @@ export const Hero = () => {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex justify-center items-center">
+        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12">
+          {/* Profile Photo */}
+          <div className="flex-shrink-0 order-2 lg:order-1">
+            <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-full overflow-hidden border-4 border-primary/20 shadow-2xl">
+              <img
+                src="/lovable-uploads/31ec1e2e-fdac-453a-bc83-b17697936c04.png"
+                alt="Kamal Nagy"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          
           {/* Text content */}
-          <div className="text-center animate-fade-in max-w-4xl">
+          <div className="text-center lg:text-left animate-fade-in max-w-4xl order-1 lg:order-2">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
               <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent animate-gradient">
                 Kamal
