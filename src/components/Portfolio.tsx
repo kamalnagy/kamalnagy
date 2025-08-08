@@ -4,6 +4,7 @@ import { PortfolioSection } from './portfolio/PortfolioSection';
 import { SEOArchives } from './portfolio/SEOArchives';
 import { FeaturedWorkStack } from './portfolio/FeaturedWorkStack';
 import { ReviewsSection } from './portfolio/ReviewsSection';
+import AccountsSlider from './portfolio/AccountsSlider';
 import { portfolioSections, seoArchives } from './portfolio/portfolioData';
 
 export const Portfolio = () => {
@@ -57,6 +58,8 @@ export const Portfolio = () => {
           ))}
 
           <SEOArchives archives={seoArchives} />
+          
+          <AccountsSlider />
           
           <ReviewsSection backgroundImage="/lovable-uploads/a9c744e7-2a59-49ee-8d46-f433d3eaaf90.png" />
         </div>

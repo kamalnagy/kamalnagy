@@ -182,6 +182,24 @@ export const portfolioSections = [
         description: "Professional roadmap to entering the medical device sales industry",
         link: "https://hsi-eg.co/ar/how-to-start-a-career-in-medical-device-sales/",
         logo: "/lovable-uploads/18517331-d399-4f1c-bc91-130f9f85dbff.png"
+      },
+      {
+        title: "The Difference Between Split Air Conditioners and Other Types",
+        description: "Comprehensive guide to understanding split AC technology and comparisons",
+        link: "https://alshathri.sa/article-view/The-Difference-Between-Split-Air-Conditioners",
+        logo: "/lovable-uploads/8fbe4867-db56-4b84-a45f-97acf0f4063d.png"
+      },
+      {
+        title: "Samsung TV: Your Gateway to Home Entertainment from Alshathri Store",
+        description: "Complete guide to Samsung smart TV features and entertainment options",
+        link: "https://alshathri.sa/article-view/samsung-tv-from-alshathri-store",
+        logo: "/lovable-uploads/5127d626-d296-4353-ba18-67d9ed5f5ef1.png"
+      },
+      {
+        title: "Smart TV: Your Comprehensive Guide to Choosing the Future Screen from Alshathri Store",
+        description: "Expert advice on selecting the perfect smart TV for your home",
+        link: "https://alshathri.sa/article-view/Your-Guide-to-Choosing-the-Smart-TV",
+        logo: "/lovable-uploads/24732094-85cf-46f6-a4aa-b45ee6315442.png"
       }
     ]
   }
@@ -191,7 +209,7 @@ export const seoArchives = [
   {
     title: "3arrafni.com Archive",
     description: "Complete collection of tech articles and SEO content",
-    link: "https://www.3arrafni.com/author/kamal-nagy/",
+    link: "https://www.3arrafni.com/author/kamal/",
     logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
   }
 ];

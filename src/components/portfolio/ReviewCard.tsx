@@ -73,8 +73,8 @@ export const ReviewCard = ({ review, backgroundImage }: ReviewCardProps) => {
         </h4>
         
         {/* Comment */}
-        <div className="flex-1 flex items-center">
-          <p className="text-white/90 text-sm leading-relaxed text-center line-clamp-4">
+        <div className="flex-1 flex items-center justify-center">
+          <p className="text-white/90 text-sm leading-relaxed text-center line-clamp-4 w-full">
             {review.comment}
           </p>
         </div>
