@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-export const Clients = () => {
-  const clients = [
+const ClientsSlider = () => {
+  const accounts = [
     {
       name: "3arrafni.com",
       logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
@@ -40,6 +40,16 @@ export const Clients = () => {
     }
   ];
 
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % accounts.length);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [accounts.length]);
+
   return (
     <section className="py-6 md:py-8 px-4 md:px-6 bg-muted/10">
       <div className="container mx-auto max-w-5xl">
@@ -48,39 +58,35 @@ export const Clients = () => {
             <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent animate-gradient">Accounts</span>
           </h2>
           <p className="text-muted-foreground text-sm max-w-xl mx-auto animate-fade-in animation-delay-1000 px-4">
-            Trusted partnerships with leading brands and organizations across various industries
+            Accounts I've Worked on Diverse Content Creation Across Blogs & social media
           </p>
           <div className="w-10 md:w-12 h-1 bg-gradient-to-r from-gradient-start to-gradient-end mx-auto mt-2 md:mt-3 rounded-full animate-scale-in animation-delay-2000"></div>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 md:gap-3 items-center justify-items-center">
-          {clients.map((client, index) => (
+        <div className="flex justify-center items-center min-h-[200px]">
+          <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden bg-white shadow-lg transition-all duration-500 ease-in-out transform hover:scale-105">
+            <img
+              src={accounts[currentIndex].logo}
+              alt={accounts[currentIndex].name}
+              className="w-full h-full object-contain p-4"
+            />
+          </div>
+        </div>
+        
+        <div className="flex justify-center">
+          <p className="text-lg font-semibold text-foreground">
+            {accounts[currentIndex].name}
+          </p>
+        </div>
+        
+        <div className="flex justify-center gap-2 mt-4">
+          {accounts.map((_, index) => (
             <div
               key={index}
-              className="group relative bg-card/30 backdrop-blur-sm rounded-lg md:rounded-xl p-2 md:p-3 hover:bg-card/50 transition-all duration-300 hover:scale-105 hover:shadow-lg border border-border hover:border-accent w-full aspect-square flex items-center justify-center overflow-hidden"
-              style={{
-                animationDelay: `${index * 50}ms`
-              }}
-            >
-              {/* Subtle animated background glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg md:rounded-xl"></div>
-              
-              {/* Logo container */}
-              <div className="relative z-10 w-full h-full flex items-center justify-center p-1">
-                <img
-                  src={client.logo}
-                  alt={client.name}
-                  className="max-w-full max-h-full object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-300"
-                />
-              </div>
-              
-              {/* Hover overlay with client name */}
-              <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 via-background/60 to-transparent p-1.5 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300 rounded-b-lg md:rounded-b-xl">
-                <p className="text-foreground text-xs font-medium text-center truncate">
-                  {client.name}
-                </p>
-              </div>
-            </div>
+              className={`w-2 h-2 rounded-full transition-colors duration-300 ${
+                index === currentIndex ? 'bg-primary' : 'bg-muted-foreground/30'
+              }`}
+            />
           ))}
         </div>
         
@@ -98,3 +104,5 @@ export const Clients = () => {
     </section>
   );
 };
+
+export default ClientsSlider;

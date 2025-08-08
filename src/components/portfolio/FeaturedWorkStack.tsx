@@ -93,6 +93,18 @@ export const FeaturedWorkStack = () => {
     };
   }, [currentIndex]);
 
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === featuredWorks.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? featuredWorks.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <div 
       id="featured-stack" 
@@ -170,6 +182,28 @@ export const FeaturedWorkStack = () => {
             </a>
           );
         })}
+      </div>
+      
+      {/* Navigation arrows */}
+      <div className="absolute bottom-4 right-4 flex gap-2 z-40">
+        <button
+          onClick={prevSlide}
+          className="bg-background/80 backdrop-blur-sm border border-border rounded-full p-2 hover:bg-background transition-all duration-300 hover:scale-110 shadow-lg"
+          aria-label="Previous slide"
+        >
+          <svg className="w-4 h-4 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+          </svg>
+        </button>
+        <button
+          onClick={nextSlide}
+          className="bg-background/80 backdrop-blur-sm border border-border rounded-full p-2 hover:bg-background transition-all duration-300 hover:scale-110 shadow-lg"
+          aria-label="Next slide"
+        >
+          <svg className="w-4 h-4 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
     </div>
   );

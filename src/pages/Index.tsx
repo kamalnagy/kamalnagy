@@ -3,7 +3,7 @@ import React from 'react';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
 import { Portfolio } from '@/components/Portfolio';
-import { Clients } from '@/components/Clients';
+import ClientsSlider from '@/components/ClientsSlider';
 import { Contact } from '@/components/Contact';
 
 const Index = () => {
@@ -12,7 +12,7 @@ const Index = () => {
       <Hero />
       <About />
       <Portfolio />
-      <Clients />
+      <ClientsSlider />
       <Contact />
     </div>
   );

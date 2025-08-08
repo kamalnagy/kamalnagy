@@ -59,7 +59,7 @@ export const Hero = () => {
             
             <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
               "The right words, at the right time, can open doors, change minds, and build empires." 
-              As a bilingual SEO content creator and legal researcher, I believe in the transformative power of language — not just to communicate, but to connect.
+              As a bilingual SEO content writer and legal academic researcher, I believe in the transformative power of word not just to communicate, but to connect.
               With over 5 years of experience in academic legal research and more than 1.5 years in SEO-driven content creation.
             </p>
             
@@ -90,9 +90,6 @@ export const Hero = () => {
           </div>
         </div>
         
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="w-6 h-6 text-muted-foreground" />
-        </div>
       </div>
     </section>
   );
