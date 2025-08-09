@@ -2,7 +2,6 @@ import React from 'react';
 import { Experience } from '@/components/Experience';
 import { Skills } from '@/components/Skills';
 import { Education } from '@/components/Education';
-import { Awards } from '@/components/Awards';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -47,7 +46,6 @@ const CV = () => {
         <Experience />
         <Education />
         <Skills />
-        <Awards />
       </main>
     </div>
   );
