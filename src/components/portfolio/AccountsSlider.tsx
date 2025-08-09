@@ -3,40 +3,36 @@ import React, { useState, useEffect } from 'react';
 const AccountsSlider = () => {
   const accounts = [
     {
-      name: "3arrafni.com",
-      logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
+      name: "Brand Design",
+      logo: "/lovable-uploads/90d22a4e-228e-439e-a158-d73972a37529.png"
     },
     {
-      name: "Menusbee",
-      logo: "/lovable-uploads/efe16f18-e306-4748-bfde-333f019c03b0.png"
+      name: "Data Solutions",
+      logo: "/lovable-uploads/69e91fca-9e4f-4e60-94c0-b2e9ca71240c.png"
     },
     {
-      name: "Android World",
-      logo: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png"
+      name: "SAFA Student Services",
+      logo: "/lovable-uploads/9c0d5493-1a62-465e-9b99-1fd5deb50acb.png"
     },
     {
-      name: "SafaTR",
-      logo: "/lovable-uploads/62555173-b976-41ad-bed8-39ee3a82b0c5.png"
+      name: "Basenote",
+      logo: "/lovable-uploads/1f6cb002-8043-49f7-9991-7039fba1310a.png"
     },
     {
-      name: "BaseNotesA",
-      logo: "/lovable-uploads/ac78e0b4-1f75-4ea6-a2e0-076903014978.png"
+      name: "HSI Healthcare Training",
+      logo: "/lovable-uploads/f021c59e-8728-4435-be76-938b8b8b4296.png"
     },
     {
-      name: "HSI Egypt",
-      logo: "/lovable-uploads/63be9809-8cd5-4624-b8f1-c57fc574a477.png"
-    },
-    {
-      name: "Saabeel",
-      logo: "/lovable-uploads/c39156a9-5748-4c37-8a35-b71e3ee96426.png"
+      name: "Synergy Solutions",
+      logo: "/lovable-uploads/1506ebdc-d429-42d0-aa89-57a3f8f051f1.png"
     },
     {
       name: "Devolum",
-      logo: "/lovable-uploads/1666408e-a405-44b6-ba0a-b11c493ecb73.png"
+      logo: "/lovable-uploads/6165073a-101a-4378-9df3-53022877f254.png"
     },
     {
-      name: "International Student",
-      logo: "/lovable-uploads/a60fb0f5-68a1-4284-ad40-afcae8273fd0.png"
+      name: "Educational Services",
+      logo: "/lovable-uploads/2bb81cf0-79f0-4210-abac-08f05a7c3472.png"
     }
   ];
 
