@@ -5,34 +5,34 @@ import { Brain, Search, PenTool, Globe, BarChart3, FileText } from 'lucide-react
 export const Skills = () => {
   const skillCategories = [
     {
-      icon: Brain,
-      title: "AI & Technology",
-      skills: ["Generative AI - Proficient", "Prompt Engineering - Proficient"]
-    },
-    {
       icon: Search,
-      title: "SEO & Analytics",
-      skills: ["SEO - Competent", "Semrush & Ahrefs - Expert", "Keyword Analysis"]
-    },
-    {
-      icon: PenTool,
-      title: "Content Creation",
-      skills: ["Creative Writing - Expert", "Content Review - Expert", "Copywriting"]
+      title: "SEO & Tools",
+      skills: ["Keyword Research", "On-Page Optimization", "Meta Tags", "SEMrush", "Ahrefs", "Google Analytics"]
     },
     {
       icon: Globe,
-      title: "Web & CMS",
-      skills: ["WordPress - Expert", "Content Management", "Web Optimization"]
+      title: "Content Management",
+      skills: ["WordPress", "Content Strategy", "Social Media Content Creation", "Social Media Management"]
     },
     {
       icon: BarChart3,
-      title: "Office & Analytics",
-      skills: ["MS Office Suite - Expert", "Data Analysis", "Performance Reporting"]
+      title: "Analysis & Reporting",
+      skills: ["Competitor Analysis", "Performance Reporting", "Research & Analytical Thinking"]
+    },
+    {
+      icon: PenTool,
+      title: "Office & Productivity",
+      skills: ["Microsoft Word", "Microsoft Excel", "Microsoft PowerPoint", "Time Management & Organization"]
+    },
+    {
+      icon: Brain,
+      title: "Soft Skills",
+      skills: ["Adaptability & Problem-Solving", "Communication & Collaboration", "Research Skills"]
     },
     {
       icon: FileText,
       title: "Languages",
-      skills: ["Arabic - Native/Bilingual", "English - Proficient", "Translation - Expert"]
+      skills: ["Arabic - Native", "English - Professional", "Legal Research & Writing"]
     }
   ];
 

@@ -5,37 +5,45 @@ export const Experience = () => {
   const experiences = [
     {
       company: "Devolum",
-      role: "Content Team Leader",
-      period: "Jan 2024 - present",
-      location: "Mansoura, Egypt",
+      role: "SEO Content Creator",
+      period: "Apr 2024 - Present",
+      location: "Egypt",
       responsibilities: [
-        "Leading team of content writers, providing guidance and mentoring",
-        "Planning content strategies for clients to improve websites' blogs and traffic",
-        "Content optimization to improve search rankings and user engagement",
-        "Managing social media content calendars and campaigns"
+        "Developed high-quality articles, product descriptions, and landing pages incorporating targeted keywords",
+        "Implemented on-page SEO best practices, including meta descriptions and image optimization",
+        "Conducted keyword research using SEMrush and Ahrefs to identify high-traffic search terms",
+        "Collaborated with marketing teams to align content strategy with business objectives"
       ]
     },
     {
-      company: "Devolum",
-      role: "SEO Specialist",
-      period: "Jan 2024 - present",
-      location: "Mansoura, Egypt",
+      company: "Freelance",
+      role: "Legal & Economic Researcher",
+      period: "Jul 2019 - Present",
+      location: "Egypt",
       responsibilities: [
-        "On-page optimization and technical SEO implementation",
-        "Keyword research and competitive analysis",
-        "Content collaboration for SEO-friendly content creation",
-        "Performance reporting and algorithm updates tracking"
+        "Conduct in-depth legal and economic research on regulatory compliance and financial policies",
+        "Analyze economic data and policy developments to provide actionable insights",
+        "Stay updated on international and regional legal and economic changes"
       ]
     },
     {
-      company: "3arrafni Website",
-      role: "Editor in Chief",
-      period: "Oct 2022 - present",
-      location: "Mansoura, Egypt",
+      company: "Areej Alalam Group",
+      role: "Tourist Advisor",
+      period: "Nov 2022 - Mar 2023",
+      location: "Egypt",
       responsibilities: [
-        "Managing content teams and overseeing content development",
-        "Writing SEO-friendly tech articles and product reviews",
-        "NVIDIA MENA news translation and content localization"
+        "Advised clients on travel itineraries, transportation, and accommodations",
+        "Prepared promotional materials to market tour packages"
+      ]
+    },
+    {
+      company: "Karim Elsabahy Law Firm",
+      role: "Legal Trainee",
+      period: "Jul 2021 - Jan 2022",
+      location: "Egypt",
+      responsibilities: [
+        "Drafted claims and defenses, reviewed contracts, and negotiated settlements",
+        "Assisted in case management and court follow-ups"
       ]
     }
   ];
