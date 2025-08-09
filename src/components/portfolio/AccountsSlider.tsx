@@ -58,11 +58,11 @@ const AccountsSlider = () => {
       </div>
       
       <div className="flex justify-center items-center min-h-[200px]">
-        <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden bg-white shadow-lg transition-all duration-500 ease-in-out transform hover:scale-105">
+        <div className="relative w-40 h-40 md:w-48 md:h-48 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-xl transition-all duration-500 ease-in-out transform hover:scale-105">
           <img
             src={accounts[currentIndex].logo}
             alt={accounts[currentIndex].name}
-            className="w-full h-full object-contain p-4"
+            className="w-full h-full object-contain p-6 filter brightness-100"
           />
         </div>
       </div>
