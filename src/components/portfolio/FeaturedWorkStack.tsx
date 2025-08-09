@@ -37,61 +37,6 @@ const featuredWorks: FeaturedWork[] = [
 export const FeaturedWorkStack = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const stackElement = document.getElementById('featured-stack');
-      if (!stackElement) return;
-      
-      const rect = stackElement.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      
-      // Calculate if stack is in viewport
-      const stackTop = rect.top;
-      const stackBottom = rect.bottom;
-      const isInViewport = stackTop < windowHeight && stackBottom > 0;
-      
-      if (isInViewport) {
-        // Calculate scroll progress through the stack area
-        const viewportCenter = windowHeight / 2;
-        const stackCenter = stackTop + rect.height / 2;
-        const distanceFromCenter = Math.abs(stackCenter - viewportCenter);
-        const maxDistance = windowHeight / 2 + rect.height / 2;
-        
-        // When stack is near center, calculate card index based on relative position
-        if (distanceFromCenter < maxDistance) {
-          const progressThroughStack = Math.max(0, Math.min(1, 
-            (viewportCenter - stackTop) / rect.height
-          ));
-          
-          // Map progress to card index
-          const newIndex = Math.floor(progressThroughStack * featuredWorks.length);
-          const clampedIndex = Math.max(0, Math.min(featuredWorks.length - 1, newIndex));
-          
-          if (clampedIndex !== currentIndex) {
-            setCurrentIndex(clampedIndex);
-          }
-        }
-      }
-    };
-
-    // Use requestAnimationFrame for smoother updates
-    let ticking = false;
-    const smoothHandleScroll = () => {
-      if (!ticking) {
-        requestAnimationFrame(() => {
-          handleScroll();
-          ticking = false;
-        });
-        ticking = true;
-      }
-    };
-
-    window.addEventListener('scroll', smoothHandleScroll, { passive: true });
-    
-    return () => {
-      window.removeEventListener('scroll', smoothHandleScroll);
-    };
-  }, [currentIndex]);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => 
