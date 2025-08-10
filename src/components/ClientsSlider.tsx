@@ -73,43 +73,24 @@ const ClientsSlider = () => {
         </div>
 
         <div className="relative flex justify-center items-center min-h-[200px]">
-          {/* Previous button */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-0 z-10 p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 group"
-            aria-label="Previous slide"
-          >
-            <ChevronLeft className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
-          </button>
-
           {/* Slider container */}
-          <div className="overflow-hidden w-full max-w-4xl mx-8">
-            <div 
-              className="flex transition-transform duration-500 ease-in-out gap-6"
-              style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
-            >
+          <div className="w-full max-w-6xl mx-8">
+            <div className="flex flex-wrap justify-center items-center gap-4 md:gap-6">
               {accounts.map((account, index) => (
-                <div key={index} className="w-1/3 flex-shrink-0 flex justify-center">
-                  <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-xl transition-all duration-500 ease-in-out transform hover:scale-105">
+                <div key={index} className="flex justify-center">
+                  <div className={`relative w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-xl transition-all duration-500 ease-in-out transform hover:scale-105 ${
+                    index === currentIndex ? 'ring-2 ring-primary scale-110' : ''
+                  }`}>
                     <img
                       src={account.logo}
                       alt={account.name}
-                      className="w-full h-full object-contain p-4 filter brightness-100"
+                      className="w-full h-full object-contain p-3 filter brightness-100"
                     />
                   </div>
                 </div>
               ))}
             </div>
           </div>
-
-          {/* Next button */}
-          <button
-            onClick={nextSlide}
-            className="absolute right-0 z-10 p-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 transition-all duration-300 group"
-            aria-label="Next slide"
-          >
-            <ChevronRight className="w-5 h-5 text-foreground group-hover:text-primary transition-colors" />
-          </button>
         </div>
         
         <div className="flex justify-center">
