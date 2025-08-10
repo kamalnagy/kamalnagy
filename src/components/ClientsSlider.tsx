@@ -83,18 +83,18 @@ const ClientsSlider = () => {
           </button>
 
           {/* Slider container */}
-          <div className="overflow-hidden w-full max-w-md mx-8">
+          <div className="overflow-hidden w-full max-w-4xl mx-8">
             <div 
-              className="flex transition-transform duration-500 ease-in-out"
-              style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+              className="flex transition-transform duration-500 ease-in-out gap-6"
+              style={{ transform: `translateX(-${currentIndex * (100 / 3)}%)` }}
             >
               {accounts.map((account, index) => (
-                <div key={index} className="w-full flex-shrink-0 flex justify-center">
-                  <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-xl transition-all duration-500 ease-in-out transform hover:scale-105">
+                <div key={index} className="w-1/3 flex-shrink-0 flex justify-center">
+                  <div className="relative w-24 h-24 md:w-32 md:h-32 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-xl transition-all duration-500 ease-in-out transform hover:scale-105">
                     <img
                       src={account.logo}
                       alt={account.name}
-                      className="w-full h-full object-contain p-6 filter brightness-100"
+                      className="w-full h-full object-contain p-4 filter brightness-100"
                     />
                   </div>
                 </div>
