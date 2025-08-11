@@ -6,15 +6,14 @@ import { Autoplay } from 'swiper/modules';
 
 const ClientsSlider = () => {
   const clients = [
-    { src: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png", alt: "3arrafni.com" },
-    { src: "/lovable-uploads/efe16f18-e306-4748-bfde-333f019c03b0.png", alt: "Menusbee" },
-    { src: "/lovable-uploads/c8892c9f-d780-4825-a3b1-b1e017d5bd62.png", alt: "Android World" },
-    { src: "/lovable-uploads/62555173-b976-41ad-bed8-39ee3a82b0c5.png", alt: "SafaTR" },
-    { src: "/lovable-uploads/ac78e0b4-1f75-4ea6-a2e0-076903014978.png", alt: "BaseNotesA" },
-    { src: "/lovable-uploads/63be9809-8cd5-4624-b8f1-c57fc574a477.png", alt: "HSI Egypt" },
-    { src: "/lovable-uploads/c39156a9-5748-4c37-8a35-b71e3ee96426.png", alt: "Saabeel" },
-    { src: "/lovable-uploads/1666408e-a405-44b6-ba0a-b11c493ecb73.png", alt: "Devolum" },
-    { src: "/lovable-uploads/a60fb0f5-68a1-4284-ad40-afcae8273fd0.png", alt: "International Student" },
+    { src: "/lovable-uploads/18d0f454-9e87-4ab7-9eb6-dd1c2f109b06.png", alt: "Client Logo 1" },
+    { src: "/lovable-uploads/90443aac-27ad-4f8c-b667-7f313dbf0b6a.png", alt: "Client Logo 2" },
+    { src: "/lovable-uploads/a4bf9099-e284-4771-bf2b-ed1a8fc66fc1.png", alt: "SAFA Student Services" },
+    { src: "/lovable-uploads/7d7c4203-9734-4f5f-8cda-9a0181347759.png", alt: "Basenote" },
+    { src: "/lovable-uploads/ebc77130-7804-47dd-9281-cc3e282c0031.png", alt: "HSI Center" },
+    { src: "/lovable-uploads/57f39cd0-0083-44c3-870d-fba43e44efde.png", alt: "S Logo" },
+    { src: "/lovable-uploads/0d02d50d-ff7e-423c-b16b-6b57fb119fcf.png", alt: "Lov" },
+    { src: "/lovable-uploads/776c91df-2e85-4c5d-965f-8fc73b3d438c.png", alt: "Academic Services" },
   ];
 
   return (
