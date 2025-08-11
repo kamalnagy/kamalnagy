@@ -1,4 +1,8 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper/modules';
 import { ReviewCard } from './ReviewCard';
 import { reviews } from './reviewsData';
 
@@ -18,14 +22,27 @@ export const ReviewsSection = ({ backgroundImage }: ReviewsSectionProps) => {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
-        {reviews.map((review, index) => (
-          <ReviewCard
-            key={index}
-            review={review}
-            backgroundImage={backgroundImage}
-          />
-        ))}
+      <div className="w-full">
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+            1280: { slidesPerView: 4 },
+          }}
+        >
+          {reviews.map((review, index) => (
+            <SwiperSlide key={index}>
+              <ReviewCard
+                review={review}
+                backgroundImage={backgroundImage}
+              />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </div>
   );
