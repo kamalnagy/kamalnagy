@@ -7,100 +7,103 @@
 /* Definition of the design system. All colors, gradients, fonts, etc should be defined here. */
 
 @layer base {
-  :root {
-    /* Light mode - Clean and modern */
-    --background: 220 100% 98%;
-    --background-gradient: linear-gradient(135deg, hsl(220 100% 98%) 0%, hsl(210 100% 96%) 50%, hsl(200 100% 97%) 100%);
-    --foreground: 240 10% 3.9%;
+:root {
+    /* Light mode - Soft, elegant, eye-pleasing */
+    --background: 260 20% 98%;
+    --background-gradient: linear-gradient(135deg, hsl(265 60% 96%) 0%, hsl(210 60% 97%) 50%, hsl(42 80% 96%) 100%);
+    --foreground: 220 15% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 240 10% 3.9%;
+    --card-foreground: 220 15% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 3.9%;
+    --popover-foreground: 220 15% 15%;
 
-    /* Primary brand colors - Purple Blue Gradient */
-    --primary: 270 91% 65%;
+    /* Primary brand - refined teal */
+    --primary: 186 45% 40%;
     --primary-foreground: 210 40% 98%;
 
-    /* Secondary with purple tint */
-    --secondary: 260 15% 94%;
-    --secondary-foreground: 270 15% 15%;
+    /* Secondary - warm gold */
+    --secondary: 40 65% 52%;
+    --secondary-foreground: 210 40% 98%;
 
-    /* Muted backgrounds with purple undertone */
-    --muted: 260 15% 94%;
-    --muted-foreground: 270 8% 45%;
+    /* Muted neutrals */
+    --muted: 220 15% 94%;
+    --muted-foreground: 220 10% 40%;
 
-    /* Accent colors with blue-purple gradient */
-    --accent: 260 15% 94%;
-    --accent-foreground: 270 15% 15%;
+    /* Accent - dusty rose */
+    --accent: 340 30% 94%;
+    --accent-foreground: 340 25% 30%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    /* Purple-themed borders */
-    --border: 260 20% 88%;
-    --input: 260 20% 88%;
-    --ring: 270 91% 65%;
+    /* Subtle borders */
+    --border: 220 14% 88%;
+    --input: 220 14% 88%;
+    --ring: 186 45% 40%;
 
     --radius: 0.75rem;
 
-    /* Enhanced sidebar colors with purple theme */
+    /* Sidebar */
     --sidebar-background: 260 20% 97%;
-    --sidebar-foreground: 270 15% 25%;
-    --sidebar-primary: 270 91% 65%;
+    --sidebar-foreground: 220 15% 25%;
+    --sidebar-primary: 186 45% 40%;
     --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 260 15% 94%;
-    --sidebar-accent-foreground: 270 15% 15%;
-    --sidebar-border: 260 20% 88%;
-    --sidebar-ring: 270 91% 65%;
+    --sidebar-accent: 340 30% 94%;
+    --sidebar-accent-foreground: 340 25% 30%;
+    --sidebar-border: 220 14% 88%;
+    --sidebar-ring: 186 45% 40%;
 
-    /* Beautiful purple-blue gradient colors */
-    --gradient-start: 270 91% 65%;
-    --gradient-middle: 260 80% 70%;
-    --gradient-end: 240 85% 75%;
-    
-    /* Purple-tinted shadow colors */
-    --shadow-light: 260 15% 90%;
-    --shadow-medium: 260 15% 82%;
+    /* Gentle gradient for text accents */
+    --gradient-start: 265 60% 70%;
+    --gradient-middle: 200 60% 65%;
+    --gradient-end: 42 70% 70%;
+
+    /* Soft shadows */
+    --shadow-light: 220 15% 90%;
+    --shadow-medium: 220 15% 82%;
   }
 
-  .dark {
-    --background: 270 30% 8%;
-    --foreground: 270 15% 95%;
+.dark {
+    /* Dark mode - deep, calming gradient */
+    --background: 220 40% 8%;
+    --background-gradient: linear-gradient(135deg, hsl(220 45% 10%) 0%, hsl(260 35% 14%) 100%);
+    --foreground: 220 20% 96%;
 
-    --card: 270 30% 8%;
-    --card-foreground: 270 15% 95%;
+    --card: 220 40% 8%;
+    --card-foreground: 220 20% 96%;
 
-    --popover: 270 30% 8%;
-    --popover-foreground: 270 15% 95%;
+    --popover: 220 40% 8%;
+    --popover-foreground: 220 20% 96%;
 
-    --primary: 270 91% 65%;
-    --primary-foreground: 270 30% 8%;
+    --primary: 186 55% 50%;
+    --primary-foreground: 220 40% 8%;
 
-    --secondary: 270 20% 15%;
-    --secondary-foreground: 270 15% 95%;
+    --secondary: 40 70% 60%;
+    --secondary-foreground: 220 40% 8%;
 
-    --muted: 270 20% 15%;
-    --muted-foreground: 270 10% 65%;
+    --muted: 220 25% 14%;
+    --muted-foreground: 220 10% 70%;
 
-    --accent: 270 20% 15%;
-    --accent-foreground: 270 15% 95%;
+    --accent: 340 35% 65%;
+    --accent-foreground: 220 40% 8%;
 
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 270 15% 95%;
+    --destructive-foreground: 220 20% 96%;
 
-    --border: 270 20% 15%;
-    --input: 270 20% 15%;
-    --ring: 270 91% 65%;
-    --sidebar-background: 270 25% 12%;
-    --sidebar-foreground: 270 15% 95%;
-    --sidebar-primary: 270 91% 65%;
-    --sidebar-primary-foreground: 270 30% 8%;
-    --sidebar-accent: 270 20% 15%;
-    --sidebar-accent-foreground: 270 15% 95%;
-    --sidebar-border: 270 20% 15%;
-    --sidebar-ring: 270 91% 65%;
+    --border: 220 20% 18%;
+    --input: 220 20% 18%;
+    --ring: 186 55% 50%;
+
+    --sidebar-background: 220 28% 12%;
+    --sidebar-foreground: 220 20% 96%;
+    --sidebar-primary: 186 55% 50%;
+    --sidebar-primary-foreground: 220 40% 8%;
+    --sidebar-accent: 340 35% 20%;
+    --sidebar-accent-foreground: 220 20% 96%;
+    --sidebar-border: 220 20% 18%;
+    --sidebar-ring: 186 55% 50%;
   }
 }
 
@@ -115,7 +118,8 @@
   }
 
   .dark body {
-    @apply bg-background;
+    @apply text-foreground;
+    background: var(--background-gradient);
   }
 }
 
