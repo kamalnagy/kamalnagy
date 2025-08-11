@@ -136,7 +136,7 @@ export const FeaturedWorkStack = () => {
           className="bg-background/80 backdrop-blur-sm border border-border rounded-full p-2 hover:bg-background transition-all duration-300 hover:scale-110 shadow-lg"
           aria-label="Previous slide"
         >
-          <svg className="w-4 h-4 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
@@ -145,7 +145,7 @@ export const FeaturedWorkStack = () => {
           className="bg-background/80 backdrop-blur-sm border border-border rounded-full p-2 hover:bg-background transition-all duration-300 hover:scale-110 shadow-lg"
           aria-label="Next slide"
         >
-          <svg className="w-4 h-4 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 text-foreground" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
