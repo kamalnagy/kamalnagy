@@ -2,7 +2,8 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import { Navigation } from 'swiper/modules';
+import 'swiper/css/autoplay';
+import { Navigation, Autoplay } from 'swiper/modules';
 import { ReviewCard } from './ReviewCard';
 import { reviews } from './reviewsData';
 
@@ -24,8 +25,12 @@ export const ReviewsSection = ({ backgroundImage }: ReviewsSectionProps) => {
       
       <div className="w-full">
         <Swiper
-          modules={[Navigation]}
+          modules={[Navigation, Autoplay]}
           navigation
+          autoplay={{
+            delay: 3000,
+            disableOnInteraction: false,
+          }}
           spaceBetween={20}
           slidesPerView={1}
           breakpoints={{
