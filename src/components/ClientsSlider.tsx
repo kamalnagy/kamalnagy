@@ -14,6 +14,7 @@ const ClientsSlider = () => {
     { src: "/lovable-uploads/57f39cd0-0083-44c3-870d-fba43e44efde.png", alt: "S Logo" },
     { src: "/lovable-uploads/0d02d50d-ff7e-423c-b16b-6b57fb119fcf.png", alt: "Lov" },
     { src: "/lovable-uploads/776c91df-2e85-4c5d-965f-8fc73b3d438c.png", alt: "Academic Services" },
+    { src: "/lovable-uploads/00d2e28e-3620-4aa1-986b-54662d0ebf84.png", alt: "New Account" },
   ];
 
   return (

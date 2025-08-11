@@ -6,7 +6,7 @@ import 'swiper/css/autoplay';
 import { Navigation, Autoplay } from 'swiper/modules';
 import { ReviewCard } from './ReviewCard';
 import { reviews } from './reviewsData';
-
+import { Button } from '@/components/ui/button';
 interface ReviewsSectionProps {
   backgroundImage: string;
 }
@@ -16,7 +16,7 @@ export const ReviewsSection = ({ backgroundImage }: ReviewsSectionProps) => {
     <div className="space-y-6 md:space-y-8">
       <div className="text-center px-4">
         <h3 className="text-xl md:text-3xl font-bold text-foreground mb-2 md:mb-4">
-          Freelance Legal Academic Works
+          Feedback on My Academic Works
         </h3>
         <p className="text-muted-foreground text-sm md:text-lg">
           Customer testimonials and reviews for legal academic writing services
@@ -48,6 +48,18 @@ export const ReviewsSection = ({ backgroundImage }: ReviewsSectionProps) => {
             </SwiperSlide>
           ))}
         </Swiper>
+      </div>
+
+      <div className="flex justify-center mt-6">
+        <Button asChild>
+          <a
+            href="https://khamsat.com/user/kamalnagy/reviews"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            For more
+          </a>
+        </Button>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ import { SEOArchives } from './portfolio/SEOArchives';
 import { SEOResults } from './portfolio/SEOResults';
 import { FeaturedWorkStack } from './portfolio/FeaturedWorkStack';
 import { ReviewsSection } from './portfolio/ReviewsSection';
-import AccountsSlider from './portfolio/AccountsSlider';
+import ClientsSlider from '@/components/ClientsSlider';
 import { portfolioSections, seoArchives } from './portfolio/portfolioData';
 
 export const Portfolio = () => {
@@ -59,6 +59,8 @@ export const Portfolio = () => {
           ))}
 
           <SEOArchives archives={seoArchives} />
+          
+          <ClientsSlider />
           
           <SEOResults />
           
