@@ -62,7 +62,8 @@ export const Hero = () => {
             </h1>
             
             <p className="text-lg md:text-xl text-muted-foreground mb-4 font-light">
-              SEO & Social Media Content Creator | Independent Legal Academic Researcher
+              SEO & Social Media Content Creator<br />
+              Independent Legal Academic Researcher
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 text-muted-foreground mb-6">
