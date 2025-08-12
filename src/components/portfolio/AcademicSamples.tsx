@@ -1,4 +1,5 @@
 import React from 'react';
+import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 
 export const AcademicSamples = () => {
   const images = [
@@ -49,10 +50,9 @@ export const AcademicSamples = () => {
           Samples of My Academic Work
         </h3>
         <p className="mt-3 text-sm md:text-base text-muted-foreground max-w-3xl md:pr-6">
-          I produce high-quality academic research across legal and economic fields. I conduct in-depth
-          research, analyze complex topics, and extract accurate information from credible, official
-          sources. I am proficient in recognized citation styles such as APA, ensuring precise
-          documentation of all sources.
+          High-quality academic research across legal and economic fields, with in-depth investigation,
+          critical analysis, and accurate synthesis from credible, official sources. Proficiency in
+          recognized citation styles such as APA ensures precise documentation of all sources.
         </p>
       </header>
 
@@ -83,24 +83,27 @@ export const AcademicSamples = () => {
           </div>
         </article>
 
-        {/* Image grid */}
-        <div className="order-1 lg:order-2 grid grid-cols-2 gap-4">
-          {images.map((img, idx) => (
-            <figure
-              key={idx}
-              className={`relative overflow-hidden rounded-lg border border-border bg-background ${
-                idx === 0 ? 'col-span-2' : ''
-              }`}
-            >
-              <img
-                src={img.src}
-                alt={img.alt}
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]"
-              />
-            </figure>
-          ))}
+        {/* Image slider */}
+        <div className="order-1 lg:order-2">
+          <Carousel opts={{ loop: true }}>
+            <CarouselContent>
+              {images.map((img, idx) => (
+                <CarouselItem key={idx} className="basis-full">
+                  <figure className="relative overflow-hidden rounded-lg border border-border bg-background">
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-[260px] md:h-[360px] lg:h-[420px] object-cover transition-transform duration-300 hover:scale-[1.02]"
+                    />
+                  </figure>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious aria-label="Previous academic sample" />
+            <CarouselNext aria-label="Next academic sample" />
+          </Carousel>
         </div>
       </div>
 
