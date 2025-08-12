@@ -7,6 +7,7 @@ import { FeaturedWorkStack } from './portfolio/FeaturedWorkStack';
 import { ReviewsSection } from './portfolio/ReviewsSection';
 import ClientsSlider from '@/components/ClientsSlider';
 import { portfolioSections, seoArchives } from './portfolio/portfolioData';
+import { AcademicSamples } from './portfolio/AcademicSamples';
 
 export const Portfolio = () => {
   // Define specific grid layouts for each section
@@ -63,6 +64,8 @@ export const Portfolio = () => {
           <ClientsSlider />
           
           <SEOResults />
+          
+          <AcademicSamples />
           
           <ReviewsSection backgroundImage="/lovable-uploads/a9c744e7-2a59-49ee-8d46-f433d3eaaf90.png" />
         </div>
