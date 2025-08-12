@@ -1,10 +1,28 @@
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { ArrowDown, Linkedin, Mail, MessageCircle, FileText } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
 
 export const Hero = () => {
+  const textMeasureRef = useRef<HTMLDivElement>(null);
+  const imageWrapperRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (!textMeasureRef.current || !imageWrapperRef.current) return;
+      if (window.innerWidth >= 1024) {
+        const h = textMeasureRef.current.offsetHeight;
+        imageWrapperRef.current.style.height = `${h}px`;
+      } else {
+        imageWrapperRef.current.style.height = '';
+      }
+    };
+    updateHeight();
+    window.addEventListener('resize', updateHeight);
+    return () => window.removeEventListener('resize', updateHeight);
+  }, []);
+
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background">
       {/* Theme Toggle */}
@@ -20,10 +38,10 @@ export const Hero = () => {
       </div>
       
       <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col lg:flex-row justify-center items-center gap-8 lg:gap-12">
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-8 lg:gap-12">
           {/* Profile Photo */}
           <div className="flex-shrink-0 order-1 lg:order-1">
-            <div className="w-48 h-48 lg:w-64 lg:h-64 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
+            <div ref={imageWrapperRef} className="w-48 h-48 lg:w-64 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
               <img
                 src="/lovable-uploads/31ec1e2e-fdac-453a-bc83-b17697936c04.png"
                 alt="Kamal Nagy"
@@ -34,6 +52,7 @@ export const Hero = () => {
           
           {/* Text content */}
           <div className="text-center lg:text-left animate-fade-in max-w-4xl order-2 lg:order-2">
+            <div ref={textMeasureRef}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6">
               <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent animate-gradient">
                 Kamal
@@ -62,7 +81,7 @@ export const Hero = () => {
               As a bilingual SEO content writer and legal academic researcher, I believe in the transformative power of word not just to communicate, but to connect.
               With over 5 years of experience in academic legal research and more than 1.5 years in SEO-driven content creation.
             </p>
-            
+            </div>
             <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
               <a 
                 href="#contact" 
