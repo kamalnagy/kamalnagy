@@ -74,7 +74,7 @@ export const Hero = () => {
                 href="https://linkedin.com/in/kamal-nagy" 
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-2 border-accent-foreground text-accent-foreground px-6 py-3 rounded-full font-semibold hover:bg-accent-foreground hover:text-background transform transition-all duration-300 flex items-center justify-center space-x-2"
+                className="border-2 border-accent text-accent px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-accent-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
               >
                 <Linkedin className="w-5 h-5" />
                 <span>LinkedIn</span>
