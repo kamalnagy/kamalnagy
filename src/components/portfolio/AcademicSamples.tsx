@@ -95,7 +95,7 @@ export const AcademicSamples = () => {
                       alt={img.alt}
                       loading="lazy"
                       decoding="async"
-                      className="w-full h-[260px] md:h-[360px] lg:h-[420px] object-cover transition-transform duration-300 hover:scale-[1.02]"
+                      className="w-full h-[260px] md:h-[360px] lg:h-[420px] object-contain transition-transform duration-300 hover:scale-[1.02]"
                     />
                   </figure>
                 </CarouselItem>
