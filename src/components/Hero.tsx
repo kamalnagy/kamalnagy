@@ -5,6 +5,7 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
 import emailIcon from '@/assets/gmail-icon.png';
 import phoneIcon from '@/assets/whatsapp-icon.png';
+import IconProcessor from '@/components/IconProcessor';
 
 export const Hero = () => {
   const textMeasureRef = useRef<HTMLDivElement>(null);
@@ -27,6 +28,9 @@ export const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background">
+      {/* Icon Processor - temporary for background removal */}
+      <IconProcessor />
+      
       {/* Theme Toggle */}
       <div className="absolute top-6 right-6 z-20">
         <ThemeToggle />
