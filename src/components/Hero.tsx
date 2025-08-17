@@ -1,8 +1,10 @@
 
 import React, { useEffect, useRef } from 'react';
-import { ArrowDown, Linkedin, Mail, MessageCircle, FileText } from 'lucide-react';
+import { ArrowDown, Linkedin, FileText } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
+import emailIcon from '@/assets/email-icon.png';
+import phoneIcon from '@/assets/phone-icon.png';
 
 export const Hero = () => {
   const textMeasureRef = useRef<HTMLDivElement>(null);
@@ -68,7 +70,11 @@ export const Hero = () => {
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 text-muted-foreground mb-6">
               <div className="flex items-center space-x-2">
-                <Mail className="w-5 h-5 text-primary" />
+                <img 
+                  src={emailIcon} 
+                  alt="Email" 
+                  className="w-5 h-5"
+                />
                 <a 
                   href="mailto:Kamalnagy97@gmail.com"
                   className="text-sm md:text-base hover:text-primary transition-colors duration-200"
@@ -77,7 +83,11 @@ export const Hero = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <MessageCircle className="w-5 h-5 text-accent-foreground" />
+                <img 
+                  src={phoneIcon} 
+                  alt="Phone" 
+                  className="w-5 h-5"
+                />
                 <a 
                   href="https://wa.me/201554044072"
                   target="_blank"
