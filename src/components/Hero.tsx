@@ -3,8 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import { ArrowDown, Linkedin, FileText } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
-import emailIcon from '@/assets/gmail-icon.png';
-import phoneIcon from '@/assets/whatsapp-icon.png';
+import emailIcon from '@/assets/gmail-m-icon.png';
+import phoneIcon from '@/assets/whatsapp-clean-icon.png';
 import IconProcessor from '@/components/IconProcessor';
 
 export const Hero = () => {
