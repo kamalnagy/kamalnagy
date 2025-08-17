@@ -69,11 +69,23 @@ export const Hero = () => {
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 text-muted-foreground mb-6">
               <div className="flex items-center space-x-2">
                 <Mail className="w-5 h-5 text-primary" />
-                <span className="text-sm md:text-base">Kamalnagy97@gmail.com</span>
+                <a 
+                  href="mailto:Kamalnagy97@gmail.com"
+                  className="text-sm md:text-base hover:text-primary transition-colors duration-200"
+                >
+                  Kamalnagy97@gmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <MessageCircle className="w-5 h-5 text-accent-foreground" />
-                <span className="text-sm md:text-base">+201554044072</span>
+                <a 
+                  href="https://wa.me/201554044072"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-sm md:text-base hover:text-accent-foreground transition-colors duration-200"
+                >
+                  +201554044072
+                </a>
               </div>
             </div>
             
