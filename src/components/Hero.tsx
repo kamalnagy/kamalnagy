@@ -4,8 +4,8 @@ import { ArrowDown, Linkedin, FileText } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
 import emailIcon from '@/assets/gmail-m-icon.png';
-import phoneIcon from '@/assets/whatsapp-clean-icon.png';
-import IconProcessor from '@/components/IconProcessor';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 export const Hero = () => {
   const textMeasureRef = useRef<HTMLDivElement>(null);
@@ -28,9 +28,6 @@ export const Hero = () => {
 
   return (
     <section className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-background via-muted/30 to-background">
-      {/* Icon Processor - temporary for background removal */}
-      <IconProcessor />
-      
       {/* Theme Toggle */}
       <div className="absolute top-6 right-6 z-20">
         <ThemeToggle />
@@ -87,9 +84,9 @@ export const Hero = () => {
                 </a>
               </div>
               <div className="flex items-center space-x-2">
-                <img 
-                  src={phoneIcon} 
-                  alt="Phone" 
+                <FontAwesomeIcon 
+                  icon={faWhatsapp} 
+                  style={{color: "#63E6BE"}} 
                   className="w-5 h-5"
                 />
                 <a 
