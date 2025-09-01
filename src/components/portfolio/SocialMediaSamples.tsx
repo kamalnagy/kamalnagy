@@ -25,7 +25,7 @@ const socialMediaPosts: SocialMediaPost[] = [
   {
     image: '/lovable-uploads/54624388-17b4-40c0-a06e-5a08b44a799e.png',
     caption: 'Tech Company Post - "Your App from Idea to Reality" by Devolum',
-    platform: 'Facebook'
+    platform: 'Devolum'
   },
   {
     image: '/lovable-uploads/a5c9bf8a-39ca-465c-97e2-f29a41a7d859.png',
