@@ -3,7 +3,8 @@ import React, { useEffect, useRef } from 'react';
 import { ArrowDown, Linkedin, FileText } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
-import emailIcon from '@/assets/gmail-m-icon.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 export const Hero = () => {
   const textMeasureRef = useRef<HTMLDivElement>(null);
@@ -69,9 +70,9 @@ export const Hero = () => {
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 text-muted-foreground mb-6">
               <div className="flex items-center space-x-2">
-                <img 
-                  src={emailIcon} 
-                  alt="Email" 
+                <FontAwesomeIcon 
+                  icon={faEnvelope} 
+                  style={{color: "#a81f26"}}
                   className="w-5 h-5"
                 />
                 <a 
