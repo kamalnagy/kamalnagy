@@ -285,3 +285,18 @@ html {
     opacity: 0.4;
   }
 }
+
+/* Custom Swiper styles for Social Media Samples */
+.swiper-pagination-social .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: hsl(var(--muted-foreground) / 0.3);
+  opacity: 1;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-social .swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 4px;
+  background: hsl(var(--primary));
+}
