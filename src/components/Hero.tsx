@@ -1,15 +1,17 @@
 
-import React, { useEffect, useRef } from 'react';
-import { ArrowDown, Linkedin, FileText } from 'lucide-react';
+import React, { useEffect, useRef, useState } from 'react';
+import { ArrowDown, Linkedin, FileText, Award } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
+import { RecommendationsModal } from '@/components/RecommendationsModal';
 
 export const Hero = () => {
   const textMeasureRef = useRef<HTMLDivElement>(null);
   const imageWrapperRef = useRef<HTMLDivElement>(null);
+  const [recommendationsOpen, setRecommendationsOpen] = useState(false);
 
   useEffect(() => {
     const updateHeight = () => {
@@ -106,7 +108,7 @@ export const Hero = () => {
               With over 5 years of experience in academic legal research and more than 1.5 years in SEO-driven content creation.
             </p>
             </div>
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 flex-wrap">
               <a 
                 href="#contact" 
                 className="bg-gradient-to-r from-gradient-start to-gradient-middle text-background px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -129,11 +131,24 @@ export const Hero = () => {
                 <FileText className="w-5 h-5" />
                 <span>View CV</span>
               </Link>
+              <button
+                onClick={() => setRecommendationsOpen(true)}
+                className="border-2 border-secondary text-secondary px-6 py-3 rounded-full font-semibold hover:bg-secondary hover:text-secondary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2 mt-4 sm:mt-0"
+              >
+                <Award className="w-5 h-5" />
+                <span>Recommendations</span>
+              </button>
             </div>
           </div>
         </div>
         
       </div>
+      
+      {/* Recommendations Modal */}
+      <RecommendationsModal 
+        open={recommendationsOpen} 
+        onOpenChange={setRecommendationsOpen} 
+      />
     </section>
   );
 };
