@@ -71,7 +71,11 @@ export default {
 				'gradient-middle': 'hsl(var(--gradient-middle))',
 				'gradient-end': 'hsl(var(--gradient-end))',
 				'shadow-light': 'hsl(var(--shadow-light))',
-				'shadow-medium': 'hsl(var(--shadow-medium))'
+				'shadow-medium': 'hsl(var(--shadow-medium))',
+				// Gold frame colors
+				'gold-frame': 'hsl(var(--gold-frame))',
+				'gold-frame-light': 'hsl(var(--gold-frame-light))',
+				'gold-frame-dark': 'hsl(var(--gold-frame-dark))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

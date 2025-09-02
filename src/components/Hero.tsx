@@ -46,12 +46,21 @@ export const Hero = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start gap-8 lg:gap-12">
           {/* Profile Photo */}
           <div className="flex-shrink-0 order-1 lg:order-1">
-            <div ref={imageWrapperRef} className="w-48 h-48 lg:w-64 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl">
-              <img
-                src="/lovable-uploads/31ec1e2e-fdac-453a-bc83-b17697936c04.png"
-                alt="Kamal Nagy"
-                className="w-full h-full object-cover"
-              />
+            <div 
+              ref={imageWrapperRef} 
+              className="w-48 h-48 lg:w-64 rounded-2xl overflow-hidden shadow-2xl relative"
+              style={{
+                background: `linear-gradient(135deg, hsl(var(--gold-frame-light)), hsl(var(--gold-frame)), hsl(var(--gold-frame-dark)))`,
+                padding: '4px'
+              }}
+            >
+              <div className="w-full h-full rounded-2xl overflow-hidden bg-background">
+                <img
+                  src="/lovable-uploads/31ec1e2e-fdac-453a-bc83-b17697936c04.png"
+                  alt="Kamal Nagy"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
           </div>
           
