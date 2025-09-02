@@ -75,9 +75,14 @@ export const Hero = () => {
               <span className="text-foreground">Nagy</span>
             </h1>
             
-            <p className="text-lg md:text-xl text-muted-foreground mb-4 font-light">
-              SEO & Social Media Content Creator<br />
-              Independent Legal Academic Researcher
+            <p className="text-lg md:text-xl mb-4 font-light">
+              <span className="bg-gradient-to-r from-gold-frame via-gold-frame-light to-gold-frame bg-clip-text text-transparent font-medium">
+                SEO & Social Media Content Creator
+              </span>
+              <br />
+              <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent font-medium">
+                Independent Legal Academic Researcher
+              </span>
             </p>
             
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-6 text-muted-foreground mb-6">
