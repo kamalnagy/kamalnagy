@@ -89,7 +89,7 @@ export const Hero = () => {
               <div className="flex items-center space-x-2">
                 <FontAwesomeIcon 
                   icon={faEnvelope} 
-                  style={{color: "#a81f26"}}
+                  style={{color: "#e85a61"}}
                   className="w-5 h-5"
                 />
                 <a 
@@ -102,7 +102,7 @@ export const Hero = () => {
               <div className="flex items-center space-x-2">
                 <FontAwesomeIcon 
                   icon={faWhatsapp} 
-                  style={{color: "#217e1b"}}
+                  style={{color: "#4ac959"}}
                   className="w-5 h-5"
                 />
                 <a 
