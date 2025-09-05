@@ -42,8 +42,9 @@ const ClientsSlider = () => {
                 disableOnInteraction: false,
               }}
               breakpoints={{
-                320: { slidesPerView: 2 },
-                640: { slidesPerView: 3 },
+                320: { slidesPerView: 3 },
+                480: { slidesPerView: 4 },
+                640: { slidesPerView: 4 },
                 1024: { slidesPerView: 5 },
               }}
             >
