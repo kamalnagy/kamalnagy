@@ -1,10 +1,16 @@
 import React from 'react';
 import { Calendar, MapPin, Building2 } from 'lucide-react';
+import azzrkLogo from '../assets/company-logos/azzrk.png';
+import devolumLogo from '../assets/company-logos/devolum-new.png';
+import freelanceLogo from '../assets/company-logos/freelance-new.png';
+import areejLogo from '../assets/company-logos/areej-new.png';
+import lawFirmLogo from '../assets/company-logos/law-firm-new.png';
 
 export const Experience = () => {
-  const experiences = [
+  const mainExperiences = [
     {
       company: "Azzrk",
+      logo: azzrkLogo,
       role: "Content Creator",
       employmentType: "Full-time",
       period: "09/2025 - Present",
@@ -21,6 +27,7 @@ export const Experience = () => {
     },
     {
       company: "Devolum",
+      logo: devolumLogo,
       role: "SEO Content Creator",
       employmentType: "Full-time",
       period: "04/2024 - 09/2025",
@@ -36,6 +43,7 @@ export const Experience = () => {
     },
     {
       company: "Freelance",
+      logo: freelanceLogo,
       role: "Legal & Economic Researcher",
       employmentType: "Freelance",
       period: "07/2019 - Present",
@@ -49,9 +57,13 @@ export const Experience = () => {
         "Utilize advanced research tools, legal databases, and statistical analysis software to ensure data accuracy and credibility"
       ],
       skills: ["Legal Research", "Economic Analysis", "Policy Analysis", "Regulatory Compliance", "Financial Research", "Report Writing", "Statistical Analysis"]
-    },
+    }
+  ];
+
+  const additionalExperiences = [
     {
       company: "Areej Alalam Group",
+      logo: areejLogo,
       role: "Tourist Advisor",
       employmentType: "Full-time",
       period: "11/2022 - 03/2023",
@@ -65,6 +77,7 @@ export const Experience = () => {
     },
     {
       company: "Karim Elsabahy Law Firm",
+      logo: lawFirmLogo,
       role: "Legal Trainee",
       employmentType: "Internship",
       period: "07/2021 - 01/2022",
@@ -96,6 +109,81 @@ export const Experience = () => {
     }
   }
 
+  const renderExperienceItem = (exp: any, index: number, isLastItem: boolean) => (
+    <div key={index} className={`${!isLastItem ? 'border-b border-border/50' : ''}`}>
+      <div className="p-8">
+        <div className="flex gap-4">
+          {/* Company Logo */}
+          <div className="flex-shrink-0">
+            {exp.logo ? (
+              <img 
+                src={exp.logo} 
+                alt={`${exp.company} logo`}
+                className="w-14 h-14 rounded-lg object-contain bg-muted/20 border border-border/30 p-2"
+              />
+            ) : (
+              <div className="w-14 h-14 rounded-lg overflow-hidden bg-muted/20 border border-border/30 flex items-center justify-center">
+                <Building2 className="w-7 h-7 text-muted-foreground/50" />
+              </div>
+            )}
+          </div>
+          
+          {/* Job Details */}
+          <div className="flex-1">
+            <div className="mb-4">
+              <h3 className="text-xl font-bold text-foreground mb-1">
+                {exp.role}
+              </h3>
+              <p className="text-sm text-muted-foreground mb-1">
+                {exp.company} · {exp.employmentType}
+              </p>
+              <p className="text-sm text-muted-foreground/80 mb-1">
+                {exp.period} · {exp.duration}
+              </p>
+              {exp.location && (
+                <p className="text-sm text-muted-foreground/80 flex items-center gap-1">
+                  <MapPin className="w-3 h-3" />
+                  {exp.location}
+                </p>
+              )}
+            </div>
+            
+            {/* Description */}
+            <div className="mb-4">
+              <ul className="space-y-2">
+                {exp.responsibilities.map((resp: string, respIndex: number) => (
+                  <li key={respIndex} className="text-sm text-muted-foreground leading-relaxed">
+                    {resp}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            {/* Skills */}
+            <div className="flex flex-wrap gap-2">
+              {exp.skills.map((skill: string, skillIndex: number) => (
+                <span 
+                  key={skillIndex}
+                  className="inline-flex items-center gap-1 text-xs text-muted-foreground"
+                >
+                  {skillIndex === 0 && (
+                    <span className="text-primary">◆</span>
+                  )}
+                  <span className="hover:text-foreground transition-colors cursor-default">
+                    {skill}
+                  </span>
+                  {skillIndex < exp.skills.length - 1 && (
+                    <span className="text-muted-foreground/30">·</span>
+                  )}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+
   return (
     <section className="py-20 px-6 bg-muted/10">
       <div className="container mx-auto max-w-4xl">
@@ -105,71 +193,23 @@ export const Experience = () => {
           </h2>
         </div>
         
-        <div className="bg-card/30 backdrop-blur-lg rounded-2xl border border-border">
-          {experiences.map((exp, index) => (
-            <div key={index} className={`${index !== experiences.length - 1 ? 'border-b border-border/50' : ''}`}>
-              <div className="p-8">
-                <div className="flex gap-4">
-                  {/* Company Logo Placeholder */}
-                  <div className="flex-shrink-0">
-                    <div className="w-14 h-14 rounded-lg overflow-hidden bg-muted/20 border border-border/30 flex items-center justify-center">
-                      <Building2 className="w-7 h-7 text-muted-foreground/50" />
-                    </div>
-                  </div>
-                  
-                  {/* Job Details */}
-                  <div className="flex-1">
-                    <div className="mb-4">
-                      <h3 className="text-xl font-bold text-foreground mb-1">
-                        {exp.role}
-                      </h3>
-                      <p className="text-sm text-muted-foreground mb-1">
-                        {exp.company} · {exp.employmentType}
-                      </p>
-                      <p className="text-sm text-muted-foreground/80 mb-1">
-                        {exp.period} · {exp.duration}
-                      </p>
-                      <p className="text-sm text-muted-foreground/80 flex items-center gap-1">
-                        <MapPin className="w-3 h-3" />
-                        {exp.location}
-                      </p>
-                    </div>
-                    
-                    {/* Description */}
-                    <div className="mb-4">
-                      <ul className="space-y-2">
-                        {exp.responsibilities.map((resp, respIndex) => (
-                          <li key={respIndex} className="text-sm text-muted-foreground leading-relaxed">
-                            {resp}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                    
-                    {/* Skills */}
-                    <div className="flex flex-wrap gap-2">
-                      {exp.skills.map((skill, skillIndex) => (
-                        <span 
-                          key={skillIndex}
-                          className="inline-flex items-center gap-1 text-xs text-muted-foreground"
-                        >
-                          {skillIndex === 0 && (
-                            <span className="text-primary">◆</span>
-                          )}
-                          <span className="hover:text-foreground transition-colors cursor-default">
-                            {skill}
-                          </span>
-                          {skillIndex < exp.skills.length - 1 && (
-                            <span className="text-muted-foreground/30">·</span>
-                          )}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
+        {/* Main Experience */}
+        <div className="bg-card/30 backdrop-blur-lg rounded-2xl border border-border mb-8">
+          {mainExperiences.map((exp, index) => 
+            renderExperienceItem(exp, index, index === mainExperiences.length - 1)
+          )}
+        </div>
+
+        {/* Additional Experience */}
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-foreground mb-6 text-center">
+            Additional <span className="bg-gradient-to-r from-gradient-start to-gradient-end bg-clip-text text-transparent">Experience</span>
+          </h3>
+          <div className="bg-card/30 backdrop-blur-lg rounded-2xl border border-border">
+            {additionalExperiences.map((exp, index) => 
+              renderExperienceItem(exp, index, index === additionalExperiences.length - 1)
+            )}
+          </div>
         </div>
       </div>
     </section>
