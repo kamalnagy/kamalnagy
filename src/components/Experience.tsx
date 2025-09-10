@@ -1,19 +1,30 @@
 import React from 'react';
 import { Calendar, MapPin, Building2 } from 'lucide-react';
-import devolumLogo from '@/assets/company-logos/devolum.png';
-import freelanceLogo from '@/assets/company-logos/freelance.png';
-import areejLogo from '@/assets/company-logos/areej.png';
-import lawFirmLogo from '@/assets/company-logos/law-firm.png';
 
 export const Experience = () => {
   const experiences = [
     {
+      company: "Azzrk",
+      role: "Content Creator",
+      employmentType: "Full-time",
+      period: "09/2025 - Present",
+      duration: calculateDuration("Sep 2025"),
+      location: "Egypt",
+      responsibilities: [
+        "Created and optimized diverse content assets, including blog articles, landing pages, social media scripts, motion graphics scripts, and promotional video storyboards",
+        "Developed end-to-end content strategies aligned with marketing objectives to boost engagement and brand awareness, and conversion rates",
+        "Produced campaign ideas, website content structures, PDF and web page copy, and content analysis reports to support cross-channel marketing initiatives",
+        "Collaborated closely with designers, videographers, and marketing teams to deliver high-impact multimedia content, ensuring consistent tone of voice and brand direction",
+        "Researched market trends, audience insights, and competitors to deliver innovative, audience-driven content solutions"
+      ],
+      skills: ["Content Creation", "Content Strategy", "Blog Writing", "Landing Pages", "Social Media Scripts", "Motion Graphics Scripts", "Video Storyboards", "Campaign Development", "Cross-channel Marketing"]
+    },
+    {
       company: "Devolum",
-      logo: devolumLogo,
       role: "SEO Content Creator",
       employmentType: "Full-time",
-      period: "Apr 2024 - Present",
-      duration: calculateDuration("Apr 2024"),
+      period: "04/2024 - 09/2025",
+      duration: "1 yr 6 mos",
       location: "Egypt",
       responsibilities: [
         "Developed high-quality articles, product descriptions, and landing pages incorporating targeted keywords",
@@ -25,25 +36,25 @@ export const Experience = () => {
     },
     {
       company: "Freelance",
-      logo: freelanceLogo,
       role: "Legal & Economic Researcher",
-      employmentType: "Self-employed",
-      period: "Jul 2019 - Present",
+      employmentType: "Freelance",
+      period: "07/2019 - Present",
       duration: calculateDuration("Jul 2019"),
-      location: "Egypt",
+      location: "",
       responsibilities: [
-        "Conduct in-depth legal and economic research on regulatory compliance and financial policies",
-        "Analyze economic data and policy developments to provide actionable insights",
-        "Stay updated on international and regional legal and economic changes"
+        "Conduct in-depth legal and economic research on regulatory compliance, financial policies, and emerging legislation",
+        "Analyze complex economic data and policy developments to provide actionable insights and strategic recommendations",
+        "Collaborate with clients, law firms, and academic institutions to deliver accurate, well-structured reports under tight deadlines",
+        "Stay updated on international, regional, and local legal and economic changes to anticipate trends and regulatory shifts",
+        "Utilize advanced research tools, legal databases, and statistical analysis software to ensure data accuracy and credibility"
       ],
-      skills: ["Legal Research", "Economic Analysis", "Policy Analysis", "Regulatory Compliance", "Financial Research"]
+      skills: ["Legal Research", "Economic Analysis", "Policy Analysis", "Regulatory Compliance", "Financial Research", "Report Writing", "Statistical Analysis"]
     },
     {
       company: "Areej Alalam Group",
-      logo: areejLogo,
       role: "Tourist Advisor",
       employmentType: "Full-time",
-      period: "Nov 2022 - Mar 2023",
+      period: "11/2022 - 03/2023",
       duration: "5 mos",
       location: "Egypt",
       responsibilities: [
@@ -54,10 +65,9 @@ export const Experience = () => {
     },
     {
       company: "Karim Elsabahy Law Firm",
-      logo: lawFirmLogo,
       role: "Legal Trainee",
       employmentType: "Internship",
-      period: "Jul 2021 - Jan 2022",
+      period: "07/2021 - 01/2022",
       duration: "7 mos",
       location: "Egypt",
       responsibilities: [
@@ -100,14 +110,10 @@ export const Experience = () => {
             <div key={index} className={`${index !== experiences.length - 1 ? 'border-b border-border/50' : ''}`}>
               <div className="p-8">
                 <div className="flex gap-4">
-                  {/* Company Logo */}
+                  {/* Company Logo Placeholder */}
                   <div className="flex-shrink-0">
-                    <div className="w-14 h-14 rounded-lg overflow-hidden bg-background border border-border/30 flex items-center justify-center">
-                      <img 
-                        src={exp.logo} 
-                        alt={`${exp.company} logo`}
-                        className="w-full h-full object-contain p-1"
-                      />
+                    <div className="w-14 h-14 rounded-lg overflow-hidden bg-muted/20 border border-border/30 flex items-center justify-center">
+                      <Building2 className="w-7 h-7 text-muted-foreground/50" />
                     </div>
                   </div>
                   
