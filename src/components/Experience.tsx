@@ -1,8 +1,8 @@
 import React from 'react';
 import { Calendar, MapPin, Building2 } from 'lucide-react';
-import azzrkLogo from '../assets/company-logos/azzrk-new.png';
-import devolumLogo from '../assets/company-logos/devolum-new.png';
-import freelanceLogo from '../assets/company-logos/freelance-new.png';
+import azzrkLogo from '../assets/company-logos/azzrk-latest.png';
+import devolumLogo from '../assets/company-logos/devolum-latest.png';
+import freelanceLogo from '../assets/company-logos/freelance-latest.png';
 import areejLogo from '../assets/company-logos/areej-new.png';
 import lawFirmLogo from '../assets/company-logos/law-firm-new.png';
 
