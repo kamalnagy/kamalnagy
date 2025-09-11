@@ -37,7 +37,7 @@ const CV = () => {
             </div>
             <div className="bg-card/30 backdrop-blur-lg rounded-2xl p-8 border border-border">
               <p className="text-lg text-muted-foreground leading-relaxed text-center">
-                Results-driven SEO Content Creator with over 2 years of experience crafting keyword-optimized content across articles, product descriptions, and landing pages. Skilled in keyword research, on-page SEO optimization, and content strategy development. Proven track record in collaborating with marketing teams to enhance organic traffic and improve search rankings.
+                Results-driven SEO & Social Media Content Creator with over 2 years of experience crafting keyword-optimized content across articles, product descriptions, and landing pages. Skilled in keyword research, on-page SEO optimization, and content strategy development. Proven track record in collaborating with marketing teams to enhance organic traffic and improve search rankings.
               </p>
             </div>
           </div>
