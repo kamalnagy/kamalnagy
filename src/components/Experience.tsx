@@ -1,16 +1,11 @@
 import React from 'react';
 import { Calendar, MapPin, Building2 } from 'lucide-react';
-import azzrkLogo from '../assets/company-logos/azzrk-latest.png';
-import devolumLogo from '../assets/company-logos/devolum-latest.png';
-import freelanceLogo from '../assets/company-logos/freelance-latest.png';
-import areejLogo from '../assets/company-logos/areej-new.png';
-import lawFirmLogo from '../assets/company-logos/law-firm-new.png';
 
 export const Experience = () => {
   const mainExperiences = [
     {
       company: "Azzrk",
-      logo: azzrkLogo,
+      logo: null,
       role: "Content Creator",
       employmentType: "Full-time",
       period: "09/2025 - Present",
@@ -27,7 +22,7 @@ export const Experience = () => {
     },
     {
       company: "Devolum",
-      logo: devolumLogo,
+      logo: null,
       role: "SEO Content Creator",
       employmentType: "Full-time",
       period: "04/2024 - 09/2025",
@@ -43,7 +38,7 @@ export const Experience = () => {
     },
     {
       company: "Freelance",
-      logo: freelanceLogo,
+      logo: null,
       role: "Legal & Economic Researcher",
       employmentType: "Freelance",
       period: "07/2019 - Present",
@@ -63,7 +58,7 @@ export const Experience = () => {
   const additionalExperiences = [
     {
       company: "Areej Alalam Group",
-      logo: areejLogo,
+      logo: null,
       role: "Tourist Advisor",
       employmentType: "Full-time",
       period: "11/2022 - 03/2023",
@@ -77,7 +72,7 @@ export const Experience = () => {
     },
     {
       company: "Karim Elsabahy Law Firm",
-      logo: lawFirmLogo,
+      logo: null,
       role: "Legal Trainee",
       employmentType: "Internship",
       period: "07/2021 - 01/2022",
@@ -113,19 +108,10 @@ export const Experience = () => {
     <div key={index} className={`${!isLastItem ? 'border-b border-border/50' : ''}`}>
       <div className="p-8">
         <div className="flex gap-4">
-          {/* Company Logo */}
+          {/* Empty Logo Area */}
           <div className="flex-shrink-0">
-            {exp.logo ? (
-              <img 
-                src={exp.logo} 
-                alt={`${exp.company} logo`}
-                className="w-14 h-14 rounded-lg object-contain bg-muted/20 border border-border/30 p-2"
-              />
-            ) : (
-              <div className="w-14 h-14 rounded-lg overflow-hidden bg-muted/20 border border-border/30 flex items-center justify-center">
-                <Building2 className="w-7 h-7 text-muted-foreground/50" />
-              </div>
-            )}
+            <div className="w-14 h-14 rounded-lg bg-muted/20 border border-border/30">
+            </div>
           </div>
           
           {/* Job Details */}
