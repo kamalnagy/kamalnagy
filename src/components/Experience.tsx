@@ -5,7 +5,7 @@ export const Experience = () => {
   const mainExperiences = [
     {
       company: "Azzrk",
-      logo: null,
+      logo: '/lovable-uploads/d38ccfce-4cff-4f3d-88a0-7a5767543da7.png',
       role: "Content Creator",
       employmentType: "Full-time",
       period: "09/2025 - Present",
@@ -108,10 +108,18 @@ export const Experience = () => {
     <div key={index} className={`${!isLastItem ? 'border-b border-border/50' : ''}`}>
       <div className="p-8">
         <div className="flex gap-4">
-          {/* Empty Logo Area */}
+          {/* Logo Area */}
           <div className="flex-shrink-0">
-            <div className="w-14 h-14 rounded-lg bg-muted/20 border border-border/30">
-            </div>
+            {exp.logo ? (
+              <img 
+                src={exp.logo} 
+                alt={`${exp.company} logo`}
+                className="w-14 h-14 rounded-lg object-contain bg-muted/20 border border-border/30 p-2"
+              />
+            ) : (
+              <div className="w-14 h-14 rounded-lg bg-muted/20 border border-border/30">
+              </div>
+            )}
           </div>
           
           {/* Job Details */}
