@@ -6,21 +6,21 @@ export const SEOResults = () => {
   const metrics = [
     {
       label: 'Total Clicks',
-      value: '7.68K',
+      value: '17.8K',
       icon: MousePointer,
       color: 'text-blue-500',
       bgColor: 'bg-blue-50 dark:bg-blue-950/20'
     },
     {
       label: 'Total Impressions',
-      value: '388K',
+      value: '984K',
       icon: Eye,
       color: 'text-purple-500',
       bgColor: 'bg-purple-50 dark:bg-purple-950/20'
     },
     {
       label: 'Average CTR',
-      value: '2%',
+      value: '1.8%',
       icon: BarChart3,
       color: 'text-green-500',
       bgColor: 'bg-green-50 dark:bg-green-950/20'
@@ -68,7 +68,7 @@ export const SEOResults = () => {
           <CardContent className="p-0">
             <div className="relative">
               <img 
-                src="/lovable-uploads/48c87711-88bd-41fc-ad5a-848bcad8e53c.png"
+                src="/lovable-uploads/2e2ca353-d131-433e-853a-c5f202692cf1.png"
                 alt="Masrschools Google Search Console Performance Dashboard showing 3-month growth"
                 className="w-full h-auto"
               />

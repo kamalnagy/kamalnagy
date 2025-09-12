@@ -29,5 +29,45 @@ export const Skills = () => {
     title: "Languages",
     skills: ["Arabic: Native", "English: Professional"]
   }];
-  return;
+  
+  return (
+    <section id="skills" className="py-16 px-4 bg-background">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-3xl font-bold text-center mb-12 text-foreground">My Skills</h2>
+        <div className="grid md:grid-cols-3 gap-8">
+          {skillCategories.map((category, index) => {
+            const Icon = category.icon;
+            return (
+              <div key={index} className="bg-card rounded-lg p-6 shadow-lg border border-border">
+                <div className="flex items-center mb-4">
+                  <Icon className="w-6 h-6 mr-3 text-primary" />
+                  <h3 className="text-xl font-semibold text-foreground">{category.title}</h3>
+                </div>
+                {category.subsections ? (
+                  <div className="space-y-4">
+                    {category.subsections.map((subsection, subIndex) => (
+                      <div key={subIndex}>
+                        <h4 className="font-medium text-sm text-primary mb-2">{subsection.name}</h4>
+                        <ul className="list-disc list-inside space-y-1">
+                          {subsection.skills.map((skill, skillIndex) => (
+                            <li key={skillIndex} className="text-muted-foreground text-sm">{skill}</li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <ul className="list-disc list-inside space-y-2">
+                    {category.skills?.map((skill, skillIndex) => (
+                      <li key={skillIndex} className="text-muted-foreground">{skill}</li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </section>
+  );
 };
