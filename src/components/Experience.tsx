@@ -58,7 +58,7 @@ export const Experience = () => {
   const additionalExperiences = [
     {
       company: "Areej Alalam Group",
-      logo: null,
+      logo: '/lovable-uploads/453f756e-8a63-4715-8bd0-fa9562e534f2.png',
       role: "Tourist Advisor",
       employmentType: "Full-time",
       period: "11/2022 - 03/2023",
