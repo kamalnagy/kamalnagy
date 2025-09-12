@@ -22,7 +22,7 @@ export const Experience = () => {
     },
     {
       company: "Devolum",
-      logo: null,
+      logo: '/lovable-uploads/9b72e61f-43a8-4118-a8b5-9589ea572695.png',
       role: "SEO Content Creator",
       employmentType: "Full-time",
       period: "04/2024 - 09/2025",
