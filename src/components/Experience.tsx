@@ -72,7 +72,7 @@ export const Experience = () => {
     },
     {
       company: "Karim Elsabahy Law Firm",
-      logo: null,
+      logo: '/lovable-uploads/ffc219cd-1d79-47d7-8f6e-089216166a77.png',
       role: "Legal Trainee",
       employmentType: "Internship",
       period: "07/2021 - 01/2022",
