@@ -38,7 +38,7 @@ export const Experience = () => {
     },
     {
       company: "Freelance",
-      logo: null,
+      logo: '/lovable-uploads/6055cc04-c774-40b6-a605-4ad07dbb9a5a.png',
       role: "Legal & Economic Researcher",
       employmentType: "Freelance",
       period: "07/2019 - Present",
