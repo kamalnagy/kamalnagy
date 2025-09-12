@@ -2,8 +2,8 @@
 import React from 'react';
 import { Hero } from '@/components/Hero';
 import { About } from '@/components/About';
+import { Skills } from '@/components/Skills';
 import { Portfolio } from '@/components/Portfolio';
-
 import { Contact } from '@/components/Contact';
 
 const Index = () => {
@@ -11,8 +11,8 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Hero />
       <About />
+      <Skills />
       <Portfolio />
-      
       <Contact />
     </div>
   );
