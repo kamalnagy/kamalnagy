@@ -1,16 +1,16 @@
 import React from 'react';
 import { Calendar, MapPin, Building2 } from 'lucide-react';
-import azzrkMinimal from '@/assets/company-logos/azzrk-minimal.png';
-import devolumMinimal from '@/assets/company-logos/devolum-minimal.png';
-import freelanceMinimal from '@/assets/company-logos/freelance-minimal.png';
-import areejMinimal from '@/assets/company-logos/areej-minimal.png';
-import lawMinimal from '@/assets/company-logos/law-minimal.png';
+import azzrkLogo from '@/assets/company-logos/azzrk-latest.png';
+import devolumLogo from '@/assets/company-logos/devolum-latest.png';
+import freelanceLogo from '@/assets/company-logos/freelance-latest.png';
+import areejLogo from '@/assets/company-logos/areej-new.png';
+import lawLogo from '@/assets/company-logos/law-firm-new.png';
 
 export const Experience = () => {
   const mainExperiences = [
     {
       company: "Azzrk",
-      logo: azzrkMinimal,
+      logo: azzrkLogo,
       role: "Content Creator",
       employmentType: "Full-time",
       period: "09/2025 - Present",
@@ -27,7 +27,7 @@ export const Experience = () => {
     },
     {
       company: "Devolum",
-      logo: devolumMinimal,
+      logo: devolumLogo,
       role: "SEO Content Creator",
       employmentType: "Full-time",
       period: "04/2024 - 09/2025",
@@ -43,7 +43,7 @@ export const Experience = () => {
     },
     {
       company: "Freelance",
-      logo: freelanceMinimal,
+      logo: freelanceLogo,
       role: "Legal & Economic Researcher",
       employmentType: "Freelance",
       period: "07/2019 - Present",
@@ -63,7 +63,7 @@ export const Experience = () => {
   const additionalExperiences = [
     {
       company: "Areej Alalam Group",
-      logo: areejMinimal,
+      logo: areejLogo,
       role: "Tourist Advisor",
       employmentType: "Full-time",
       period: "11/2022 - 03/2023",
@@ -77,7 +77,7 @@ export const Experience = () => {
     },
     {
       company: "Karim Elsabahy Law Firm",
-      logo: lawMinimal,
+      logo: lawLogo,
       role: "Legal Trainee",
       employmentType: "Internship",
       period: "07/2021 - 01/2022",
