@@ -1,11 +1,16 @@
 import React from 'react';
 import { Calendar, MapPin, Building2 } from 'lucide-react';
+import azzrkMinimal from '@/assets/company-logos/azzrk-minimal.png';
+import devolumMinimal from '@/assets/company-logos/devolum-minimal.png';
+import freelanceMinimal from '@/assets/company-logos/freelance-minimal.png';
+import areejMinimal from '@/assets/company-logos/areej-minimal.png';
+import lawMinimal from '@/assets/company-logos/law-minimal.png';
 
 export const Experience = () => {
   const mainExperiences = [
     {
       company: "Azzrk",
-      logo: '/lovable-uploads/d38ccfce-4cff-4f3d-88a0-7a5767543da7.png',
+      logo: azzrkMinimal,
       role: "Content Creator",
       employmentType: "Full-time",
       period: "09/2025 - Present",
@@ -22,7 +27,7 @@ export const Experience = () => {
     },
     {
       company: "Devolum",
-      logo: '/lovable-uploads/9b72e61f-43a8-4118-a8b5-9589ea572695.png',
+      logo: devolumMinimal,
       role: "SEO Content Creator",
       employmentType: "Full-time",
       period: "04/2024 - 09/2025",
@@ -38,7 +43,7 @@ export const Experience = () => {
     },
     {
       company: "Freelance",
-      logo: '/lovable-uploads/6055cc04-c774-40b6-a605-4ad07dbb9a5a.png',
+      logo: freelanceMinimal,
       role: "Legal & Economic Researcher",
       employmentType: "Freelance",
       period: "07/2019 - Present",
@@ -58,7 +63,7 @@ export const Experience = () => {
   const additionalExperiences = [
     {
       company: "Areej Alalam Group",
-      logo: '/lovable-uploads/453f756e-8a63-4715-8bd0-fa9562e534f2.png',
+      logo: areejMinimal,
       role: "Tourist Advisor",
       employmentType: "Full-time",
       period: "11/2022 - 03/2023",
@@ -72,7 +77,7 @@ export const Experience = () => {
     },
     {
       company: "Karim Elsabahy Law Firm",
-      logo: '/lovable-uploads/ffc219cd-1d79-47d7-8f6e-089216166a77.png',
+      logo: lawMinimal,
       role: "Legal Trainee",
       employmentType: "Internship",
       period: "07/2021 - 01/2022",
@@ -114,10 +119,11 @@ export const Experience = () => {
               <img 
                 src={exp.logo} 
                 alt={`${exp.company} logo`}
-                className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-contain bg-muted/10 border border-border/20 p-3 shadow-sm hover:shadow-md transition-shadow"
+                className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-contain bg-gradient-to-br from-muted/5 to-muted/10 p-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                style={{ filter: 'drop-shadow(0 0 20px hsla(var(--primary) / 0.2))' }}
               />
             ) : (
-              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-muted/10 border border-border/20">
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-gradient-to-br from-muted/5 to-muted/10 shadow-lg">
               </div>
             )}
           </div>
