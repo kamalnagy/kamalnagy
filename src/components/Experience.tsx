@@ -114,10 +114,10 @@ export const Experience = () => {
               <img 
                 src={exp.logo} 
                 alt={`${exp.company} logo`}
-                className="w-14 h-14 rounded-lg object-contain bg-muted/20 border border-border/30 p-2"
+                className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-contain bg-muted/10 border border-border/20 p-3 shadow-sm hover:shadow-md transition-shadow"
               />
             ) : (
-              <div className="w-14 h-14 rounded-lg bg-muted/20 border border-border/30">
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-muted/10 border border-border/20">
               </div>
             )}
           </div>
