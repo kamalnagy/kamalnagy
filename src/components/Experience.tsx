@@ -116,14 +116,19 @@ export const Experience = () => {
           {/* Logo Area */}
           <div className="flex-shrink-0">
             {exp.logo ? (
-              <img 
-                src={exp.logo} 
-                alt={`${exp.company} logo`}
-                className="w-20 h-20 md:w-24 md:h-24 rounded-xl object-contain bg-gradient-to-br from-muted/5 to-muted/10 p-2 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
-                style={{ filter: 'drop-shadow(0 0 20px hsla(var(--primary) / 0.2))' }}
-              />
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-gradient-to-br from-background to-muted/20 p-3 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-border/50">
+                <img 
+                  src={exp.logo} 
+                  alt={`${exp.company} logo`}
+                  className="w-full h-full object-contain"
+                  style={{ 
+                    filter: 'drop-shadow(0 2px 4px hsla(0, 0%, 0%, 0.1))',
+                    mixBlendMode: 'normal'
+                  }}
+                />
+              </div>
             ) : (
-              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-gradient-to-br from-muted/5 to-muted/10 shadow-lg">
+              <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-gradient-to-br from-background to-muted/20 shadow-lg border border-border/50">
               </div>
             )}
           </div>
