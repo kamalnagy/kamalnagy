@@ -6,14 +6,14 @@ export const SEOResults = () => {
   const metrics = [
     {
       label: 'Total Clicks',
-      value: '18.4K',
+      value: '25.9K',
       icon: MousePointer,
       color: 'text-blue-500',
       bgColor: 'bg-blue-50 dark:bg-blue-950/20'
     },
     {
       label: 'Total Impressions',
-      value: '1.02M',
+      value: '1.43M',
       icon: Eye,
       color: 'text-purple-500',
       bgColor: 'bg-purple-50 dark:bg-purple-950/20'
@@ -27,7 +27,7 @@ export const SEOResults = () => {
     },
     {
       label: 'Average Position',
-      value: '9.2',
+      value: '8.8',
       icon: Target,
       color: 'text-orange-500',
       bgColor: 'bg-orange-50 dark:bg-orange-950/20'
