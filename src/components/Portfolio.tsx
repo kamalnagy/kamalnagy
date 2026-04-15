@@ -9,6 +9,7 @@ import ClientsSlider from '@/components/ClientsSlider';
 import { portfolioSections, seoArchives } from './portfolio/portfolioData';
 import { AcademicSamples } from './portfolio/AcademicSamples';
 import { SocialMediaSamples } from './portfolio/SocialMediaSamples';
+import { WebsitesShowcase } from './portfolio/WebsitesShowcase';
 
 export const Portfolio = () => {
   // Define specific grid layouts for each section
@@ -67,6 +68,8 @@ export const Portfolio = () => {
           <SocialMediaSamples />
           
           <SEOResults />
+
+          <WebsitesShowcase />
           
           <AcademicSamples />
           
