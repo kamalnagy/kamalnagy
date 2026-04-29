@@ -74,13 +74,7 @@ export const portfolioSections = [
         description: "NVIDIA DLSS 4 integration in Killing Floor 3 and Wuchang",
         link: "https://www.3arrafni.com/tech-news/nvidia-dlss-4-killing-floor-3-wuchang/",
         logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
-      }
-    ]
-  },
-  {
-    title: "Content Writing - Another Works",
-    description: "Diverse content creation across multiple platforms and industries",
-    items: [
+      },
       {
         title: "Which best? Medipol Istanbul Vs Ankara",
         description: "Comprehensive comparison between Medipol universities in Istanbul and Ankara",
