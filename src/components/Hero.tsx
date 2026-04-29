@@ -56,7 +56,7 @@ export const Hero = () => {
             >
               <div className="w-full h-full rounded-2xl overflow-hidden bg-background">
                 <img
-                  src="/lovable-uploads/31ec1e2e-fdac-453a-bc83-b17697936c04.png"
+                  src="/lovable-uploads/f9c8de36-3057-4354-9f75-c0468fc3f85e.png"
                   alt="Kamal Nagy"
                   className="w-full h-full object-cover"
                 />
