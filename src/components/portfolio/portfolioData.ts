@@ -128,6 +128,24 @@ export const portfolioSections = [
         description: "Expert advice on selecting the perfect smart TV for your home",
         link: "https://alshathri.sa/article-view/Your-Guide-to-Choosing-the-Smart-TV",
         logo: "/lovable-uploads/24732094-85cf-46f6-a4aa-b45ee6315442.png"
+      },
+      {
+        title: "Nothing OS 4.0 Update",
+        description: "What's new in Nothing OS 4.0 — features, supported devices, and rollout details",
+        link: "https://www.3arrafni.com/tech-news/nothing-os-4-0-update/",
+        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
+      },
+      {
+        title: "3D Printing In Medicine",
+        description: "How 3D printing is transforming modern medicine, from implants to surgical planning",
+        link: "https://hsi-eg.co/ar/3d-printing-in-medicine/",
+        logo: "/lovable-uploads/63be9809-8cd5-4624-b8f1-c57fc574a477.png"
+      },
+      {
+        title: "Lucullian Perfumes Review",
+        description: "Detailed review and notes breakdown of Lucullian fragrance collection",
+        link: "https://basenotesa.com/ar/blog/Lucullian/a-131799106",
+        logo: "/lovable-uploads/ac78e0b4-1f75-4ea6-a2e0-076903014978.png"
       }
     ]
   }
