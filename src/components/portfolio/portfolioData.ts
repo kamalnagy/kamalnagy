@@ -28,18 +28,6 @@ export const portfolioSections = [
         logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       },
       {
-        title: "Nothing OS 4.0",
-        description: "Comprehensive coverage of Nothing OS 4.0 features and updates",
-        link: "https://www.3arrafni.com/tech-news/nothing-os-4-0/",
-        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
-      },
-      {
-        title: "Xiaomi 16 Grabs New Certification",
-        description: "Latest certification updates for Xiaomi 16 smartphone",
-        link: "https://www.3arrafni.com/tech-news/xiaomi-16-grabs-new-certification/",
-        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
-      },
-      {
         title: "Nothing Phone 3 Official Release",
         description: "Official announcement and details of Nothing Phone 3",
         link: "https://www.3arrafni.com/tech-news/nothing-phone-3-official-release/",
@@ -58,28 +46,10 @@ export const portfolioSections = [
         logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
       },
       {
-        title: "S Pen Galaxy S26 Ultra Changes",
-        description: "Upcoming changes for S Pen in Galaxy S26 Ultra",
-        link: "https://www.3arrafni.com/tech-news/upcoming-changes-for-s26-ultra-pen/",
-        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
-      },
-      {
         title: "GeForce RTX 50 Release",
         description: "NVIDIA GeForce RTX 5050 official release coverage",
         link: "https://www.3arrafni.com/tech-news/nvidia-geforce-rtx-5050-released/",
         logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
-      },
-      {
-        title: "NVIDIA DLSS 4",
-        description: "NVIDIA DLSS 4 integration in Killing Floor 3 and Wuchang",
-        link: "https://www.3arrafni.com/tech-news/nvidia-dlss-4-killing-floor-3-wuchang/",
-        logo: "/lovable-uploads/6dab2819-91cb-4e5c-aa0c-3c0b6a4d6f24.png"
-      },
-      {
-        title: "Which best? Medipol Istanbul Vs Ankara",
-        description: "Comprehensive comparison between Medipol universities in Istanbul and Ankara",
-        link: "https://safatr.com/medipol-istandul-vs-ankara/",
-        logo: "/lovable-uploads/62555173-b976-41ad-bed8-39ee3a82b0c5.png"
       },
       {
         title: "Istinye University Prices",
@@ -94,22 +64,10 @@ export const portfolioSections = [
         logo: "/lovable-uploads/e5766cd0-2abf-4aad-889f-5fd096910af7.png"
       },
       {
-        title: "What is Istanbul Gelisim University fees?",
-        description: "Complete fee structure and admission costs for Gelisim University",
-        link: "https://safatr.com/en/what-is-istanbul-gelisim-university-fees/",
-        logo: "/lovable-uploads/c9e7ccdd-6f7e-430f-b167-0d0c6a0e6acb.png"
-      },
-      {
         title: "Son Venin",
         description: "In-depth analysis and review of Son Venin fragrance",
         link: "https://basenotesa.com/ar/blog/Son-Venin/a-131799105",
         logo: "/lovable-uploads/ac78e0b4-1f75-4ea6-a2e0-076903014978.png"
-      },
-      {
-        title: "Lucullian",
-        description: "Comprehensive review and analysis of Lucullian luxury perfume",
-        link: "https://basenotesa.com/ar/blog/lucullian/a-564443064",
-        logo: "/lovable-uploads/1769811d-85a0-4317-bae5-4b5347d93170.png"
       },
       {
         title: "Challenges Facing Teachers In The Digital Age",
@@ -136,22 +94,10 @@ export const portfolioSections = [
         logo: "/lovable-uploads/1666408e-a405-44b6-ba0a-b11c493ecb73.png"
       },
       {
-        title: "Increase Student Engagement",
-        description: "Strategies and techniques to boost student participation and learning",
-        link: "https://saabeel.com/increase-student-engagement/",
-        logo: "/lovable-uploads/21b639d5-f1db-467b-8a06-432f93d6c81d.png"
-      },
-      {
         title: "Study Medicine In English In Turkey",
         description: "Complete guide to pursuing medical education in English at Turkish universities",
         link: "https://www.international-stu.com/study-medicine-in-english-in-turkey-2/",
         logo: "/lovable-uploads/a60fb0f5-68a1-4284-ad40-afcae8273fd0.png"
-      },
-      {
-        title: "Studying In English At Turkish Public Universities",
-        description: "Comprehensive overview of English-taught programs at Turkish public institutions",
-        link: "https://www.international-stu.com/studying-in-english-at-turkish-public-universities/",
-        logo: "/lovable-uploads/faac997b-a1dc-447f-9be5-4005abadb87f.png"
       },
       {
         title: "AI In Developing Biodegradable Implants",
@@ -166,12 +112,6 @@ export const portfolioSections = [
         logo: "/lovable-uploads/c75fea98-0675-43bd-b742-221d8cc43633.png"
       },
       {
-        title: "3D Printing In Medicine",
-        description: "Revolutionary applications of 3D printing technology in healthcare",
-        link: "https://hsi-eg.co/ar/3d-printing-in-medicine/",
-        logo: "/lovable-uploads/fbcc368b-5d04-4c04-833a-7d27a77ff254.png"
-      },
-      {
         title: "How To Start A Career In Medical Device Sales",
         description: "Professional roadmap to entering the medical device sales industry",
         link: "https://hsi-eg.co/ar/how-to-start-a-career-in-medical-device-sales/",
@@ -182,12 +122,6 @@ export const portfolioSections = [
         description: "Comprehensive guide to understanding split AC technology and comparisons",
         link: "https://alshathri.sa/article-view/The-Difference-Between-Split-Air-Conditioners",
         logo: "/lovable-uploads/8fbe4867-db56-4b84-a45f-97acf0f4063d.png"
-      },
-      {
-        title: "Samsung TV: Your Gateway to Home Entertainment from Alshathri Store",
-        description: "Complete guide to Samsung smart TV features and entertainment options",
-        link: "https://alshathri.sa/article-view/samsung-tv-from-alshathri-store",
-        logo: "/lovable-uploads/5127d626-d296-4353-ba18-67d9ed5f5ef1.png"
       },
       {
         title: "Smart TV: Your Comprehensive Guide to Choosing the Future Screen from Alshathri Store",
