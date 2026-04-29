@@ -77,7 +77,7 @@ export const Hero = () => {
             
             <p className="text-lg md:text-xl mb-4 font-light">
               <span className="bg-gradient-to-r from-gold-frame via-gold-frame-light to-gold-frame bg-clip-text text-transparent font-medium">
-                SEO & Web Content Writer | Scriptwriter & Digital Brand Content Creator
+                SEO Content Writer & UX Content | Scriptwriter & Digital Brand Content Creator
               </span>
               <br />
               <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent font-medium">
