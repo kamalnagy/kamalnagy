@@ -70,6 +70,8 @@ export const Portfolio = () => {
           <SocialMediaSamples />
 
           <VideoAdsSection />
+
+          <PdfsSection />
           
           <SEOResults />
 
