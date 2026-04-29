@@ -1,7 +1,7 @@
 export const portfolioSections = [
   {
-    title: "Content Writing - 3arrafni.com",
-    description: "Tech news and content creation with SEO optimization",
+    title: "Content Writing - Articles Portfolio",
+    description: "A unified collection of tech news, education, lifestyle, medical, and consumer-tech articles written across multiple platforms with SEO optimization",
     items: [
       {
         title: "Fantasy Premier League Explained",
