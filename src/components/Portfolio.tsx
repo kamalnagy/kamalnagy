@@ -11,6 +11,7 @@ import { AcademicSamples } from './portfolio/AcademicSamples';
 import { SocialMediaSamples } from './portfolio/SocialMediaSamples';
 import { WebsitesShowcase } from './portfolio/WebsitesShowcase';
 import { VideoAdsSection } from './portfolio/VideoAdsSection';
+import { PdfsSection } from './portfolio/PdfsSection';
 
 export const Portfolio = () => {
   // Define specific grid layouts for each section
@@ -69,6 +70,8 @@ export const Portfolio = () => {
           <SocialMediaSamples />
 
           <VideoAdsSection />
+
+          <PdfsSection />
           
           <SEOResults />
 
