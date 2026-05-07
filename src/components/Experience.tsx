@@ -11,19 +11,21 @@ export const Experience = () => {
     {
       company: "Azzrk",
       logo: azzrkLogo,
-      role: "Content Creator",
+      role: "SEO Content Writer & Content Creator",
       employmentType: "Full-time",
       period: "09/2025 - Present",
       duration: calculateDuration("Sep 2025"),
       location: "Egypt",
       responsibilities: [
+        "Planned and delivered structured website and campaign content aligned with SEO, brand messaging, and conversion goals",
+        "Built website content structures and wrote SEO-optimized web copy across key site pages and landing pages",
         "Created and optimized diverse content assets, including blog articles, landing pages, social media scripts, motion graphics scripts, and promotional video storyboards",
-        "Developed end-to-end content strategies aligned with marketing objectives to boost engagement and brand awareness, and conversion rates",
+        "Developed end-to-end content strategies aligned with marketing objectives to boost engagement, brand awareness, and conversion rates",
         "Produced campaign ideas, website content structures, PDF and web page copy, and content analysis reports to support cross-channel marketing initiatives",
         "Collaborated closely with designers, videographers, and marketing teams to deliver high-impact multimedia content, ensuring consistent tone of voice and brand direction",
         "Researched market trends, audience insights, and competitors to deliver innovative, audience-driven content solutions"
       ],
-      skills: ["Content Creation", "Content Strategy", "Blog Writing", "Landing Pages", "Social Media Scripts", "Motion Graphics Scripts", "Video Storyboards", "Campaign Development", "Cross-channel Marketing"]
+      skills: ["SEO Content Writing", "Website Content Structure", "Content Creation", "Content Strategy", "Brand Messaging", "Landing Pages", "Social Media Scripts", "Motion Graphics Scripts", "Video Storyboards", "Campaign Development"]
     },
     {
       company: "Devolum",
