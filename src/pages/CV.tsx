@@ -37,7 +37,7 @@ const CV = () => {
             </div>
             <div className="bg-card/30 backdrop-blur-lg rounded-2xl p-8 border border-border">
               <p className="text-lg text-muted-foreground leading-relaxed text-center">
-                Results-driven SEO & Social Media Content Creator with over 2 years of experience crafting keyword-optimized content across articles, product descriptions, and landing pages. Skilled in keyword research, on-page SEO optimization, and content strategy development. Proven track record in collaborating with marketing teams to enhance organic traffic and improve search rankings.
+                SEO & Web Content Specialist | Scriptwriter & Brand Messaging with over 2 years of experience delivering structured, performance-driven content across websites and digital campaigns. Experienced in building website content structures, writing SEO-optimized web copy, and developing clear brand messaging across landing pages, ad scripts, company profiles, and social media content plans. Skilled in keyword research, on-page SEO optimization, and content strategy execution, with a proven ability to collaborate with marketing and creative teams to support organic growth, campaign performance, and conversion goals.
               </p>
             </div>
           </div>

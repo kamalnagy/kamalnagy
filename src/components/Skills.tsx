@@ -24,7 +24,15 @@ export const Skills = () => {
     subsections: [{
       name: "SEO & Content Optimization",
       icon: Search,
-      skills: ["Keyword Research", "On-Page Optimization", "Content Auditing", "Meta Tags", "Internal Linking Strategies"]
+      skills: ["Keyword Research", "On-Page SEO", "Content Auditing", "Meta Tags Optimization", "Internal Linking Strategies"]
+    }, {
+      name: "Content Strategy & Structure",
+      icon: Calendar,
+      skills: ["Website Content Structuring", "Search Intent Mapping", "Messaging Frameworks", "Editorial Calendars", "Conversion Rate Optimization (CRO)"]
+    }, {
+      name: "Brand & Campaign Messaging",
+      icon: Target,
+      skills: ["Brand Tone of Voice Development", "Campaign Messaging", "Ad & Video Scriptwriting", "Company Profiles & Brand Documents"]
     }, {
       name: "Analytics & Reporting",
       icon: BarChart3,
@@ -34,13 +42,9 @@ export const Skills = () => {
       icon: Globe,
       skills: ["WordPress", "Shopify (basic)", "Webflow (basic)"]
     }, {
-      name: "Content Strategy & Planning",
-      icon: Calendar,
-      skills: ["Editorial Calendars", "A/B Testing", "Conversion Rate Optimization (CRO)", "Performance KPIs Tracking & Reporting"]
-    }, {
-      name: "Web & Design Basics",
+      name: "Content Formatting & Adaptation",
       icon: Layout,
-      skills: ["Basic HTML/CSS for formatting", "Cross-platform content repurposing (articles → videos → social posts)"]
+      skills: ["Web Content Formatting & Publishing", "Content Adaptation Across Digital Formats"]
     }]
   }, {
     icon: Users,
