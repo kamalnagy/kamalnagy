@@ -17,7 +17,7 @@ export const About = () => {
     {
       icon: TrendingUp,
       title: "SEO Content Creation",
-      description: "1.5+ years driving organic traffic and engagement"
+      description: "2.4+ years driving organic traffic and engagement"
     }
   ];
 
