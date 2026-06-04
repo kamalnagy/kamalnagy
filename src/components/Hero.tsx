@@ -49,7 +49,7 @@ export const Hero = () => {
           <div className="flex-shrink-0 order-1 lg:order-1">
             <div 
               ref={imageWrapperRef} 
-              className="w-48 h-48 lg:w-64 rounded-2xl overflow-hidden shadow-2xl relative"
+              className="w-56 h-72 lg:w-72 lg:h-96 rounded-2xl overflow-hidden shadow-2xl relative"
               style={{
                 background: `linear-gradient(135deg, hsl(var(--gold-frame-light)), hsl(var(--gold-frame)), hsl(var(--gold-frame-dark)))`,
                 padding: '4px'
@@ -57,7 +57,7 @@ export const Hero = () => {
             >
               <div className="w-full h-full rounded-2xl overflow-hidden bg-background">
                 <img
-                  src="/lovable-uploads/f9c8de36-3057-4354-9f75-c0468fc3f85e.png"
+                  src={kamalPortrait.url}
                   alt="Kamal Nagy"
                   className="w-full h-full object-cover"
                 />
