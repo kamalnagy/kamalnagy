@@ -73,6 +73,7 @@ export const Hero = () => {
               </span>
               <br />
               <span className="text-foreground">Nagy</span>
+              <span className="sr-only"> — SEO Content Writer & Digital Brand Content Creator</span>
             </h1>
             
             <p className="text-lg md:text-xl mb-4 font-light">
