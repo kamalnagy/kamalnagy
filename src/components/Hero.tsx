@@ -1,6 +1,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { ArrowDown, Linkedin, FileText, Award } from 'lucide-react';
+import kamalPortrait from '@/assets/kamal-portrait.jpeg.asset.json';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
