@@ -50,9 +50,9 @@ export const pdfsData: PdfItem[] = [
     logoBgClass: 'bg-[#0A1530]',
   },
   {
-    id: 'sumoue-marketing-collection',
+    id: 'sumoue-follow-ups',
     company: 'Sumoue',
-    title: 'Sumoue — Marketing Collection (Folder)',
+    title: 'Sumoue — Follow Ups',
     description:
       'A curated collection of marketing documents I produced for Sumoue marketing agency. Each piece reflects full creative ownership — from concept and copywriting to brand storytelling and document structure.',
     role: 'Concept • Content Writing • Creative Direction',
