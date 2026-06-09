@@ -46,8 +46,8 @@ export const pdfsData: PdfItem[] = [
       'A branded marketing document created for Sumoue, a marketing agency. I led the full creative inspiration and content writing — shaping the brand narrative, structuring the offering, and refining the persuasive tone end to end.',
     role: 'Concept • Content Writing • Brand Voice',
     pdfUrl: 'https://drive.google.com/file/d/17qFBeHzlJlaTvv3xIXi7dyH6eY3GTmBB/view?usp=sharing',
-    logo: sumoueLogo,
-    logoBgClass: 'bg-[#2A0A4A]',
+    logo: sumoueCover,
+    logoBgClass: 'bg-[#0A1530]',
   },
   {
     id: 'sumoue-marketing-collection',
