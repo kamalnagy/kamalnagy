@@ -39,9 +39,9 @@ export const pdfsData: PdfItem[] = [
     logoBgClass: 'bg-black',
   },
   {
-    id: 'sumoue-marketing-document',
+    id: 'sumoue-company-profile',
     company: 'Sumoue',
-    title: 'Sumoue — Marketing Agency Document',
+    title: 'Sumoue — Company Profile',
     description:
       'A branded marketing document created for Sumoue, a marketing agency. I led the full creative inspiration and content writing — shaping the brand narrative, structuring the offering, and refining the persuasive tone end to end.',
     role: 'Concept • Content Writing • Brand Voice',
