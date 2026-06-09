@@ -1,5 +1,6 @@
 import phlogLogo from '@/assets/pdfs/phlog-logo.png';
 import almugasabCover from '@/assets/pdfs/almugasab-cover.png';
+import sumoueLogo from '@/assets/pdfs/sumoue-logo.png';
 
 export interface PdfItem {
   id: string;
