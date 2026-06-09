@@ -37,4 +37,26 @@ export const pdfsData: PdfItem[] = [
     logo: almugasabCover,
     logoBgClass: 'bg-black',
   },
+  {
+    id: 'sumoue-marketing-document',
+    company: 'Sumoue',
+    title: 'Sumoue — Marketing Agency Document',
+    description:
+      'A branded marketing document created for Sumoue, a marketing agency. I led the full creative inspiration and content writing — shaping the brand narrative, structuring the offering, and refining the persuasive tone end to end.',
+    role: 'Concept • Content Writing • Brand Voice',
+    pdfUrl: 'https://drive.google.com/file/d/17qFBeHzlJlaTvv3xIXi7dyH6eY3GTmBB/view?usp=sharing',
+    logo: sumoueLogo,
+    logoBgClass: 'bg-[#2A0A4A]',
+  },
+  {
+    id: 'sumoue-marketing-collection',
+    company: 'Sumoue',
+    title: 'Sumoue — Marketing Collection (Folder)',
+    description:
+      'A curated collection of marketing documents I produced for Sumoue marketing agency. Each piece reflects full creative ownership — from concept and copywriting to brand storytelling and document structure.',
+    role: 'Concept • Content Writing • Creative Direction',
+    pdfUrl: 'https://drive.google.com/drive/folders/1mJtFCDHMgdIKRdZW0yyHlGtjT_Lns278?usp=drive_link',
+    logo: sumoueLogo,
+    logoBgClass: 'bg-[#2A0A4A]',
+  },
 ];
