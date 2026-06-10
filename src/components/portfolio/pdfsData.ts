@@ -56,7 +56,7 @@ export const pdfsData: PdfItem[] = [
     description:
       'A curated collection of marketing documents I produced for Sumoue marketing agency. Each piece reflects full creative ownership — from concept and copywriting to brand storytelling and document structure.',
     role: 'Concept • Content Writing • Creative Direction',
-    pdfUrl: 'https://drive.google.com/drive/folders/1mJtFCDHMgdIKRdZW0yyHlGtjT_Lns278?usp=sharing',
+    pdfUrl: 'https://drive.google.com/drive/u/0/folders/1mJtFCDHMgdIKRdZW0yyHlGtjT_Lns278',
     logo: sumoueCover,
     logoBgClass: 'bg-[#0A1530]',
   },
