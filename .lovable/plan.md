@@ -1,38 +1,11 @@
+The screenshot is not a Google Drive sharing-permission problem. It is a browser/embed restriction: `drive.google.com` is refusing to connect inside the current preview/frame context, which can happen even when the folder is public.
 
+Plan:
+1. Keep the existing public sharing URL format for the folder.
+2. Update the portfolio document links so Google Drive opens as a true top-level external page, not inside the Lovable preview frame.
+3. Add `aria-label` text that matches the actual destination, so the folder link is not described as a single PDF.
+4. Verify the links use `target="_blank"` and safe external-link attributes.
 
-## New "Websites I Built" Section
-
-### Concept
-A section placed **after SEO Results** showcasing websites you structured and built content for. Each website is displayed inside a **mini browser mockup frame** (with a fake URL bar, traffic light dots, and the site URL), containing a screenshot preview, plus the website name, your role/description, and a visit link.
-
-### Layout
-- Section title: "Websites I Built" (or similar) with subtitle
-- Responsive grid: 1 column on mobile, 2 columns on tablet, 3 on desktop
-- Each card is a browser mockup:
-
-```text
-┌─────────────────────────────────┐
-│ 🔴 🟡 🟢   example.com         │
-├─────────────────────────────────┤
-│                                 │
-│     [ Website Screenshot ]      │
-│                                 │
-├─────────────────────────────────┤
-│  Website Name                   │
-│  Description of what I did      │
-│  Role: Content Structure & SEO  │
-│              [Visit Site →]     │
-└─────────────────────────────────┘
-```
-
-- Hover effect: subtle scale + glow, consistent with existing portfolio style
-- Uses the same glass/gradient styling as the rest of the portfolio
-
-### Technical Plan
-1. **Create** `src/components/portfolio/WebsitesShowcase.tsx` -- new component with browser mockup cards, accepting an array of website data (name, url, screenshot, description, role)
-2. **Create** `src/components/portfolio/websitesData.ts` -- data file with placeholder entries (you'll provide the actual websites and screenshots later)
-3. **Update** `src/components/Portfolio.tsx` -- insert `<WebsitesShowcase />` right after `<SEOResults />`
-
-### Next Step
-Once approved, I'll build it with placeholder data. Then you can provide the actual website names, screenshots, and descriptions to populate it.
-
+Technical detail:
+- The current code already uses `target="_blank"`, but the preview environment can still show blocked Drive content depending on how the click is handled or previewed.
+- The production/published site should open the link in a new browser tab. If Google still blocks it there, the workaround is to use a direct Google Drive file link instead of a folder link, or upload the PDF into the app/assets instead of relying on Drive.
