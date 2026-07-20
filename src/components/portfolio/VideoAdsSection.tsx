@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Play, Sparkles, TrendingUp, Trophy } from 'lucide-react';
+import { Play, Sparkles, TrendingUp, Trophy, Wand2 } from 'lucide-react';
 
 interface VideoAd {
   src: string;
@@ -8,7 +8,7 @@ interface VideoAd {
   featured?: boolean;
   badge?: string;
   note?: string;
-  
+  aiMade?: boolean;
 }
 
 interface CompanyVideoAds {
@@ -36,9 +36,9 @@ const companies: CompanyVideoAds[] = [
       {
         src: '/videos/phlog-winning-ad.mp4',
         title: 'Phlog — Top-Performing Lead Gen Ad',
-        featured: true,
         badge: 'Proven Winner',
         note: 'A campaign I wrote and creatively directed that outperformed expectations — generating a strong volume of qualified leads for Phlog.',
+        aiMade: true,
       },
       { src: '/videos/phlog-1.mp4', title: 'Phlog Ad — Concept 1' },
       { src: '/videos/phlog-2.mp4', title: 'Phlog Ad — Concept 2' },
