@@ -39,9 +39,10 @@ const companies: CompanyVideoAds[] = [
         featured: true,
         badge: 'Proven Winner',
         note: 'A campaign I wrote and creatively directed that outperformed expectations — generating a strong volume of qualified leads for Phlog.',
+        aiMade: true,
       },
-      { src: '/videos/phlog-1.mp4', title: 'Phlog Ad — Concept 1' },
-      { src: '/videos/phlog-2.mp4', title: 'Phlog Ad — Concept 2' },
+      { src: '/videos/phlog-1.mp4', title: 'Phlog Ad — Concept 1', aiMade: true },
+      { src: '/videos/phlog-2.mp4', title: 'Phlog Ad — Concept 2', aiMade: true },
     ],
   },
   {
