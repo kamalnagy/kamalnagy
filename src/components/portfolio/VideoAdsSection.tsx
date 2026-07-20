@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Play, Sparkles } from 'lucide-react';
+import { Play, Sparkles, TrendingUp, Trophy } from 'lucide-react';
 
 interface VideoAd {
   src: string;
   title: string;
+  featured?: boolean;
+  badge?: string;
+  note?: string;
 }
 
 interface CompanyVideoAds {
