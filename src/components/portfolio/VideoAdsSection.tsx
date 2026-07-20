@@ -143,7 +143,7 @@ export const VideoAdsSection = () => {
           </span>
         </h3>
         <p className="text-muted-foreground text-sm md:text-lg max-w-3xl mx-auto">
-          Full creative concepts, scripts, and content direction I developed for brand video advertisements
+          Full creative concepts, scripts, and AI-assisted content direction I developed for brand video advertisements
         </p>
       </div>
 
