@@ -32,6 +32,13 @@ const companies: CompanyVideoAds[] = [
     company: 'Phlog Influencers Marketing',
     description: 'End-to-end creative ideation and scriptwriting for influencer-driven brand campaigns',
     videos: [
+      {
+        src: '/videos/phlog-winning-ad.mp4',
+        title: 'Phlog — Top-Performing Lead Gen Ad',
+        featured: true,
+        badge: 'Proven Winner',
+        note: 'A campaign I wrote and creatively directed that outperformed expectations — generating a strong volume of qualified leads for Phlog.',
+      },
       { src: '/videos/phlog-1.mp4', title: 'Phlog Ad — Concept 1' },
       { src: '/videos/phlog-2.mp4', title: 'Phlog Ad — Concept 2' },
     ],
