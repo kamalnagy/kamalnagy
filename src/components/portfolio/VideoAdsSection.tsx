@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Play, Sparkles } from 'lucide-react';
+import { Play, Sparkles, TrendingUp, Trophy } from 'lucide-react';
 
 interface VideoAd {
   src: string;
   title: string;
+  featured?: boolean;
+  badge?: string;
+  note?: string;
 }
 
 interface CompanyVideoAds {
@@ -29,6 +32,13 @@ const companies: CompanyVideoAds[] = [
     company: 'Phlog Influencers Marketing',
     description: 'End-to-end creative ideation and scriptwriting for influencer-driven brand campaigns',
     videos: [
+      {
+        src: '/videos/phlog-winning-ad.mp4',
+        title: 'Phlog — Top-Performing Lead Gen Ad',
+        featured: true,
+        badge: 'Proven Winner',
+        note: 'A campaign I wrote and creatively directed that outperformed expectations — generating a strong volume of qualified leads for Phlog.',
+      },
       { src: '/videos/phlog-1.mp4', title: 'Phlog Ad — Concept 1' },
       { src: '/videos/phlog-2.mp4', title: 'Phlog Ad — Concept 2' },
     ],
@@ -46,12 +56,30 @@ const companies: CompanyVideoAds[] = [
 
 const VideoCard = ({ video }: { video: VideoAd }) => {
   const [playing, setPlaying] = useState(false);
+  const isFeatured = !!video.featured;
   return (
-    <div className="group relative overflow-hidden rounded-2xl bg-card border border-border/50 transition-all duration-500 hover:border-primary/40 hover:shadow-[0_20px_50px_-15px_hsl(var(--primary)/0.4)] hover:-translate-y-1">
-      {/* Gradient glow on hover */}
-      <div className="absolute -inset-0.5 bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end rounded-2xl opacity-0 group-hover:opacity-30 blur-md transition-opacity duration-500 pointer-events-none" />
-      
-      <div className="relative aspect-[9/16] overflow-hidden bg-black">
+    <div
+      className={`group relative overflow-hidden rounded-2xl bg-card border transition-all duration-500 hover:-translate-y-1 ${
+        isFeatured
+          ? 'border-primary/60 shadow-[0_25px_60px_-20px_hsl(var(--primary)/0.5)] sm:col-span-2'
+          : 'border-border/50 hover:border-primary/40 hover:shadow-[0_20px_50px_-15px_hsl(var(--primary)/0.4)]'
+      }`}
+    >
+      {/* Gradient glow */}
+      <div
+        className={`absolute -inset-0.5 bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end rounded-2xl blur-md transition-opacity duration-500 pointer-events-none ${
+          isFeatured ? 'opacity-40' : 'opacity-0 group-hover:opacity-30'
+        }`}
+      />
+
+      {isFeatured && video.badge && (
+        <div className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end text-white text-xs font-bold shadow-lg">
+          <Trophy className="w-3.5 h-3.5" />
+          {video.badge}
+        </div>
+      )}
+
+      <div className={`relative overflow-hidden bg-black ${isFeatured ? 'aspect-video sm:aspect-[16/10]' : 'aspect-[9/16]'}`}>
         <video
           src={video.src}
           controls
@@ -59,7 +87,7 @@ const VideoCard = ({ video }: { video: VideoAd }) => {
           playsInline
           onPlay={() => setPlaying(true)}
           onPause={() => setPlaying(false)}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-contain bg-black"
         >
           Your browser does not support the video tag.
         </video>
@@ -73,6 +101,12 @@ const VideoCard = ({ video }: { video: VideoAd }) => {
       </div>
       <div className="relative p-4 bg-gradient-to-b from-card to-card/80">
         <p className="text-sm font-semibold text-foreground">{video.title}</p>
+        {video.note && (
+          <p className="mt-2 text-xs md:text-sm text-muted-foreground leading-relaxed flex gap-2">
+            <TrendingUp className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+            <span>{video.note}</span>
+          </p>
+        )}
       </div>
     </div>
   );
