@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
-import { Play, Sparkles, TrendingUp, Trophy, Wand2 } from 'lucide-react';
+import { Play, Sparkles, TrendingUp, Trophy } from 'lucide-react';
 
 interface VideoAd {
   src: string;
@@ -8,7 +8,7 @@ interface VideoAd {
   featured?: boolean;
   badge?: string;
   note?: string;
-  aiMade?: boolean;
+  
 }
 
 interface CompanyVideoAds {
@@ -39,10 +39,9 @@ const companies: CompanyVideoAds[] = [
         featured: true,
         badge: 'Proven Winner',
         note: 'A campaign I wrote and creatively directed that outperformed expectations — generating a strong volume of qualified leads for Phlog.',
-        aiMade: true,
       },
-      { src: '/videos/phlog-1.mp4', title: 'Phlog Ad — Concept 1', aiMade: true },
-      { src: '/videos/phlog-2.mp4', title: 'Phlog Ad — Concept 2', aiMade: true },
+      { src: '/videos/phlog-1.mp4', title: 'Phlog Ad — Concept 1' },
+      { src: '/videos/phlog-2.mp4', title: 'Phlog Ad — Concept 2' },
     ],
   },
   {
@@ -79,12 +78,6 @@ const VideoCard = ({ video }: { video: VideoAd }) => {
           <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end text-white text-xs font-bold shadow-lg">
             <Trophy className="w-3.5 h-3.5" />
             {video.badge}
-          </div>
-        )}
-        {video.aiMade && (
-          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-background/90 backdrop-blur border border-primary/30 text-primary text-xs font-bold shadow-lg">
-            <Wand2 className="w-3.5 h-3.5" />
-            Made with AI
           </div>
         )}
       </div>
