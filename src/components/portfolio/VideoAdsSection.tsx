@@ -74,12 +74,20 @@ const VideoCard = ({ video }: { video: VideoAd }) => {
         }`}
       />
 
-      {isFeatured && video.badge && (
-        <div className="absolute top-3 left-3 z-10 inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end text-white text-xs font-bold shadow-lg">
-          <Trophy className="w-3.5 h-3.5" />
-          {video.badge}
-        </div>
-      )}
+      <div className="absolute top-3 left-3 z-10 flex flex-wrap gap-2">
+        {isFeatured && video.badge && (
+          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end text-white text-xs font-bold shadow-lg">
+            <Trophy className="w-3.5 h-3.5" />
+            {video.badge}
+          </div>
+        )}
+        {video.aiMade && (
+          <div className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-background/90 backdrop-blur border border-primary/30 text-primary text-xs font-bold shadow-lg">
+            <Wand2 className="w-3.5 h-3.5" />
+            Made with AI
+          </div>
+        )}
+      </div>
 
       <div className={`relative overflow-hidden bg-black ${isFeatured ? 'aspect-video sm:aspect-[16/10]' : 'aspect-[9/16]'}`}>
         <video
