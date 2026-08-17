@@ -9,6 +9,16 @@ import callva from '@/assets/brands/callva.png.asset.json';
 import deem from '@/assets/brands/deem.png.asset.json';
 import devolum from '@/assets/brands/devolum.png.asset.json';
 import ghanaem from '@/assets/brands/ghanaem.png.asset.json';
+import hsi from '@/assets/brands/hsi.png.asset.json';
+import ihkam from '@/assets/brands/ihkam.png.asset.json';
+import infugram from '@/assets/brands/infugram.png.asset.json';
+import internationalStudents from '@/assets/brands/international-students.png.asset.json';
+import johnson from '@/assets/brands/johnson.png.asset.json';
+import medstar from '@/assets/brands/medstar.png.asset.json';
+import menusbee from '@/assets/brands/menusbee.png.asset.json';
+import phlog from '@/assets/brands/phlog.png.asset.json';
+import rawaf from '@/assets/brands/rawaf.png.asset.json';
+import revenueX from '@/assets/brands/revenue-x.png.asset.json';
 
 const brands = [
   { name: '3arrafni', src: arrafni.url },
@@ -21,6 +31,16 @@ const brands = [
   { name: 'Deem Agency', src: deem.url },
   { name: 'Devolum', src: devolum.url },
   { name: 'Ghanaem', src: ghanaem.url },
+  { name: 'HSI Center for Healthcare Training & Consultation', src: hsi.url },
+  { name: 'Ihkam Tech Solutions', src: ihkam.url },
+  { name: 'Infugram', src: infugram.url },
+  { name: 'International Students', src: internationalStudents.url },
+  { name: 'Johnson Store', src: johnson.url },
+  { name: 'Med Star Medical Center', src: medstar.url },
+  { name: 'Menusbee', src: menusbee.url },
+  { name: 'Phlog', src: phlog.url },
+  { name: 'Rawaf Perfumes', src: rawaf.url },
+  { name: 'Revenue X', src: revenueX.url },
 ];
 
 export const BrandsMarquee = () => {
