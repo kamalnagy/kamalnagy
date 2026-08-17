@@ -49,7 +49,7 @@ export const BrandsMarquee = () => {
                 src={brand.src}
                 alt={`${brand.name} logo`}
                 loading="lazy"
-                className="h-12 md:h-16 w-auto max-w-[140px] object-contain brightness-0 invert opacity-50 transition-all duration-300 hover:opacity-100 hover:scale-110"
+                className="h-12 md:h-16 w-auto max-w-[140px] object-contain brightness-0 dark:invert opacity-50 transition-all duration-300 hover:opacity-100 hover:scale-110"
               />
             </div>
           ))}
