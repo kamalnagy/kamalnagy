@@ -134,7 +134,15 @@ export const FeaturedWorkStack = () => {
                       : `linear-gradient(to top, rgba(0,0,0,${0.7 + absOffset * 0.1}) 0%, rgba(0,0,0,${0.4 + absOffset * 0.1}) 60%, transparent 100%)`
                   }}
                 />
+                <div className="absolute top-5 left-5 md:top-6 md:left-6">
+                  <span className="inline-flex items-center rounded-full bg-gradient-to-r from-gradient-start to-gradient-end px-3 py-1 text-[10px] md:text-xs font-semibold uppercase tracking-wider text-white shadow-lg">
+                    {work.category}
+                  </span>
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  {work.subtitle && (
+                    <p className="text-white/80 text-xs md:text-sm mb-2">{work.subtitle}</p>
+                  )}
                   <h3 
                     className="text-white font-bold text-lg md:text-2xl lg:text-3xl mb-3 md:mb-4 transition-all duration-1000 group-hover:translate-y-[-8px]"
                     style={{
