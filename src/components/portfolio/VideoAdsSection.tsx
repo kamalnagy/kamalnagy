@@ -123,7 +123,7 @@ const VideoCard = ({ video }: { video: VideoAd }) => {
 
 export const VideoAdsSection = () => {
   return (
-    <div className="relative space-y-8 md:space-y-12">
+    <div id="video-ads" className="relative space-y-8 md:space-y-12 scroll-mt-24">
       {/* Decorative background */}
       <div className="absolute inset-0 -z-10 overflow-hidden pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
