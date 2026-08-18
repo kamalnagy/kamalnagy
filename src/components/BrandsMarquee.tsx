@@ -51,6 +51,16 @@ const brands = [
   { name: 'Phlog', src: phlog.url },
   { name: 'Rawaf Perfumes', src: rawaf.url },
   { name: 'Revenue X', src: revenueX.url },
+  { name: 'Rihal', src: rihal.url },
+  { name: 'RoadTech', src: roadtech.url },
+  { name: 'Roaya', src: roaya.url },
+  { name: 'Saabeel', src: saabeel.url },
+  { name: 'SADA Agency', src: sada.url },
+  { name: 'SAFA Student Services', src: safa.url },
+  { name: 'Sanad', src: sanad.url },
+  { name: 'Sharry', src: sharry.url },
+  { name: 'Shefaa Misr', src: shefaa.url },
+  { name: 'Strevya', src: strevya.url },
 ];
 
 export const BrandsMarquee = () => {
