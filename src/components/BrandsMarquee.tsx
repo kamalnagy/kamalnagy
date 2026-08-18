@@ -66,6 +66,11 @@ const brands = [
   { name: 'Sharry', src: sharry.url },
   { name: 'Shefaa Misr', src: shefaa.url },
   { name: 'Strevya', src: strevya.url },
+  { name: 'Sumoue Marketing Agency', src: sumoue.url },
+  { name: 'Surratak', src: surratak.url },
+  { name: 'Talaa Travel', src: talaa.url },
+  { name: 'The Bold Era', src: boldera.url },
+  { name: 'Transition', src: transition.url },
 ];
 
 export const BrandsMarquee = () => {
