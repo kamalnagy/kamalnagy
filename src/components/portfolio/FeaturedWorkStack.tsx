@@ -1,36 +1,66 @@
 import React, { useState, useEffect } from 'react';
+import rihalImg from '@/assets/websites/rihal.png';
+import surratakImg from '@/assets/websites/surratak.png';
+import almugasabCover from '@/assets/pdfs/almugasab-cover.png';
+import phlogCover from '@/assets/pdfs/phlog-logo.png';
 
 interface FeaturedWork {
   title: string;
   link: string;
   image: string;
+  category: string;
+  subtitle?: string;
 }
 
 const featuredWorks: FeaturedWork[] = [
   {
     title: "Fantasy Premier League Explained",
     link: "https://www.3arrafni.com/fantasy-premier-league-explained/",
-    image: "/lovable-uploads/b14d570d-e8e5-4ae3-8804-493cd431e8bc.png"
+    image: "/lovable-uploads/b14d570d-e8e5-4ae3-8804-493cd431e8bc.png",
+    category: "SEO Article",
+    subtitle: "3arrafni.com — long-form SEO guide"
   },
   {
-    title: "Ramses Central Fire Disrupted Egypt's Internet",
-    link: "https://www.3arrafni.com/ramses-central-fire-disrupted-egypts-internet/",
-    image: "/lovable-uploads/bcfc6f72-cd1d-4b77-b573-d2864bd26e80.png"
+    title: "Rihal Marketing Website",
+    link: "https://rihalmarketing.com/",
+    image: rihalImg,
+    category: "Website Content",
+    subtitle: "Full website content structure & SEO"
+  },
+  {
+    title: "Phlog — Top-Performing Lead Gen Ad",
+    link: "#video-ads",
+    image: phlogCover,
+    category: "Video Ad Script",
+    subtitle: "Concept & script that drove qualified leads"
+  },
+  {
+    title: "Almugasab — Company Profile",
+    link: "https://drive.google.com/file/d/1pseyy44FyVc02GqjEpudg4q6DCZoqYTl/view?usp=sharing",
+    image: almugasabCover,
+    category: "Brand PDF",
+    subtitle: "Concept, storytelling & full copy"
+  },
+  {
+    title: "Shefaa Healthcare Campaign",
+    link: "#social-samples",
+    image: "/lovable-uploads/4f1644fd-6337-410b-aa11-4bd15ca33db1.png",
+    category: "Social Media",
+    subtitle: "Campaign copy & creative direction"
+  },
+  {
+    title: "Surratak E-commerce Platform",
+    link: "https://surratak.com/",
+    image: surratakImg,
+    category: "Website Content",
+    subtitle: "Content strategy & site structure"
   },
   {
     title: "What's New In The MacBook Pro M5",
     link: "https://www.3arrafni.com/tech-news/whats-new-in-the-macbook-pro-m5-update/",
-    image: "/lovable-uploads/6003f53f-4584-4c61-9047-9b1f0c4ab5a4.png"
-  },
-  {
-    title: "iPhone 17 Air Colors Leak",
-    link: "https://www.3arrafni.com/tech-news/iphone-17-air-colors-leak/",
-    image: "/lovable-uploads/3ab556f4-89e1-46bc-ac02-abb3d8ee8503.png"
-  },
-  {
-    title: "Nothing OS 4.0",
-    link: "https://www.3arrafni.com/tech-news/nothing-os-4-0/",
-    image: "/lovable-uploads/b823ab54-079a-4e3a-ba85-7a325944be55.png"
+    image: "/lovable-uploads/6003f53f-4584-4c61-9047-9b1f0c4ab5a4.png",
+    category: "Tech News",
+    subtitle: "Consumer-tech news writing"
   }
 ];
 
