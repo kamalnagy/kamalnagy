@@ -66,7 +66,7 @@ const socialMediaPosts: SocialMediaPost[] = [
 
 export const SocialMediaSamples = () => {
   return (
-    <div className="space-y-6 md:space-y-8">
+    <div id="social-samples" className="space-y-6 md:space-y-8 scroll-mt-24">
       <div className="text-center px-4">
         <h3 className="text-xl md:text-3xl font-bold text-foreground mb-2 md:mb-4">
           Samples of Social Media Work
