@@ -97,8 +97,8 @@ export const FeaturedWorkStack = () => {
             <a
               key={index}
               href={work.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={work.link.startsWith('#') ? undefined : '_blank'}
+              rel={work.link.startsWith('#') ? undefined : 'noopener noreferrer'}
               className="absolute inset-0 transition-all duration-1000 ease-out cursor-pointer group"
               style={{
                 zIndex: isActive ? 30 : 20 - absOffset,
