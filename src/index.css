@@ -16,6 +16,9 @@
     --card: 0 0% 100%;
     --card-foreground: 220 15% 15%;
 
+    /* Neutral tile used behind brand logos so every logo stays legible */
+    --brand-tile: 0 0% 100%;
+
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 15%;
 
