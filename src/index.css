@@ -18,6 +18,7 @@
 
     /* Neutral tile used behind brand logos so every logo stays legible */
     --brand-tile: 0 0% 100%;
+    --brand-tile-dark: 220 30% 16%;
 
     --popover: 0 0% 100%;
     --popover-foreground: 220 15% 15%;
@@ -83,6 +84,7 @@
     --card-foreground: 220 20% 96%;
 
     --brand-tile: 0 0% 96%;
+    --brand-tile-dark: 220 35% 12%;
 
     --popover: 220 40% 8%;
     --popover-foreground: 220 20% 96%;

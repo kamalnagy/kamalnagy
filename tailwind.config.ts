@@ -53,6 +53,7 @@ export default {
 					foreground: 'hsl(var(--popover-foreground))'
 				},
 				'brand-tile': 'hsl(var(--brand-tile))',
+				'brand-tile-dark': 'hsl(var(--brand-tile-dark))',
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
