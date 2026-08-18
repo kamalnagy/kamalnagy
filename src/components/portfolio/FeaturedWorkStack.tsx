@@ -1,36 +1,66 @@
 import React, { useState, useEffect } from 'react';
+import rihalImg from '@/assets/websites/rihal.png';
+import surratakImg from '@/assets/websites/surratak.png';
+import almugasabCover from '@/assets/pdfs/almugasab-cover.png';
+import phlogCover from '@/assets/pdfs/phlog-logo.png';
 
 interface FeaturedWork {
   title: string;
   link: string;
   image: string;
+  category: string;
+  subtitle?: string;
 }
 
 const featuredWorks: FeaturedWork[] = [
   {
     title: "Fantasy Premier League Explained",
     link: "https://www.3arrafni.com/fantasy-premier-league-explained/",
-    image: "/lovable-uploads/b14d570d-e8e5-4ae3-8804-493cd431e8bc.png"
+    image: "/lovable-uploads/b14d570d-e8e5-4ae3-8804-493cd431e8bc.png",
+    category: "SEO Article",
+    subtitle: "3arrafni.com — long-form SEO guide"
   },
   {
-    title: "Ramses Central Fire Disrupted Egypt's Internet",
-    link: "https://www.3arrafni.com/ramses-central-fire-disrupted-egypts-internet/",
-    image: "/lovable-uploads/bcfc6f72-cd1d-4b77-b573-d2864bd26e80.png"
+    title: "Rihal Marketing Website",
+    link: "https://rihalmarketing.com/",
+    image: rihalImg,
+    category: "Website Content",
+    subtitle: "Full website content structure & SEO"
+  },
+  {
+    title: "Phlog — Top-Performing Lead Gen Ad",
+    link: "#video-ads",
+    image: phlogCover,
+    category: "Video Ad Script",
+    subtitle: "Concept & script that drove qualified leads"
+  },
+  {
+    title: "Almugasab — Company Profile",
+    link: "https://drive.google.com/file/d/1pseyy44FyVc02GqjEpudg4q6DCZoqYTl/view?usp=sharing",
+    image: almugasabCover,
+    category: "Brand PDF",
+    subtitle: "Concept, storytelling & full copy"
+  },
+  {
+    title: "Shefaa Healthcare Campaign",
+    link: "#social-samples",
+    image: "/lovable-uploads/4f1644fd-6337-410b-aa11-4bd15ca33db1.png",
+    category: "Social Media",
+    subtitle: "Campaign copy & creative direction"
+  },
+  {
+    title: "Surratak E-commerce Platform",
+    link: "https://surratak.com/",
+    image: surratakImg,
+    category: "Website Content",
+    subtitle: "Content strategy & site structure"
   },
   {
     title: "What's New In The MacBook Pro M5",
     link: "https://www.3arrafni.com/tech-news/whats-new-in-the-macbook-pro-m5-update/",
-    image: "/lovable-uploads/6003f53f-4584-4c61-9047-9b1f0c4ab5a4.png"
-  },
-  {
-    title: "iPhone 17 Air Colors Leak",
-    link: "https://www.3arrafni.com/tech-news/iphone-17-air-colors-leak/",
-    image: "/lovable-uploads/3ab556f4-89e1-46bc-ac02-abb3d8ee8503.png"
-  },
-  {
-    title: "Nothing OS 4.0",
-    link: "https://www.3arrafni.com/tech-news/nothing-os-4-0/",
-    image: "/lovable-uploads/b823ab54-079a-4e3a-ba85-7a325944be55.png"
+    image: "/lovable-uploads/6003f53f-4584-4c61-9047-9b1f0c4ab5a4.png",
+    category: "Tech News",
+    subtitle: "Consumer-tech news writing"
   }
 ];
 
@@ -67,8 +97,8 @@ export const FeaturedWorkStack = () => {
             <a
               key={index}
               href={work.link}
-              target="_blank"
-              rel="noopener noreferrer"
+              target={work.link.startsWith('#') ? undefined : '_blank'}
+              rel={work.link.startsWith('#') ? undefined : 'noopener noreferrer'}
               className="absolute inset-0 transition-all duration-1000 ease-out cursor-pointer group"
               style={{
                 zIndex: isActive ? 30 : 20 - absOffset,
@@ -104,7 +134,15 @@ export const FeaturedWorkStack = () => {
                       : `linear-gradient(to top, rgba(0,0,0,${0.7 + absOffset * 0.1}) 0%, rgba(0,0,0,${0.4 + absOffset * 0.1}) 60%, transparent 100%)`
                   }}
                 />
+                <div className="absolute top-5 left-5 md:top-6 md:left-6">
+                  <span className="inline-flex items-center rounded-full bg-gradient-to-r from-gradient-start to-gradient-end px-3 py-1 text-[10px] md:text-xs font-semibold uppercase tracking-wider text-white shadow-lg">
+                    {work.category}
+                  </span>
+                </div>
                 <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                  {work.subtitle && (
+                    <p className="text-white/80 text-xs md:text-sm mb-2">{work.subtitle}</p>
+                  )}
                   <h3 
                     className="text-white font-bold text-lg md:text-2xl lg:text-3xl mb-3 md:mb-4 transition-all duration-1000 group-hover:translate-y-[-8px]"
                     style={{

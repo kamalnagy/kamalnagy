@@ -29,38 +29,49 @@ import sanad from '@/assets/brands/sanad.png.asset.json';
 import sharry from '@/assets/brands/sharry.png.asset.json';
 import shefaa from '@/assets/brands/shefaa.png.asset.json';
 import strevya from '@/assets/brands/strevya.png.asset.json';
+import sumoue from '@/assets/brands/sumoue.png.asset.json';
+import surratak from '@/assets/brands/surratak.png.asset.json';
+import talaa from '@/assets/brands/talaa.png.asset.json';
+import boldera from '@/assets/brands/boldera.png.asset.json';
+import transition from '@/assets/brands/transition.png.asset.json';
 
-const brands = [
+/** `light: true` = the logo artwork itself is light/white, so it needs a dark tile */
+const brands: { name: string; src: string; light?: boolean }[] = [
   { name: '3arrafni', src: arrafni.url },
-  { name: 'Almugasab', src: almugasab.url },
-  { name: 'Alzahra Baz Jewelry', src: alzahra.url },
-  { name: 'Aroma Classic', src: aroma.url },
+  { name: 'Almugasab', src: almugasab.url, light: true },
+  { name: 'Alzahra Baz Jewelry', src: alzahra.url, light: true },
+  { name: 'Aroma Classic', src: aroma.url, light: true },
   { name: 'Baco Store', src: baco.url },
   { name: 'Basenote', src: basenote.url },
-  { name: 'CallVa', src: callva.url },
+  { name: 'CallVa', src: callva.url, light: true },
   { name: 'Deem Agency', src: deem.url },
-  { name: 'Devolum', src: devolum.url },
+  { name: 'Devolum', src: devolum.url, light: true },
   { name: 'Ghanaem', src: ghanaem.url },
-  { name: 'HSI Center for Healthcare Training & Consultation', src: hsi.url },
-  { name: 'Ihkam Tech Solutions', src: ihkam.url },
+  { name: 'HSI Center for Healthcare Training & Consultation', src: hsi.url, light: true },
+  { name: 'Ihkam Tech Solutions', src: ihkam.url, light: true },
   { name: 'Infugram', src: infugram.url },
-  { name: 'International Students', src: internationalStudents.url },
+  { name: 'International Students', src: internationalStudents.url, light: true },
   { name: 'Johnson Store', src: johnson.url },
-  { name: 'Med Star Medical Center', src: medstar.url },
+  { name: 'Med Star Medical Center', src: medstar.url, light: true },
   { name: 'Menusbee', src: menusbee.url },
   { name: 'Phlog', src: phlog.url },
   { name: 'Rawaf Perfumes', src: rawaf.url },
   { name: 'Revenue X', src: revenueX.url },
-  { name: 'Rihal', src: rihal.url },
+  { name: 'Rihal', src: rihal.url, light: true },
   { name: 'RoadTech', src: roadtech.url },
   { name: 'Roaya', src: roaya.url },
   { name: 'Saabeel', src: saabeel.url },
-  { name: 'SADA Agency', src: sada.url },
+  { name: 'SADA Agency', src: sada.url, light: true },
   { name: 'SAFA Student Services', src: safa.url },
   { name: 'Sanad', src: sanad.url },
   { name: 'Sharry', src: sharry.url },
   { name: 'Shefaa Misr', src: shefaa.url },
-  { name: 'Strevya', src: strevya.url },
+  { name: 'Strevya', src: strevya.url, light: true },
+  { name: 'Sumoue Marketing Agency', src: sumoue.url },
+  { name: 'Surratak', src: surratak.url },
+  { name: 'Talaa Travel', src: talaa.url },
+  { name: 'The Bold Era', src: boldera.url },
+  { name: 'Transition', src: transition.url, light: true },
 ];
 
 export const BrandsMarquee = () => {
@@ -83,14 +94,21 @@ export const BrandsMarquee = () => {
           {loop.map((brand, i) => (
             <div
               key={`${brand.name}-${i}`}
-              className="flex-shrink-0 flex items-center justify-center px-6 md:px-10"
+              className="group flex-shrink-0 flex items-center justify-center px-3 md:px-4"
             >
-              <img
-                src={brand.src}
-                alt={`${brand.name} logo`}
-                loading="lazy"
-                className="h-12 md:h-16 w-auto max-w-[140px] object-contain brightness-0 dark:invert opacity-50 transition-all duration-300 hover:opacity-100 hover:scale-110"
-              />
+              <div
+                className={`flex h-20 w-36 md:h-24 md:w-44 items-center justify-center rounded-2xl border border-border/40 px-4 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-primary/40 group-hover:shadow-[0_18px_40px_-18px_hsl(var(--primary)/0.45)] ${
+                  brand.light ? 'bg-brand-tile-dark' : 'bg-brand-tile'
+                }`}
+              >
+                <img
+                  src={brand.src}
+                  alt={`${brand.name} logo`}
+                  title={brand.name}
+                  loading="lazy"
+                  className="max-h-12 md:max-h-14 w-auto max-w-[120px] object-contain grayscale opacity-60 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
+                />
+              </div>
             </div>
           ))}
         </div>
