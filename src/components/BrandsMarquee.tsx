@@ -19,6 +19,16 @@ import menusbee from '@/assets/brands/menusbee.png.asset.json';
 import phlog from '@/assets/brands/phlog.png.asset.json';
 import rawaf from '@/assets/brands/rawaf.png.asset.json';
 import revenueX from '@/assets/brands/revenue-x.png.asset.json';
+import rihal from '@/assets/brands/rihal.png.asset.json';
+import roadtech from '@/assets/brands/roadtech.png.asset.json';
+import roaya from '@/assets/brands/roaya.png.asset.json';
+import saabeel from '@/assets/brands/saabeel.png.asset.json';
+import sada from '@/assets/brands/sada.png.asset.json';
+import safa from '@/assets/brands/safa.png.asset.json';
+import sanad from '@/assets/brands/sanad.png.asset.json';
+import sharry from '@/assets/brands/sharry.png.asset.json';
+import shefaa from '@/assets/brands/shefaa.png.asset.json';
+import strevya from '@/assets/brands/strevya.png.asset.json';
 
 const brands = [
   { name: '3arrafni', src: arrafni.url },
