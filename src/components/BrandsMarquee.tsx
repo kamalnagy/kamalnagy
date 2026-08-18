@@ -93,14 +93,17 @@ export const BrandsMarquee = () => {
           {loop.map((brand, i) => (
             <div
               key={`${brand.name}-${i}`}
-              className="flex-shrink-0 flex items-center justify-center px-6 md:px-10"
+              className="group flex-shrink-0 flex items-center justify-center px-3 md:px-4"
             >
-              <img
-                src={brand.src}
-                alt={`${brand.name} logo`}
-                loading="lazy"
-                className="h-12 md:h-16 w-auto max-w-[140px] object-contain brightness-0 dark:invert opacity-50 transition-all duration-300 hover:opacity-100 hover:scale-110"
-              />
+              <div className="flex h-20 w-36 md:h-24 md:w-44 items-center justify-center rounded-2xl border border-border/40 bg-card/60 px-4 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-primary/40 group-hover:bg-card group-hover:shadow-[0_18px_40px_-18px_hsl(var(--primary)/0.45)]">
+                <img
+                  src={brand.src}
+                  alt={`${brand.name} logo`}
+                  title={brand.name}
+                  loading="lazy"
+                  className="max-h-12 md:max-h-14 w-auto max-w-[120px] object-contain grayscale opacity-60 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
+                />
+              </div>
             </div>
           ))}
         </div>
