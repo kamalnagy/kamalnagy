@@ -29,6 +29,11 @@ import sanad from '@/assets/brands/sanad.png.asset.json';
 import sharry from '@/assets/brands/sharry.png.asset.json';
 import shefaa from '@/assets/brands/shefaa.png.asset.json';
 import strevya from '@/assets/brands/strevya.png.asset.json';
+import sumoue from '@/assets/brands/sumoue.png.asset.json';
+import surratak from '@/assets/brands/surratak.png.asset.json';
+import talaa from '@/assets/brands/talaa.png.asset.json';
+import boldera from '@/assets/brands/boldera.png.asset.json';
+import transition from '@/assets/brands/transition.png.asset.json';
 
 const brands = [
   { name: '3arrafni', src: arrafni.url },
