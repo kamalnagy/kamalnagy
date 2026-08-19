@@ -119,8 +119,7 @@ export const Experience = () => {
           <div className="flex-shrink-0">
             {exp.logo ? (
               <div className="w-28 h-28 md:w-36 md:h-36 rounded-2xl bg-gradient-to-br from-primary/5 via-background to-primary/10 p-4 shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:shadow-[0_8px_40px_rgb(0,0,0,0.18)] transition-all duration-300 hover:scale-105 border border-primary/20">
-                <img 
-                  src={exp.logo} 
+                <img loading="lazy" decoding="async" src={exp.logo} 
                   alt={`${exp.company} logo`}
                   className="w-full h-full object-contain"
                   style={{ 

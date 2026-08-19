@@ -51,8 +51,7 @@ const ClientsSlider = () => {
               {clients.map((client, idx) => (
                 <SwiperSlide key={idx}>
                   <div className="relative w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden bg-white/10 backdrop-blur-sm border border-white/20 shadow-xl transition-all duration-500 ease-in-out transform hover:scale-105">
-                    <img
-                      src={client.src}
+                    <img loading="lazy" decoding="async" src={client.src}
                       alt={client.alt}
                       className="w-full h-full object-contain p-3 filter brightness-100"
                     />

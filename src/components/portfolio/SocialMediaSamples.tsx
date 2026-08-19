@@ -115,11 +115,9 @@ export const SocialMediaSamples = () => {
             <SwiperSlide key={index}>
               <div className="group relative overflow-hidden rounded-xl bg-card border border-border transition-all duration-300 hover:shadow-xl hover:scale-[1.02]">
                 <div className="aspect-square relative overflow-hidden bg-muted">
-                  <img
-                    src={post.image}
+                  <img loading="lazy" decoding="async" src={post.image}
                     alt={post.caption}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                    loading="lazy"
                   />
                   {post.platform && (
                     <div className="absolute top-2 right-2 bg-background/90 backdrop-blur-sm px-2 py-1 rounded-md">

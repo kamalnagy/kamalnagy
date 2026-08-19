@@ -90,25 +90,20 @@ export const BrandsMarquee = () => {
         <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-r from-background to-transparent" />
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-l from-background to-transparent" />
 
-        <div className="flex w-max animate-brand-marquee hover:[animation-play-state:paused]">
+        <div className="flex w-max animate-brand-marquee hover:[animation-play-state:paused] will-change-transform">
           {loop.map((brand, i) => (
             <div
               key={`${brand.name}-${i}`}
-              className="group flex-shrink-0 flex items-center justify-center px-3 md:px-4"
+              className="group flex-shrink-0 flex h-20 w-32 md:h-24 md:w-40 items-center justify-center px-3 md:px-5"
             >
-              <div
-                className={`flex h-20 w-36 md:h-24 md:w-44 items-center justify-center rounded-2xl border border-border/40 px-4 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-primary/40 group-hover:shadow-[0_18px_40px_-18px_hsl(var(--primary)/0.45)] ${
-                  brand.light ? 'bg-brand-tile-dark' : 'bg-brand-tile'
-                }`}
-              >
-                <img
-                  src={brand.src}
-                  alt={`${brand.name} logo`}
-                  title={brand.name}
-                  loading="lazy"
-                  className="max-h-12 md:max-h-14 w-auto max-w-[120px] object-contain grayscale opacity-60 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
-                />
-              </div>
+              <img
+                src={brand.src}
+                alt={`${brand.name} logo`}
+                title={brand.name}
+                loading="lazy"
+                decoding="async"
+                className="max-h-12 md:max-h-14 w-auto max-w-[120px] object-contain grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
+              />
             </div>
           ))}
         </div>

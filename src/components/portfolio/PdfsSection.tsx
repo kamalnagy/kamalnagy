@@ -46,10 +46,8 @@ export const PdfsSection = () => {
               aria-label={`Open ${pdf.title} PDF`}
               className={`relative block aspect-[16/10] overflow-hidden ${pdf.logoBgClass ?? 'bg-muted'}`}
             >
-              <img
-                src={pdf.logo}
+              <img loading="lazy" decoding="async" src={pdf.logo}
                 alt={`${pdf.company} cover — click to open PDF`}
-                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               {/* Hover overlay with view-pdf hint */}

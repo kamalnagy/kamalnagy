@@ -43,18 +43,10 @@ export const Portfolio = () => {
         <div className="space-y-12 md:space-y-16">
           {portfolioSections.map((section, sectionIndex) => (
             <div key={sectionIndex}>
-              {sectionIndex === 0 && (
-                <div className="space-y-6 md:space-y-8">
-                  <div className="text-center px-4">
-                    <h3 className="text-xl md:text-3xl font-bold text-foreground mb-2 md:mb-4">{section.title}</h3>
-                    <p className="text-muted-foreground text-sm md:text-lg">{section.description}</p>
-                  </div>
-                  <FeaturedWorkStack />
-                </div>
-              )}
+              {sectionIndex === 0 && <FeaturedWorkStack />}
               <PortfolioSection
-                title={sectionIndex === 0 ? "" : section.title}
-                description={sectionIndex === 0 ? "" : section.description}
+                title={section.title}
+                description={section.description}
                 items={section.items}
                 gridClassName={sectionGridLayouts[sectionIndex]}
                 imageSize={sectionIndex === 1 ? 'medium' : 'small'}

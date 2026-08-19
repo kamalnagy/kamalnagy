@@ -90,11 +90,8 @@ export const AcademicSamples = () => {
               {images.map((img, idx) => (
                 <CarouselItem key={idx} className="basis-full">
                   <figure className="relative overflow-hidden rounded-lg border border-border bg-background">
-                    <img
-                      src={img.src}
+                    <img loading="lazy" decoding="async" src={img.src}
                       alt={img.alt}
-                      loading="lazy"
-                      decoding="async"
                       className="w-full h-[260px] md:h-[360px] lg:h-[420px] object-contain transition-transform duration-300 hover:scale-[1.02]"
                     />
                   </figure>
