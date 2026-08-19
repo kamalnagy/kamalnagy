@@ -67,8 +67,7 @@ export const Clients = () => {
               
               {/* Logo container */}
               <div className="relative z-10 w-full h-full flex items-center justify-center p-1">
-                <img
-                  src={client.logo}
+                <img loading="lazy" decoding="async" src={client.logo}
                   alt={client.name}
                   className="max-w-full max-h-full object-contain filter brightness-90 group-hover:brightness-110 transition-all duration-300"
                 />

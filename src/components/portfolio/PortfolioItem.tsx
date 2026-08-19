@@ -68,8 +68,7 @@ export const PortfolioItem = ({ title, description, link, logo, imageSize = 'sma
       className="group relative overflow-hidden rounded-3xl cursor-pointer transform hover:scale-105 transition-all duration-500 block min-h-[260px] md:min-h-[280px] shadow-lg hover:shadow-2xl"
     >
       {/* Full-bleed background image */}
-      <img
-        src={logo}
+      <img loading="lazy" decoding="async" src={logo}
         alt={title}
         className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
       />

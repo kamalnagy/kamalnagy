@@ -90,8 +90,7 @@ export const AcademicSamples = () => {
               {images.map((img, idx) => (
                 <CarouselItem key={idx} className="basis-full">
                   <figure className="relative overflow-hidden rounded-lg border border-border bg-background">
-                    <img
-                      src={img.src}
+                    <img loading="lazy" decoding="async" src={img.src}
                       alt={img.alt}
                       loading="lazy"
                       decoding="async"

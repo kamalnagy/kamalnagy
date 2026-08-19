@@ -67,8 +67,7 @@ export const SEOResults = () => {
         <Card className="overflow-hidden border-border/50">
           <CardContent className="p-0">
             <div className="relative">
-              <img 
-                src="/lovable-uploads/masrschools-dashboard-latest.png"
+              <img loading="lazy" decoding="async" src="/lovable-uploads/masrschools-dashboard-latest.png"
                 alt="Masrschools Google Search Console Performance Dashboard showing 3-month growth"
                 className="w-full h-auto"
               />

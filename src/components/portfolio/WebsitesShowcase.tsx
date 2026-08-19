@@ -37,8 +37,7 @@ export const WebsitesShowcase = () => {
 
             {/* Screenshot */}
             <div className="aspect-video overflow-hidden bg-muted">
-              <img
-                src={site.screenshot}
+              <img loading="lazy" decoding="async" src={site.screenshot}
                 alt={`${site.name} website screenshot`}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />

@@ -31,8 +31,7 @@ export const SEOArchives = ({ archives }: SEOArchivesProps) => {
             className="group liquid-glass liquid-glass-hover rounded-3xl p-6 md:p-8 cursor-pointer transform"
           >
             <div className="w-16 h-16 md:w-20 md:h-20 liquid-button rounded-full flex items-center justify-center mb-4 md:mb-6 group-hover:scale-110 transition-transform duration-500 p-3 mx-auto">
-              <img
-                src={archive.logo}
+              <img loading="lazy" decoding="async" src={archive.logo}
                 alt={archive.title}
                 className="w-full h-full object-contain"
               />
