@@ -4,9 +4,10 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Suspense, lazy } from "react";
 import Index from "./pages/Index";
-import CV from "./pages/CV";
-import NotFound from "./pages/NotFound";
+const CV = lazy(() => import("./pages/CV"));
+const NotFound = lazy(() => import("./pages/NotFound"));
 
 const queryClient = new QueryClient();
 
