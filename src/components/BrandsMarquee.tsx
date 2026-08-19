@@ -78,7 +78,7 @@ export const BrandsMarquee = () => {
   const loop = [...brands, ...brands];
 
   return (
-    <section className="py-10 md:py-14 border-y border-border/50 bg-muted/20 overflow-hidden">
+    <section className="py-10 md:py-14 border-y border-border/50 bg-muted/50 overflow-hidden">
       <div className="container mx-auto px-6 mb-6 md:mb-8 text-center">
         <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-muted-foreground">
           Brands I&apos;ve Written For
