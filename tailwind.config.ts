@@ -113,7 +113,7 @@ export default {
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
-				'brand-marquee': 'brand-marquee 32s linear infinite'
+				'brand-marquee': 'brand-marquee 90s linear infinite'
 			}
 
 		}
