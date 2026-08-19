@@ -48,7 +48,6 @@ export const PdfsSection = () => {
             >
               <img loading="lazy" decoding="async" src={pdf.logo}
                 alt={`${pdf.company} cover — click to open PDF`}
-                loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
               {/* Hover overlay with view-pdf hint */}
