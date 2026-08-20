@@ -46,7 +46,7 @@ export const Experience = () => {
     {
       company: "Freelance",
       logo: freelanceLogo,
-      role: "Legal & Economic Researcher",
+      role: "Freelancer Academic Legal Researcher",
       employmentType: "Freelance",
       period: "07/2019 - Present",
       duration: calculateDuration("Jul 2019"),

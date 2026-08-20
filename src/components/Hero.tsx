@@ -82,7 +82,7 @@ export const Hero = () => {
               </span>
               <br />
               <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent font-medium">
-                Independent Legal Academic Researcher
+                Freelancer Academic Legal Researcher
               </span>
             </p>
             
