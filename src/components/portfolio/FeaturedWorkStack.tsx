@@ -28,11 +28,11 @@ const featuredWorks: FeaturedWork[] = [
     subtitle: "Full website content structure & SEO"
   },
   {
-    title: "Phlog — Top-Performing Lead Gen Ad",
-    link: "#video-ads",
+    title: "Phlog — Top-Performing Lead",
+    link: "https://drive.google.com/file/d/1I4ZWXjbVzUjJPWA0FlANQMNoM3jqcj3P/view",
     image: phlogCover,
-    category: "Video Ad Script",
-    subtitle: "Concept & script that drove qualified leads"
+    category: "SERVICE PRICE PDF",
+    subtitle: "Concept service pdf that drove qualified leads"
   },
   {
     title: "Almugasab — Company Profile",
