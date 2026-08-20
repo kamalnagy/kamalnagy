@@ -95,18 +95,17 @@ export const About = () => {
         </div>
 
         {/* Pillars */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
           {pillars.map((item, index) => (
             <div
               key={item.title}
-              className="group relative bg-card/50 backdrop-blur-lg rounded-2xl p-7 border border-border transition-all duration-300 hover:bg-card/70 hover:-translate-y-1 hover:shadow-2xl hover:border-accent"
+              className="group flex items-center gap-4 bg-card/50 backdrop-blur-lg rounded-xl px-5 py-4 border border-border transition-all duration-300 hover:bg-card/70 hover:-translate-y-1 hover:shadow-2xl hover:border-accent"
               style={{ animationDelay: `${index * 120}ms` }}
             >
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-gradient-start to-gradient-middle flex items-center justify-center mb-5 transition-transform duration-300 group-hover:scale-110">
-                <item.icon className="w-6 h-6 text-background" />
+              <div className="shrink-0 w-10 h-10 rounded-lg bg-gradient-to-br from-gradient-start to-gradient-middle flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                <item.icon className="w-5 h-5 text-background" />
               </div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">{item.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">{item.description}</p>
+              <h3 className="text-sm font-semibold text-foreground leading-tight">{item.title}</h3>
             </div>
           ))}
         </div>
