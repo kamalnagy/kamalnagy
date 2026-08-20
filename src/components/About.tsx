@@ -1,13 +1,12 @@
 
 import React from 'react';
-import { Search, LayoutTemplate, MessageSquareQuote, BarChart3, Sparkles, Languages } from 'lucide-react';
+import { Search, LayoutTemplate, MessageSquareQuote, BarChart3, Sparkles, PenTool, Clapperboard, MousePointerClick } from 'lucide-react';
 
 export const About = () => {
   const stats = [
     { value: '2.4+', label: 'Years in SEO & Web Content' },
     { value: '5+', label: 'Years Legal & Economic Research' },
     { value: '40+', label: 'Brands & Businesses Served' },
-    { value: '2', label: 'Languages (AR / EN)' },
   ];
 
   const pillars = [
@@ -24,10 +23,28 @@ export const About = () => {
         'Website content structuring, search-intent mapping, messaging frameworks, editorial calendars and CRO-driven copy.',
     },
     {
+      icon: PenTool,
+      title: 'Copywriting',
+      description:
+        'Persuasive, clear copy for ads, landing pages, product descriptions, social content and brand communications that drive action.',
+    },
+    {
+      icon: MousePointerClick,
+      title: 'UX Content',
+      description:
+        'User-centered microcopy, landing page content, product flows and interface language built for clarity, guidance and conversion.',
+    },
+    {
+      icon: Clapperboard,
+      title: 'Scriptwriting',
+      description:
+        'Motion-graphics scripts, video storyboards, ad scripts and campaign narratives that capture attention and deliver a message.',
+    },
+    {
       icon: MessageSquareQuote,
       title: 'Brand & Campaign Messaging',
       description:
-        'Tone-of-voice development, campaign messaging, ad & video scriptwriting, company profiles and brand documents.',
+        'Tone-of-voice development, campaign messaging, company profiles and brand documents that define how a brand speaks.',
     },
     {
       icon: BarChart3,
@@ -37,15 +54,9 @@ export const About = () => {
     },
     {
       icon: Sparkles,
-      title: 'UX Content & Scriptwriting',
+      title: 'Research-Driven Accuracy',
       description:
-        'Landing pages, product copy, motion-graphics scripts and video storyboards built for clarity and conversion.',
-    },
-    {
-      icon: Languages,
-      title: 'Bilingual Research Background',
-      description:
-        'Arabic & English content backed by legal and economic research discipline — accurate, structured and credible.',
+        'A legal and economic research background that brings structure, credibility and depth to every piece of content.',
     },
   ];
 
@@ -60,16 +71,16 @@ export const About = () => {
             </span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            SEO & Web Content Specialist, scriptwriter and brand-messaging writer with over 2 years of experience
-            delivering structured, performance-driven content across websites and digital campaigns. I build website
-            content structures, write SEO-optimized web copy, and develop clear brand messaging across landing pages,
-            ad scripts, company profiles and social media content plans — collaborating with marketing and creative
-            teams to support organic growth, campaign performance and conversion goals.
+            I believe the right words do not just inform — they move people. Over the past 2.4+ years in SEO and web content,
+            built on 5+ years of legal and economic research, I have shaped content for more than 40 brands across websites,
+            campaigns and digital platforms. I have helped businesses find their voice, structure their message and turn
+            visitors into believers. From search-optimized website content and persuasive copy to video scripts and brand
+            messaging, every project I take on is treated as a story — and every story is designed to perform.
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto mb-14">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto mb-14">
           {stats.map((stat) => (
             <div
               key={stat.label}
@@ -84,7 +95,7 @@ export const About = () => {
         </div>
 
         {/* Pillars */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
           {pillars.map((item, index) => (
             <div
               key={item.title}
