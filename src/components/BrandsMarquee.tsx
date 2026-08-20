@@ -94,7 +94,7 @@ export const BrandsMarquee = () => {
           {loop.map((brand, i) => (
             <div
               key={`${brand.name}-${i}`}
-              className="group flex-shrink-0 flex h-20 w-32 md:h-24 md:w-40 items-center justify-center px-3 md:px-5 rounded-2xl transition-all duration-300 hover:bg-white/10 hover:ring-1 hover:ring-white/25 hover:shadow-[0_0_30px_rgba(255,255,255,0.12)]"
+              className="group flex-shrink-0 flex h-20 w-32 md:h-24 md:w-40 items-center justify-center px-3 md:px-5"
             >
               <img
                 src={brand.src}
@@ -102,7 +102,7 @@ export const BrandsMarquee = () => {
                 title={brand.name}
                 loading="lazy"
                 decoding="async"
-                className="max-h-12 md:max-h-14 w-auto max-w-[120px] object-contain grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 group-hover:drop-shadow-[0_0_8px_rgba(255,255,255,0.6)] group-hover:drop-shadow-[0_0_16px_rgba(255,255,255,0.35)]"
+                className="max-h-12 md:max-h-14 w-auto max-w-[120px] object-contain grayscale opacity-70 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
               />
             </div>
           ))}
