@@ -71,11 +71,11 @@ export const About = () => {
             </span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            I believe the right words do not just inform — they move people. Over the past 2.4+ years in SEO and web content,
+            I believe the right words do not just inform they move people. Over the past 2.4+ years in SEO and web content,
             built on 5+ years of legal and economic research, I have shaped content for more than 40 brands across websites,
             campaigns and digital platforms. I have helped businesses find their voice, structure their message and turn
             visitors into believers. From search-optimized website content and persuasive copy to video scripts and brand
-            messaging, every project I take on is treated as a story — and every story is designed to perform.
+            messaging, every project I take on is treated as a story and every story is designed to perform.
           </p>
         </div>
 
