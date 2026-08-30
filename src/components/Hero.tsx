@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { ArrowDown, Linkedin, FileText, Award } from 'lucide-react';
+import { ArrowDown, Linkedin, FileText, Award, Eye } from 'lucide-react';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -124,36 +124,47 @@ export const Hero = () => {
               With over 5 years of experience in academic legal research and more than 2.4 years in SEO-driven content creation.
             </p>
             </div>
-            <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 flex-wrap">
-              <a 
-                href="#contact" 
-                className="bg-gradient-to-r from-gradient-start to-gradient-middle text-background px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl"
-              >
-                Get In Touch
-              </a>
-              <a 
-                href="https://linkedin.com/in/kamal-nagy" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-accent text-accent px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-accent-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
-              >
-                <Linkedin className="w-5 h-5" />
-                <span>LinkedIn</span>
-              </a>
-              <Link
-                to="/cv"
-                className="border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
-              >
-                <FileText className="w-5 h-5" />
-                <span>View CV</span>
-              </Link>
-              <button
-                onClick={() => setRecommendationsOpen(true)}
-                className="border-2 border-secondary text-secondary px-6 py-3 rounded-full font-semibold hover:bg-secondary hover:text-secondary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2 mt-4 sm:mt-0"
-              >
-                <Award className="w-5 h-5" />
-                <span>Recommendations</span>
-              </button>
+            <div className="flex flex-col items-center lg:items-start space-y-4">
+              <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 flex-wrap">
+                <Link
+                  to="/cv"
+                  className="border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
+                >
+                  <FileText className="w-5 h-5" />
+                  <span>View CV</span>
+                </Link>
+                <a 
+                  href="#top-work" 
+                  className="border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
+                >
+                  <Eye className="w-5 h-5" />
+                  <span>View Top Work</span>
+                </a>
+              </div>
+              <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 flex-wrap">
+                <a 
+                  href="#contact" 
+                  className="bg-gradient-to-r from-gradient-start to-gradient-middle text-background px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  Get In Touch
+                </a>
+                <a 
+                  href="https://linkedin.com/in/kamal-nagy" 
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="border-2 border-accent text-accent px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-accent-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
+                >
+                  <Linkedin className="w-5 h-5" />
+                  <span>LinkedIn</span>
+                </a>
+                <button
+                  onClick={() => setRecommendationsOpen(true)}
+                  className="border-2 border-secondary text-secondary px-6 py-3 rounded-full font-semibold hover:bg-secondary hover:text-secondary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
+                >
+                  <Award className="w-5 h-5" />
+                  <span>Recommendations</span>
+                </button>
+              </div>
             </div>
           </div>
         </div>
