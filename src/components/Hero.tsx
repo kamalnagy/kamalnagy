@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { RecommendationsModal } from '@/components/RecommendationsModal';
+import profilePhoto from '@/assets/kamal-profile-2026.png.asset.json';
 
 export const Hero = () => {
   const textMeasureRef = useRef<HTMLDivElement>(null);
@@ -56,7 +57,7 @@ export const Hero = () => {
             >
               <div className="w-full h-full rounded-2xl overflow-hidden bg-background">
                 <img
-                  src="/lovable-uploads/f9c8de36-3057-4354-9f75-c0468fc3f85e.png"
+                  src={profilePhoto.url}
                   alt="Kamal Nagy"
                   className="w-full h-full object-cover"
                 />
