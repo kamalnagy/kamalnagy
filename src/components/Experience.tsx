@@ -30,7 +30,7 @@ export const Experience = () => {
     {
       company: "Devolum",
       logo: devolumLogo,
-      role: "SEO Content Creator",
+      role: "SEO Content Writer",
       employmentType: "Full-time",
       period: "04/2024 - 09/2025",
       duration: "1 yr 6 mos",
