@@ -11,7 +11,7 @@ export const Experience = () => {
     {
       company: "Azzrk",
       logo: azzrkLogo,
-      role: "SEO Content Writer & Content Creator",
+      role: "Content Creator",
       employmentType: "Full-time",
       period: "09/2025 - Present",
       duration: calculateDuration("Sep 2025"),
