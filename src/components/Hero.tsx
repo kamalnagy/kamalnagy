@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { RecommendationsModal } from '@/components/RecommendationsModal';
+import profilePhoto from '@/assets/kamal-profile-2026.png.asset.json';
 
 export const Hero = () => {
   const textMeasureRef = useRef<HTMLDivElement>(null);
