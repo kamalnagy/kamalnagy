@@ -135,7 +135,7 @@ export const Hero = () => {
                 </Link>
                 <a 
                   href="#top-work" 
-                  className="bg-gradient-to-r from-gold-frame to-gold-frame-light text-primary-foreground px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+                  className="border-2 border-gold-frame text-gold-frame opacity-60 px-6 py-3 rounded-full font-semibold hover:opacity-100 hover:bg-gold-frame hover:text-primary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
                 >
                   <Eye className="w-5 h-5" />
                   <span>View Top Work</span>
