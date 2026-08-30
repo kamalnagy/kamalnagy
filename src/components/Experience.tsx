@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar, MapPin, Building2 } from 'lucide-react';
+import streyvaLogo from '@/assets/company-logos/streyva-logo.jpg.asset.json';
 import azzrkLogo from '@/assets/company-logos/azzrk-latest.png';
 import devolumLogo from '@/assets/company-logos/devolum-latest.png';
 import freelanceLogo from '@/assets/company-logos/freelance-latest.png';
@@ -8,6 +9,23 @@ import lawLogo from '@/assets/company-logos/law-firm-new.png';
 
 export const Experience = () => {
   const mainExperiences = [
+    {
+      company: "Streyva Marketing Agency",
+      logo: streyvaLogo.url,
+      role: "SEO Content Writer",
+      employmentType: "Part-time",
+      period: "06/2026 - Present",
+      duration: calculateDuration("Jun 2026"),
+      location: "Remote",
+      responsibilities: [
+        "Write SEO-optimized content in both Arabic and English across websites, blogs, e-commerce platforms, and digital brand assets",
+        "Develop website content, informational pages, policy pages, and SEO blog articles structured around user search intent and business objectives",
+        "Create persuasive product and category descriptions for e-commerce brands while maintaining clear brand positioning and conversion-focused messaging",
+        "Conduct keyword research and apply on-page SEO practices, including content structuring, metadata optimization, readability, keyword placement, and internal linking",
+        "Collaborate with designers and marketing teams to ensure content aligns with brand identity, campaign direction, and the overall digital experience"
+      ],
+      skills: ["SEO Content Writing", "Arabic & English Content", "Keyword Research", "Search Intent", "On-Page SEO", "Website Content", "E-commerce Content", "Product Descriptions", "Content Optimization", "Internal Linking"]
+    },
     {
       company: "Azzrk",
       logo: azzrkLogo,
