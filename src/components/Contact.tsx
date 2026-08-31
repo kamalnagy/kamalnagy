@@ -11,7 +11,7 @@ export const Contact = () => {
             Let's <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent">Connect</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto px-2">
-            Ready to create powerful content that drives results? Let's discuss your next project.
+             Have a role, project, or brand that could use right content? Let’s connect
           </p>
         </div>
         
