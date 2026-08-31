@@ -106,6 +106,10 @@ export const Contact = () => {
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
                     <span className="text-sm md:text-base">Research-Driven Bilingual Content</span>
                   </li>
+                  <li className="flex items-start space-x-2 md:space-x-3">
+                    <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
+                    <span className="text-sm md:text-base">Social Media & Campaign Copywriting</span>
+                  </li>
                 </ul>
               </div>
             </div>
