@@ -5,7 +5,7 @@ import { SEOArchives } from './portfolio/SEOArchives';
 import { SEOResults } from './portfolio/SEOResults';
 import { FeaturedWorkStack } from './portfolio/FeaturedWorkStack';
 import { ReviewsSection } from './portfolio/ReviewsSection';
-import ClientsSlider from '@/components/ClientsSlider';
+
 import { portfolioSections, seoArchives } from './portfolio/portfolioData';
 import { AcademicSamples } from './portfolio/AcademicSamples';
 import { SocialMediaSamples } from './portfolio/SocialMediaSamples';
@@ -56,8 +56,6 @@ export const Portfolio = () => {
           ))}
 
           <SEOArchives archives={seoArchives} />
-          
-          <ClientsSlider />
           
           <SocialMediaSamples />
 
