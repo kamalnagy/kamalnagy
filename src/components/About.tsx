@@ -4,8 +4,8 @@ import { Search, LayoutTemplate, MessageSquareQuote, BarChart3, Sparkles, PenToo
 
 export const About = () => {
   const stats = [
-    { value: '2.4+', label: 'Years in SEO & Web Content' },
-    { value: '5+', label: 'Years Legal & Economic Research' },
+    { value: '3+', label: 'Years in SEO & Content Creation ' },
+    { value: '7+', label: 'Years Legal & Economic Research' },
     { value: '40+', label: 'Brands & Businesses Served' },
   ];
 
@@ -71,11 +71,8 @@ export const About = () => {
             </span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            I believe the right words do not just inform they move people. Over the past 2.4+ years in SEO and web content,
-            built on 5+ years of legal and economic research, I have shaped content for more than 40 brands across websites,
-            campaigns and digital platforms. I have helped businesses find their voice, structure their message and turn
-            visitors into believers. From search-optimized website content and persuasive copy to video scripts and brand
-            messaging, every project I take on is treated as a story and every story is designed to perform.
+            I believe the right words do more than inform .. they move people
+            I work at the intersection of SEO, storytelling, and research, creating Arabic and English content that is built to be found, understood, and acted on. With 2+ years in SEO and web content, backed by 7+ years of legal and economic research, I bring structure, strategy, and depth to everything from websites and e-commerce content to campaigns, scripts, and brand messaging.
           </p>
         </div>
 
