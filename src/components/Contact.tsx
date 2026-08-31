@@ -88,23 +88,23 @@ export const Contact = () => {
                 <ul className="space-y-3 md:space-y-4 text-muted-foreground">
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">SEO Content Creation</span>
+                    <span className="text-sm md:text-base">SEO & Web Content Writing</span>
                   </li>
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">Social Media Campaign Management</span>
+                    <span className="text-sm md:text-base">Content Strategy & Website Structure</span>
                   </li>
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">Legal Academic Research</span>
+                    <span className="text-sm md:text-base">E-commerce & Conversion Copy</span>
                   </li>
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">Bilingual Content Writing</span>
+                    <span className="text-sm md:text-base">Scriptwriting & Brand Messaging</span>
                   </li>
                   <li className="flex items-start space-x-2 md:space-x-3">
                     <div className="w-2 h-2 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full mt-1.5 md:mt-2 flex-shrink-0"></div>
-                    <span className="text-sm md:text-base">Keyword Optimization & Analytics</span>
+                    <span className="text-sm md:text-base">Research-Driven Bilingual Content</span>
                   </li>
                 </ul>
               </div>
