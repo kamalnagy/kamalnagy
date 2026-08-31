@@ -120,8 +120,7 @@ export const Hero = () => {
             
             <p className="text-base md:text-lg text-muted-foreground max-w-2xl mx-auto lg:mx-0 mb-8 leading-relaxed">
               "The right words, at the right time, can open doors, change minds, and build empires." 
-              As a bilingual SEO content writer and legal academic researcher, I believe in the transformative power of word not just to communicate, but to connect.
-              With over 5 years of experience in academic legal research and more than 2.4 years in SEO-driven content creation.
+              As a bilingual SEO content writer and legal researcher, I believe in the power of words not just to communicate, but to connect, influence, and drive action. With 2+ years in SEO-driven content and 7+ years in legal and academic research, I combine creativity, strategy, and research to create content with purpose.
             </p>
             </div>
             <div className="flex flex-col items-center lg:items-start space-y-4">
