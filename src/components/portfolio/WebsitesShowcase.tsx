@@ -8,7 +8,7 @@ export const WebsitesShowcase = () => {
     <div className="space-y-6 md:space-y-8">
       <div className="text-center px-4">
         <h3 className="text-xl md:text-3xl font-bold text-foreground mb-2 md:mb-4">
-          Websites I Built
+          Websites I Crafted Content For
         </h3>
         <p className="text-muted-foreground text-sm md:text-lg">
           Full content structure and SEO optimization for these platforms
