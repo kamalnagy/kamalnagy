@@ -71,7 +71,7 @@ export const About = () => {
             </span>
           </h2>
           <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-            I believe the right words do more than inform .. they move people
+            I believe the right words do more than inform .. they move people.
             I work at the intersection of SEO, storytelling, and research, creating Arabic and English content that is built to be found, understood, and acted on. With 2+ years in SEO and web content, backed by 7+ years of legal and economic research, I bring structure, strategy, and depth to everything from websites and e-commerce content to campaigns, scripts, and brand messaging.
           </p>
         </div>
