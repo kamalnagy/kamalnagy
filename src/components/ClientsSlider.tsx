@@ -20,15 +20,6 @@ const ClientsSlider = () => {
   return (
     <section className="py-6 md:py-8 px-4 md:px-6 bg-muted/10">
       <div className="container mx-auto max-w-5xl">
-        <div className="text-center mb-6 md:mb-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2 md:mb-3 animate-fade-in">
-            <span className="bg-gradient-to-r from-gradient-start via-gradient-middle to-gradient-end bg-clip-text text-transparent animate-gradient">Accounts</span>
-          </h2>
-          <p className="text-muted-foreground text-sm max-w-xl mx-auto animate-fade-in animation-delay-1000 px-4">
-            Accounts I've Worked on Diverse Content Creation Across Blogs & social media
-          </p>
-          <div className="w-10 md:w-12 h-1 bg-gradient-to-r from-gradient-start to-gradient-end mx-auto mt-2 md:mt-3 rounded-full animate-scale-in animation-delay-2000"></div>
-        </div>
 
         <div className="relative flex justify-center items-center min-h-[200px]">
           <div className="w-full max-w-6xl mx-8">
