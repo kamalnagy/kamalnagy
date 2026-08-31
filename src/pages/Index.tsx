@@ -1,10 +1,10 @@
-
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { Hero } from '@/components/Hero';
 import { BrandsMarquee } from '@/components/BrandsMarquee';
 import { About } from '@/components/About';
-import { Portfolio } from '@/components/Portfolio';
-import { Contact } from '@/components/Contact';
+
+const Portfolio = lazy(() => import('@/components/Portfolio').then(m => ({ default: m.Portfolio })));
+const Contact = lazy(() => import('@/components/Contact').then(m => ({ default: m.Contact })));
 
 const Index = () => {
   return (
@@ -13,8 +13,10 @@ const Index = () => {
       <BrandsMarquee />
       <About />
 
-      <Portfolio />
-      <Contact />
+      <Suspense fallback={<div className="min-h-[40vh] bg-background" />}>
+        <Portfolio />
+        <Contact />
+      </Suspense>
     </div>
   );
 };
