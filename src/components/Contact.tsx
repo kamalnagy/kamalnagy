@@ -32,28 +32,16 @@ export const Contact = () => {
                       </a>
                     </div>
                   </div>
-                  
-                  <div className="flex items-center space-x-3 md:space-x-4">
-                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full flex items-center justify-center flex-shrink-0">
-                      <Phone className="w-5 h-5 md:w-6 md:h-6 text-background" />
-                    </div>
-                    <div className="min-w-0 flex-1">
-                      <p className="text-muted-foreground text-xs md:text-sm">Phone</p>
-                      <a href="tel:+201554044072" className="text-foreground hover:text-primary transition-colors text-sm md:text-base">
-                        +201554044072
-                      </a>
-                    </div>
-                  </div>
-                  
+
                   <div className="flex items-center space-x-3 md:space-x-4">
                     <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full flex items-center justify-center flex-shrink-0">
                       <MessageCircle className="w-5 h-5 md:w-6 md:h-6 text-background" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="text-muted-foreground text-xs md:text-sm">WhatsApp</p>
-                      <a 
-                        href="https://wa.me/201554044072" 
-                        target="_blank" 
+                      <a
+                        href="https://wa.me/201554044072"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-primary transition-colors flex items-center space-x-1 text-sm md:text-base"
                       >
@@ -62,20 +50,37 @@ export const Contact = () => {
                       </a>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-center space-x-3 md:space-x-4">
                     <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full flex items-center justify-center flex-shrink-0">
                       <Linkedin className="w-5 h-5 md:w-6 md:h-6 text-background" />
                     </div>
                     <div className="min-w-0 flex-1">
                       <p className="text-muted-foreground text-xs md:text-sm">LinkedIn</p>
-                      <a 
-                        href="https://linkedin.com/in/kamal-nagy" 
-                        target="_blank" 
+                      <a
+                        href="https://linkedin.com/in/kamal-nagy"
+                        target="_blank"
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-primary transition-colors flex items-center space-x-1 text-sm md:text-base"
                       >
                         <span className="break-all">kamal-nagy</span>
+                        <ExternalLink className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
+                      </a>
+                    </div>
+                  </div>
+
+                  <div className="flex items-center space-x-3 md:space-x-4">
+                    <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-r from-gradient-start to-gradient-middle rounded-full flex items-center justify-center flex-shrink-0">
+                      <FileDown className="w-5 h-5 md:w-6 md:h-6 text-background" />
+                    </div>
+                    <div className="min-w-0 flex-1">
+                      <p className="text-muted-foreground text-xs md:text-sm">Download CV</p>
+                      <a
+                        href={cvAsset.url}
+                        download="CV_Kamal_Nagy_2026.pdf"
+                        className="text-foreground hover:text-primary transition-colors flex items-center space-x-1 text-sm md:text-base"
+                      >
+                        <span>Get my CV</span>
                         <ExternalLink className="w-3 h-3 md:w-4 md:h-4 flex-shrink-0" />
                       </a>
                     </div>
