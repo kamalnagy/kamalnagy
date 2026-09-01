@@ -141,8 +141,8 @@ export const Hero = () => {
                 >
                   Get In Touch
                 </a>
-                <a 
-                  href="https://linkedin.com/in/kamal-nagy" 
+                <a
+                  href="https://www.linkedin.com/in/kamalnagy/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-2 border-accent text-accent px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-accent-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
