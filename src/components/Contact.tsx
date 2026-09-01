@@ -58,7 +58,7 @@ export const Contact = () => {
                     <div className="min-w-0 flex-1">
                       <p className="text-muted-foreground text-xs md:text-sm">LinkedIn</p>
                       <a
-                        href="https://linkedin.com/in/kamal-nagy"
+                        href="https://www.linkedin.com/in/kamalnagy/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-foreground hover:text-primary transition-colors flex items-center space-x-1 text-sm md:text-base"
