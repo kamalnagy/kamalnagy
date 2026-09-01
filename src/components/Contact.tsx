@@ -1,6 +1,6 @@
-
 import React from 'react';
-import { Mail, Phone, MapPin, Linkedin, ExternalLink, MessageCircle } from 'lucide-react';
+import { Mail, Linkedin, ExternalLink, MessageCircle, FileDown } from 'lucide-react';
+import cvAsset from '@/assets/CV_Kamal_Nagy_2026.pdf.asset.json';
 
 export const Contact = () => {
   return (
