@@ -145,6 +145,7 @@ export const Hero = () => {
                   href="https://www.linkedin.com/in/kamalnagy/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label="Visit Kamal Nagy's LinkedIn profile (opens in new tab)"
                   className="border-2 border-accent text-accent px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-accent-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
                 >
                   <Linkedin className="w-5 h-5" />
