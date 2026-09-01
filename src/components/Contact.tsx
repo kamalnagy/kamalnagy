@@ -124,7 +124,7 @@ export const Contact = () => {
         
         <div className="text-center mt-8 md:mt-12 px-4">
           <p className="text-muted-foreground text-sm md:text-base">
-            © 2024 Kamal Nagy. Crafted with passion for great content.
+            © {new Date().getFullYear()} Kamal Nagy. Crafted with passion for great content.
           </p>
         </div>
       </div>
