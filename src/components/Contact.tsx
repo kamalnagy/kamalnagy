@@ -61,6 +61,7 @@ export const Contact = () => {
                         href="https://www.linkedin.com/in/kamalnagy/"
                         target="_blank"
                         rel="noopener noreferrer"
+                        aria-label="Visit Kamal Nagy's LinkedIn profile (opens in new tab)"
                         className="text-foreground hover:text-primary transition-colors flex items-center space-x-1 text-sm md:text-base"
                       >
                         <span className="break-all">kamal-nagy</span>
