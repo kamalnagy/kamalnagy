@@ -125,6 +125,11 @@ export const About = () => {
           ))}
         </div>
       </div>
+
+      <RecommendationsModal
+        open={recommendationsOpen}
+        onOpenChange={setRecommendationsOpen}
+      />
     </section>
   );
 };
