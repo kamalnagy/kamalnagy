@@ -1,17 +1,15 @@
 
-import React, { useEffect, useRef, useState } from 'react';
-import { ArrowDown, Linkedin, FileText, Award, Eye } from 'lucide-react';
+import React, { useEffect, useRef } from 'react';
+import { Linkedin, FileText, Eye } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
-import { RecommendationsModal } from '@/components/RecommendationsModal';
 import profilePhoto from '@/assets/kamal-profile-2026.png.asset.json';
 
 export const Hero = () => {
   const textMeasureRef = useRef<HTMLDivElement>(null);
   const imageWrapperRef = useRef<HTMLDivElement>(null);
-  const [recommendationsOpen, setRecommendationsOpen] = useState(false);
 
   useEffect(() => {
     const updateHeight = () => {
@@ -117,59 +115,35 @@ export const Hero = () => {
               As a bilingual SEO content writer and legal researcher, I believe in the power of words not just to communicate, but to connect, influence, and drive action. With 2+ years in SEO-driven content and 7+ years in legal and academic research, I combine creativity, strategy, and research to create content with purpose.
             </p>
             </div>
-            <div className="flex flex-col items-center lg:items-start space-y-4">
-              <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 flex-wrap">
-                <Link
-                  to="/cv"
-                  className="border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
-                >
-                  <FileText className="w-5 h-5" />
-                  <span>View CV</span>
-                </Link>
-                <a 
-                  href="#top-work" 
-                  className="border-2 border-destructive text-destructive opacity-60 px-6 py-3 rounded-full font-semibold hover:opacity-100 hover:bg-destructive hover:text-destructive-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
-                >
-                  <Eye className="w-5 h-5" />
-                  <span>View Top Work</span>
-                </a>
-              </div>
-              <div className="flex flex-col sm:flex-row justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 flex-wrap">
-                <a 
-                  href="#contact" 
-                  className="bg-gradient-to-r from-gradient-start to-gradient-middle text-background px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl"
-                >
-                  Get In Touch
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/kamalnagy/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Visit Kamal Nagy's LinkedIn profile (opens in new tab)"
-                  className="border-2 border-accent text-accent px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-accent-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
-                >
-                  <Linkedin className="w-5 h-5" />
-                  <span>LinkedIn</span>
-                </a>
-                <button
-                  onClick={() => setRecommendationsOpen(true)}
-                  className="border-2 border-secondary text-secondary px-6 py-3 rounded-full font-semibold hover:bg-secondary hover:text-secondary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
-                >
-                  <Award className="w-5 h-5" />
-                  <span>Recommendations</span>
-                </button>
-              </div>
+            <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4 flex-wrap">
+              <a 
+                href="#top-work" 
+                className="bg-gradient-to-r from-gradient-start to-gradient-middle text-background px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+              >
+                <Eye className="w-5 h-5" />
+                <span>View Selected Work</span>
+              </a>
+              <Link
+                to="/cv"
+                className="border-2 border-primary text-primary px-6 py-3 rounded-full font-semibold hover:bg-primary hover:text-primary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
+              >
+                <FileText className="w-5 h-5" />
+                <span>View CV</span>
+              </Link>
+              <a
+                href="https://www.linkedin.com/in/kamalnagy/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit Kamal Nagy's LinkedIn profile (opens in new tab)"
+                className="w-11 h-11 md:w-12 md:h-12 rounded-full border-2 border-accent text-accent flex items-center justify-center hover:bg-accent hover:text-accent-foreground transform transition-all duration-300"
+              >
+                <Linkedin className="w-5 h-5" />
+              </a>
             </div>
           </div>
         </div>
         
       </div>
-      
-      {/* Recommendations Modal */}
-      <RecommendationsModal 
-        open={recommendationsOpen} 
-        onOpenChange={setRecommendationsOpen} 
-      />
     </section>
   );
 };
