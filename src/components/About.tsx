@@ -1,8 +1,11 @@
 
-import React from 'react';
-import { Search, LayoutTemplate, MessageSquareQuote, BarChart3, Sparkles, PenTool, Clapperboard, MousePointerClick } from 'lucide-react';
+import React, { useState } from 'react';
+import { Search, LayoutTemplate, MessageSquareQuote, BarChart3, Sparkles, PenTool, Clapperboard, MousePointerClick, Award } from 'lucide-react';
+import { RecommendationsModal } from '@/components/RecommendationsModal';
 
 export const About = () => {
+  const [recommendationsOpen, setRecommendationsOpen] = useState(false);
+
   const stats = [
     { value: '3+', label: 'Years in SEO & Content Creation ' },
     { value: '7+', label: 'Years Legal & Economic Research' },
