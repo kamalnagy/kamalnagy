@@ -1,8 +1,11 @@
 
-import React from 'react';
-import { Search, LayoutTemplate, MessageSquareQuote, BarChart3, Sparkles, PenTool, Clapperboard, MousePointerClick } from 'lucide-react';
+import React, { useState } from 'react';
+import { Search, LayoutTemplate, MessageSquareQuote, BarChart3, Sparkles, PenTool, Clapperboard, MousePointerClick, Award } from 'lucide-react';
+import { RecommendationsModal } from '@/components/RecommendationsModal';
 
 export const About = () => {
+  const [recommendationsOpen, setRecommendationsOpen] = useState(false);
+
   const stats = [
     { value: '3+', label: 'Years in SEO & Content Creation ' },
     { value: '7+', label: 'Years Legal & Economic Research' },
@@ -74,6 +77,21 @@ export const About = () => {
             I believe the right words do more than inform .. they move people.
             I work at the intersection of SEO, storytelling, and research, creating Arabic and English content that is built to be found, understood, and acted on. With 2+ years in SEO and web content, backed by 7+ years of legal and economic research, I bring structure, strategy, and depth to everything from websites and e-commerce content to campaigns, scripts, and brand messaging.
           </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
+            <a
+              href="#contact"
+              className="bg-gradient-to-r from-gradient-start to-gradient-middle text-background px-6 py-3 rounded-full font-semibold hover:scale-105 transform transition-all duration-300 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2"
+            >
+              <span>Get In Touch</span>
+            </a>
+            <button
+              onClick={() => setRecommendationsOpen(true)}
+              className="border-2 border-secondary text-secondary px-6 py-3 rounded-full font-semibold hover:bg-secondary hover:text-secondary-foreground transform transition-all duration-300 flex items-center justify-center space-x-2"
+            >
+              <Award className="w-5 h-5" />
+              <span>Recommendations</span>
+            </button>
+          </div>
         </div>
 
         {/* Stats */}
@@ -107,6 +125,11 @@ export const About = () => {
           ))}
         </div>
       </div>
+
+      <RecommendationsModal
+        open={recommendationsOpen}
+        onOpenChange={setRecommendationsOpen}
+      />
     </section>
   );
 };
