@@ -81,7 +81,7 @@ export const BrandsMarquee = () => {
     <section className="py-10 md:py-14 border-y border-border/50 bg-muted/50 overflow-hidden">
       <div className="container mx-auto px-6 mb-6 md:mb-8 text-center">
         <p className="text-xs md:text-sm uppercase tracking-[0.25em] text-muted-foreground">
-          Brands I&apos;ve Written For
+          Brands I&apos;ve Worked With
         </p>
       </div>
 
@@ -90,20 +90,22 @@ export const BrandsMarquee = () => {
         <div className="pointer-events-none absolute left-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-r from-background to-transparent" />
         <div className="pointer-events-none absolute right-0 top-0 bottom-0 w-16 md:w-32 z-10 bg-gradient-to-l from-background to-transparent" />
 
-        <div className="flex w-max animate-brand-marquee hover:[animation-play-state:paused] will-change-transform">
+        <div className="flex w-max animate-brand-marquee will-change-transform">
           {loop.map((brand, i) => (
             <div
               key={`${brand.name}-${i}`}
-              className="group flex-shrink-0 flex h-20 w-32 md:h-24 md:w-40 items-center justify-center px-3 md:px-5"
+              className="group relative flex-shrink-0 flex h-20 w-28 md:h-24 md:w-36 items-center justify-center mx-2 md:mx-3 rounded-xl border border-border/50 bg-card/40 backdrop-blur-sm transition-all duration-300 hover:border-primary/50 hover:bg-card/70 hover:-translate-y-1"
             >
               <img
                 src={brand.src}
                 alt={`${brand.name} logo`}
-                title={brand.name}
                 loading="lazy"
                 decoding="async"
-                className="max-h-14 md:max-h-16 w-auto max-w-[132px] object-contain grayscale opacity-85 brightness-110 contrast-110 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110 group-hover:brightness-125 group-hover:contrast-115"
+                className="h-10 w-10 md:h-12 md:w-12 object-contain grayscale opacity-80 brightness-125 contrast-125 transition-all duration-300 group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-110"
               />
+              <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-card px-2.5 py-1 text-xs font-medium text-foreground opacity-0 shadow-lg transition-all duration-200 group-hover:opacity-100 group-hover:-bottom-10 pointer-events-none z-20 border border-border/50">
+                {brand.name}
+              </span>
             </div>
           ))}
         </div>
