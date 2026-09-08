@@ -1,11 +1,12 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   Dialog,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { X, ExternalLink } from 'lucide-react';
+import { ExternalLink, LoaderCircle } from 'lucide-react';
 import letterAsset from '@/assets/Kamal_Nagy_RecommendationLetter.pdf.asset.json';
 
 interface RecommendationsModalProps {
@@ -16,17 +17,81 @@ interface RecommendationsModalProps {
 const tabs = [
   {
     id: 'linkedin',
-    label: 'LinkedIn Recommendations',
+    label: 'Letter 1',
     src: 'https://drive.google.com/file/d/1ia97nNWlzPeLW3hj0bBuvGL2qLHKZmUj/preview',
     external: 'https://drive.google.com/file/d/1ia97nNWlzPeLW3hj0bBuvGL2qLHKZmUj/view',
+    localPdf: false,
   },
   {
     id: 'letter',
-    label: 'Recommendation Letter',
-    src: `${letterAsset.url}#toolbar=0&view=FitH`,
+    label: 'Letter 2',
+    src: letterAsset.url,
     external: letterAsset.url,
+    localPdf: true,
   },
 ];
+
+const PdfViewer: React.FC<{ src: string; title: string }> = ({ src, title }) => {
+  const [blobUrl, setBlobUrl] = useState<string>();
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    let objectUrl: string | undefined;
+
+    fetch(src)
+      .then((response) => {
+        if (!response.ok) throw new Error('Unable to load PDF');
+        return response.blob();
+      })
+      .then((blob) => {
+        if (!active) return;
+        objectUrl = URL.createObjectURL(new Blob([blob], { type: 'application/pdf' }));
+        setBlobUrl(objectUrl);
+      })
+      .catch(() => {
+        if (active) setFailed(true);
+      });
+
+    return () => {
+      active = false;
+      if (objectUrl) URL.revokeObjectURL(objectUrl);
+    };
+  }, [src]);
+
+  if (failed) {
+    return (
+      <div className="flex h-full flex-col items-center justify-center gap-4 px-6 text-center">
+        <p className="text-sm text-muted-foreground">The preview could not load in this browser.</p>
+        <a
+          href={src}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 font-semibold text-primary transition-colors hover:text-primary/80"
+        >
+          Open Letter 2
+          <ExternalLink className="h-4 w-4" />
+        </a>
+      </div>
+    );
+  }
+
+  if (!blobUrl) {
+    return (
+      <div className="flex h-full items-center justify-center" aria-label="Loading letter">
+        <LoaderCircle className="h-7 w-7 animate-spin text-primary" />
+      </div>
+    );
+  }
+
+  return (
+    <iframe
+      src={`${blobUrl}#toolbar=0&view=FitH`}
+      className="h-full w-full"
+      title={title}
+    />
+  );
+};
 
 export const RecommendationsModal: React.FC<RecommendationsModalProps> = ({
   open,
@@ -40,13 +105,7 @@ export const RecommendationsModal: React.FC<RecommendationsModalProps> = ({
       <DialogContent className="max-w-4xl w-[90vw] h-[85vh] p-0 flex flex-col">
         <DialogHeader className="px-6 py-4 border-b border-border shrink-0">
           <DialogTitle className="text-xl font-semibold">Recommendations</DialogTitle>
-          <button
-            onClick={() => onOpenChange(false)}
-            className="absolute right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100 focus:outline-none focus:ring-2 focus:ring-ring"
-          >
-            <X className="h-4 w-4" />
-            <span className="sr-only">Close</span>
-          </button>
+          <DialogDescription className="sr-only">Browse recommendation letters.</DialogDescription>
         </DialogHeader>
 
         <div className="flex flex-wrap items-center gap-2 px-6 py-3 border-b border-border shrink-0">
@@ -75,13 +134,17 @@ export const RecommendationsModal: React.FC<RecommendationsModalProps> = ({
         </div>
 
         <div className="flex-1 w-full overflow-hidden">
-          <iframe
-            key={current.id}
-            src={current.src}
-            className="w-full h-full"
-            title={current.label}
-            allow="autoplay"
-          />
+          {current.localPdf ? (
+            <PdfViewer key={current.id} src={current.src} title={current.label} />
+          ) : (
+            <iframe
+              key={current.id}
+              src={current.src}
+              className="w-full h-full"
+              title={current.label}
+              allow="autoplay"
+            />
+          )}
         </div>
       </DialogContent>
     </Dialog>
