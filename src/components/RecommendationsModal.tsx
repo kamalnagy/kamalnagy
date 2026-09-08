@@ -8,14 +8,12 @@ import {
 } from "@/components/ui/dialog";
 import { ExternalLink, LoaderCircle } from 'lucide-react';
 import { Document, Page, pdfjs } from 'react-pdf';
+import pdfWorkerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
 import letterAsset from '@/assets/Kamal_Nagy_RecommendationLetter.pdf.asset.json';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-  'pdfjs-dist/build/pdf.worker.min.mjs',
-  import.meta.url,
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = pdfWorkerUrl;
 
-const letterUrl = `${window.location.hostname === 'localhost' ? 'https://kamalnagy.lovable.app' : ''}${letterAsset.url}`;
+const letterUrl = `${typeof window !== 'undefined' && window.location.hostname === 'localhost' ? 'https://kamalnagy.lovable.app' : ''}${letterAsset.url}`;
 
 interface RecommendationsModalProps {
   open: boolean;
