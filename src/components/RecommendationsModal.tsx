@@ -15,6 +15,8 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
   import.meta.url,
 ).toString();
 
+const letterUrl = `${window.location.hostname === 'localhost' ? 'https://kamalnagy.lovable.app' : ''}${letterAsset.url}`;
+
 interface RecommendationsModalProps {
   open: boolean;
   onOpenChange: (open: boolean) => void;
@@ -31,8 +33,8 @@ const tabs = [
   {
     id: 'letter',
     label: 'Letter 2',
-    src: letterAsset.url,
-    external: letterAsset.url,
+    src: letterUrl,
+    external: letterUrl,
     localPdf: true,
   },
 ];
