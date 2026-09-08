@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Dialog,
   DialogContent,
@@ -7,7 +7,13 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { ExternalLink, LoaderCircle } from 'lucide-react';
+import { Document, Page, pdfjs } from 'react-pdf';
 import letterAsset from '@/assets/Kamal_Nagy_RecommendationLetter.pdf.asset.json';
+
+pdfjs.GlobalWorkerOptions.workerSrc = new URL(
+  'pdfjs-dist/build/pdf.worker.min.mjs',
+  import.meta.url,
+).toString();
 
 interface RecommendationsModalProps {
   open: boolean;
@@ -32,64 +38,52 @@ const tabs = [
 ];
 
 const PdfViewer: React.FC<{ src: string; title: string }> = ({ src, title }) => {
-  const [blobUrl, setBlobUrl] = useState<string>();
-  const [failed, setFailed] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [pageCount, setPageCount] = useState(0);
+  const [pageWidth, setPageWidth] = useState(760);
 
   useEffect(() => {
-    let active = true;
-    let objectUrl: string | undefined;
+    const container = containerRef.current;
+    if (!container) return;
 
-    fetch(src)
-      .then((response) => {
-        if (!response.ok) throw new Error('Unable to load PDF');
-        return response.blob();
-      })
-      .then((blob) => {
-        if (!active) return;
-        objectUrl = URL.createObjectURL(new Blob([blob], { type: 'application/pdf' }));
-        setBlobUrl(objectUrl);
-      })
-      .catch(() => {
-        if (active) setFailed(true);
-      });
+    const updateWidth = () => setPageWidth(Math.min(container.clientWidth - 32, 760));
+    updateWidth();
+    const observer = new ResizeObserver(updateWidth);
+    observer.observe(container);
 
     return () => {
-      active = false;
-      if (objectUrl) URL.revokeObjectURL(objectUrl);
+      observer.disconnect();
     };
-  }, [src]);
-
-  if (failed) {
-    return (
-      <div className="flex h-full flex-col items-center justify-center gap-4 px-6 text-center">
-        <p className="text-sm text-muted-foreground">The preview could not load in this browser.</p>
-        <a
-          href={src}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 font-semibold text-primary transition-colors hover:text-primary/80"
-        >
-          Open Letter 2
-          <ExternalLink className="h-4 w-4" />
-        </a>
-      </div>
-    );
-  }
-
-  if (!blobUrl) {
-    return (
-      <div className="flex h-full items-center justify-center" aria-label="Loading letter">
-        <LoaderCircle className="h-7 w-7 animate-spin text-primary" />
-      </div>
-    );
-  }
+  }, []);
 
   return (
-    <iframe
-      src={`${blobUrl}#toolbar=0&view=FitH`}
-      className="h-full w-full"
-      title={title}
-    />
+    <div ref={containerRef} className="h-full overflow-y-auto bg-muted/40 px-4 py-5" aria-label={title}>
+      <Document
+        file={src}
+        onLoadSuccess={({ numPages }) => setPageCount(numPages)}
+        loading={<div className="flex h-48 items-center justify-center"><LoaderCircle className="h-7 w-7 animate-spin text-primary" /></div>}
+        error={
+          <div className="flex h-48 flex-col items-center justify-center gap-4 text-center">
+            <p className="text-sm text-muted-foreground">The preview could not load in this browser.</p>
+            <a href={src} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 font-semibold text-primary hover:text-primary/80">
+              Open Letter 2 <ExternalLink className="h-4 w-4" />
+            </a>
+          </div>
+        }
+        className="flex flex-col items-center gap-5"
+      >
+        {Array.from({ length: pageCount }, (_, index) => (
+          <Page
+            key={`page-${index + 1}`}
+            pageNumber={index + 1}
+            width={pageWidth}
+            renderTextLayer={false}
+            renderAnnotationLayer={false}
+            className="overflow-hidden rounded-sm shadow-lg"
+          />
+        ))}
+      </Document>
+    </div>
   );
 };
 
