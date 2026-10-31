@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Experience } from '@/components/Experience';
 import { Skills } from '@/components/Skills';
 import { Education } from '@/components/Education';
@@ -9,6 +10,16 @@ import { Button } from '@/components/ui/button';
 const CV = () => {
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        <title>Curriculum Vitae — Kamal Nagy | SEO Content Writer & Digital Content Creator</title>
+        <meta name="description" content="Kamal Nagy's CV: bilingual SEO content writer, scriptwriter and digital brand content creator. Experience, skills, education and a professional summary built for web, e-commerce and campaign content roles." />
+        <link rel="canonical" href="https://kamalnagy.lovable.app/cv" />
+        <meta property="og:title" content="Curriculum Vitae — Kamal Nagy | SEO Content Writer & Digital Content Creator" />
+        <meta property="og:description" content="Kamal Nagy's CV: bilingual SEO content writer, scriptwriter and digital brand content creator. Experience, skills, education and a professional summary built for web, e-commerce and campaign content roles." />
+        <meta property="og:url" content="https://kamalnagy.lovable.app/cv" />
+        <meta property="og:type" content="profile" />
+        <meta property="og:image" content="https://kamalnagy.lovable.app/lovable-uploads/f9c8de36-3057-4354-9f75-c0468fc3f85e.png" />
+      </Helmet>
       {/* Navigation Header */}
       <header className="sticky top-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
         <div className="container mx-auto px-6 py-4">
