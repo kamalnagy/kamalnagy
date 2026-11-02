@@ -1,4 +1,4 @@
-import certAsset from "@/assets/hubspot-content-marketing-certificate.png.asset.json";
+const certAsset = { url: "/lovable-uploads/hubspot-content-marketing-certificate.png" };
 
 export interface Certificate {
   title: string;
