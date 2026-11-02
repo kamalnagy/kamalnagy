@@ -19,6 +19,9 @@ const Index = () => {
         <meta property="og:url" content="https://kamalnagy.lovable.app/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://kamalnagy.lovable.app/lovable-uploads/f9c8de36-3057-4354-9f75-c0468fc3f85e.png" />
+        <meta name="twitter:title" content="Kamal Nagy — SEO Content Writer & Digital Brand Strategist" />
+        <meta name="twitter:description" content="Professional portfolio of Kamal Nagy, specializing in SEO content writing, digital brand messaging, and legal research." />
+        <meta name="twitter:image" content="https://kamalnagy.lovable.app/lovable-uploads/f9c8de36-3057-4354-9f75-c0468fc3f85e.png" />
       </Helmet>
       <Hero />
       <BrandsMarquee />
