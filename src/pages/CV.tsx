@@ -3,6 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Experience } from '@/components/Experience';
 import { Skills } from '@/components/Skills';
 import { Education } from '@/components/Education';
+import { Certifications } from '@/components/Certifications';
 import { ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -58,6 +59,7 @@ const CV = () => {
         </section>
         
         <Experience />
+        <Certifications />
         <Education />
         <Skills />
       </main>
